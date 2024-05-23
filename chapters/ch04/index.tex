@@ -56,13 +56,13 @@
 
 
            
-     % \begin{figure}[H]
-     %     \centering
-     %         \centering
-     %         \includegraphics[width=\textwidth]{figures/bab4/data video.png}
-     %         \caption{a) \textit{Male}, b) \textit{Female}}
-     %         \label{Dataset Video}
-     % \end{figure}
+     \begin{figure}[H]
+         \centering
+             \centering
+             \includegraphics[width=\textwidth]{figures/bab4/data video.png}
+             \caption{a) \textit{Male}, b) \textit{Female}}
+             \label{Dataset Video}
+     \end{figure}
 
     
 
@@ -74,13 +74,13 @@
     
    Sebelum memasuki tahap selanjutnya, data akan memasuki seleksi fitur. Hal ini bertujuan untuk mereduksi data atau fitur yang tidak dibutuhkan. Pemilihan data dilakukan dengan memfilter data sesuai dengan deskripsi data setiap video yang telah diberikan sebelumnya seperti pada Tabel \ref{Penjelasan Dataset}. Data dipisahkan secara manual berdasarkan penamaan video pada setiap folder, seperti Gambar \ref{Seleksi_Fitur} berikut.
 
-     % \begin{figure}[H]
-     %     \centering
-     %         \centering
-     %         \includegraphics[width=\textwidth]{figures/bab4/seleksi_fitur.png}
-     %         \caption{Seleksi Fitur}
-     %         \label{Seleksi_Fitur}
-     % \end{figure}
+     \begin{figure}[H]
+         \centering
+             \centering
+             \includegraphics[width=\textwidth]{figures/bab4/seleksi_fitur.png}
+             \caption{Seleksi Fitur}
+             \label{Seleksi_Fitur}
+     \end{figure}
    
    
    Pada penelitian ini, fokus diarahkan pada fitur \textit{'action}', hanya keadaan\textit{'yawning'} dan \textit{'yawning \& talking'}  yang dipilih. Kondisi ini dipilih karena pengambilan data difokuskan pada pengemudi yang mengantuk dan menguap. Data kemudian diekstrak ke dalam format gambar (.jpg) dan dilatih pada model \textit{Convolutional Neural Network} (CNN). Seleksi data dilakukan berdasarkan dua kategori, yaitu \textit{'male'}dan \textit{'female'}.
@@ -88,24 +88,24 @@
 \subsubsection{\textit{Male}}
           Sebelum proses seleksi data, dilakukan eksplorasi data awal terkait fitur-fitur pada data. Hal ini bertujuan untuk memahami karakteristik data dan meninjau kembali kelayakan fitur-fitur yang telah dipilih. Contoh data dengan kategori \textit{'male}' ditampilkan pada Gambar \ref{male gambar1} berikut.
        
-     % \begin{figure}[H]
-     %     \centering
-     %         \centering
-     %         \includegraphics[width=\textwidth]{figures/bab4/male_contoh.png}
-     %         \caption{Penampilan Data \textit{Male}}
-     %         \label{male gambar1}
-     % \end{figure}
+     \begin{figure}[H]
+         \centering
+             \centering
+             \includegraphics[width=\textwidth]{figures/bab4/male_contoh.png}
+             \caption{Penampilan Data \textit{Male}}
+             \label{male gambar1}
+     \end{figure}
 
     Pada kategori data \textit{male} terdapat total 162 video (.avi). Berdasarkan deskripsi data pada fitur \textit{"action"} mencakup kondisi seperti \textit{"talking"}, \textit{"yawning"}, \textit{"normal"} dan \textit{"yawning \& talking"}. Proporsi dan persentase data berdasarkan fitur \textit{action} pada kategori \textit{male} ditamilkan pada Gambar \ref{Proporsi Data Male Berdasarkan "Action"} berikut.
     
 
    
 
-     % \begin{figure}[H]
-     %     \includegraphics[width=0.75\linewidth]{figures/bab4/data_male.png}
-     %     \caption{Proporsi Data \textit{Male} Berdasarkan \textit{"Action"}}
-     %     \label{Proporsi Data Male Berdasarkan "Action"}
-     % \end{figure}
+     \begin{figure}[H]
+         \includegraphics[width=0.75\linewidth]{figures/bab4/data_male.png}
+         \caption{Proporsi Data \textit{Male} Berdasarkan \textit{"Action"}}
+         \label{Proporsi Data Male Berdasarkan "Action"}
+     \end{figure}
 
   
 
@@ -195,22 +195,22 @@
     
     Pada kategori \textit{female} ditampilkan beberapa contoh data dengan kategori "\textit{female}" pada Gambar \ref{Female Dataset} berikut.
     
-     % \begin{figure}[H]
-     %     \centering
-     %     \includegraphics[width=1.0\linewidth]{figures/bab4/female_contoh.png}
-     %     \caption{Contoh Data \textit{Female}}
-     %     \label{Female Dataset}
-     % \end{figure}
+     \begin{figure}[H]
+         \centering
+         \includegraphics[width=1.0\linewidth]{figures/bab4/female_contoh.png}
+         \caption{Contoh Data \textit{Female}}
+         \label{Female Dataset}
+     \end{figure}
 
    
 
      Terdapat 154 video pada kategori \textit{"female"}, fitur \textit{action} pada data mencakup keadaan \textit{"yawning"}, \textit{"talking"},\textit{"normal"} dan \textit{"yawning \& talking"}. Berikut proprosi untuk kategori \textit{action} di tampilkan pada Gambar \ref{Proporsi Data Female Berdasarkan "Action"} berikut.
 
-     % \begin{figure}[H]
-     %     \includegraphics[width=0.75\linewidth]{figures/bab4/data_female.png}
-     %     \caption{Proporsi Data \textit{Female }Berdasarkan \textit{"Action"}}
-     %     \label{Proporsi Data Female Berdasarkan "Action"}
-     % \end{figure}
+     \begin{figure}[H]
+         \includegraphics[width=0.75\linewidth]{figures/bab4/data_female.png}
+         \caption{Proporsi Data \textit{Female }Berdasarkan \textit{"Action"}}
+         \label{Proporsi Data Female Berdasarkan "Action"}
+     \end{figure}
 
         Setelah dilakukan pemilihan fitur berdasarkan kolom \textit{action}, yaitu hanya keadaan \textit{"yawning"} dan \textit{"talking \& yawning"} yang dipilih. Dihasilkan jumlah data untuk kategori \textit{female} sebanyak 58 video. Data \textit{female} setelah dilakukan pemilihan fitur ditampilkan pada Tabel \ref{Data female setelah dilakukan pemilihan fitur} berikut.
 
@@ -313,12 +313,12 @@
 \subsubsection{\textit{Eye Aspect Ratio} (EAR)}
 
         
-         % \begin{figure}[H]
-         %     \centering
-         %     \includegraphics[width=0.75\linewidth]{figures/bab4/nilai ear.png}
-         %     \caption{Grafik Nilai EAR}
-         %     \label{Grafik Nilai EAR}
-         % \end{figure}
+         \begin{figure}[H]
+             \centering
+             \includegraphics[width=0.75\linewidth]{figures/bab4/nilai ear.png}
+             \caption{Grafik Nilai EAR}
+             \label{Grafik Nilai EAR}
+         \end{figure}
 
             Berdasarkan grafik pada Gambar \ref{Grafik Nilai EAR}, nilai EAR \textit{(Eye Aspect Ratio)} menunjukkan pola mengantuk berada dibawah rata-rata. Hal ini sesuai dengan teori yang menyatakan bahwa semakin kecil nilai EAR menunjukkan bahwa kondisi mata semakin tertutup. Namun perlu ditentukan ambang batas dimana nilai EAR menunjukkan mengantuk dengan kesalahan terkecil.
             
@@ -357,12 +357,12 @@
 
             Pada tabel \ref{Penentuan Nilai EAR} ditemukan bahwa nilai EAR yang berada di atas rata-rata memiliki nilai \textit{error} yang tinggi yaitu diatas angka $ 81\%$, hal ini menunjukkan bahwa nilai EAR diatas rata-rata tidak dapat mengelompokkan data dengan baik. Nilai \textit{error} di bawah rata-rata menunjukkan angkanya mengecil, hal ini menunjukkan semakin sedikitnya terjadi kesalahan prediksi. Visualisasi nilai EAR ditampilkan pada Gambar \ref{Eksperimen Penentuan Nilai EAR} berikut.
 
-             % \begin{figure}[H]
-             % \centering
-             %     \includegraphics[width=0.8\textwidth]{figures/bab4/penentuan nilai ear.png}
-             %     \caption{Eksperimen Penentuan Nilai EAR}
-             %     \label{Eksperimen Penentuan Nilai EAR}
-             % \end{figure}
+             \begin{figure}[H]
+             \centering
+                 \includegraphics[width=0.8\textwidth]{figures/bab4/penentuan nilai ear.png}
+                 \caption{Eksperimen Penentuan Nilai EAR}
+                 \label{Eksperimen Penentuan Nilai EAR}
+             \end{figure}
 
 
           Dari hasil visualisasi pada Gambar \ref{Eksperimen Penentuan Nilai EAR} menunjukkan pola bahwa semakin besar nilai EAR jumlah yang tereteksi kantuk juga semakin besar, namun nilai \textit{error }juga sangat kecil. Pola ini sesuai dengan teori yang menyatakan semakin kecil nilai EAR menunjukkan bahwa kondisi mata sedang tertutup atau mengantuk. Sehingga pada penentuan nilai EAR penelitian ini akan digunakan dengan nilai kesalahan atau \textit{error} yang terkecil yaitu dengan EAR sebesar 0.18 dengan \textit{error} sebesar $34.48\%$\\
@@ -372,12 +372,12 @@
 \subsubsection{\textit{Mouth Aspect Ratio} (MAR)}
     
     
-             % \begin{figure}[H]
-             %     \centering
-             %     \includegraphics[width=0.8\linewidth]{figures/bab4/nilai mar.png}
-             %     \caption{Grafik Nilai MAR}
-             %     \label{Grafik Nilai MAR}
-             % \end{figure}
+             \begin{figure}[H]
+                 \centering
+                 \includegraphics[width=0.8\linewidth]{figures/bab4/nilai mar.png}
+                 \caption{Grafik Nilai MAR}
+                 \label{Grafik Nilai MAR}
+             \end{figure}
 
 
 
@@ -419,13 +419,13 @@
 
          %Visualisasi nilai MAR yang diuju dapat dilihat pada Gambar \ref{Eksperimen Penentuan Nilai MAR} berikut.
 
-         % \begin{figure}[H]
-         %       \centering
-         %       \includegraphics[width=0.8\textwidth]{figures/bab4/penentuan nilai mar.png}
-         %       \caption{Eksperimen Penentuan Nilai MAR}
-         %       \label{Eksperimen Penentuan Nilai MAR}
+         \begin{figure}[H]
+               \centering
+               \includegraphics[width=0.8\textwidth]{figures/bab4/penentuan nilai mar.png}
+               \caption{Eksperimen Penentuan Nilai MAR}
+               \label{Eksperimen Penentuan Nilai MAR}
 
-         % \end{figure}
+         \end{figure}
 
         Dari hasil visualisasi pada Gambar \ref{Eksperimen Penentuan Nilai MAR} menunjukkan pola bahwa semakin besar nilai MAR jumlah yang tereteksi 
         menguap juga semakin besar. Pola ini sesuai dengan teori yang menyatakan 
@@ -489,13 +489,13 @@
     
     Peneliti menerapkan \textit{fold} sebesar lima untuk mempekecil waktu komputasi. Sehingga keseluruhan data dibagi menjadi lima lipatan dan dilatih sebanyak lima kali berdasarkan jumlah \textit{fold }yang telah ditentukan sebelumnya. Pembagian data diilustrasikan seperti pada Gambar \ref{Pembagian Data} berikut.
 
-         % \begin{figure}[H]
-         %       \centering
-         %       \includegraphics[width=0.85\textwidth]{figures/bab4/kfold.png}
-         %       \caption{Pembagian Data}
-         %       \label{Pembagian Data}
+         \begin{figure}[H]
+               \centering
+               \includegraphics[width=0.85\textwidth]{figures/bab4/kfold.png}
+               \caption{Pembagian Data}
+               \label{Pembagian Data}
 
-         % \end{figure}
+         \end{figure}
 
 
 
@@ -1074,19 +1074,19 @@
     Grafik akurasi dan \textit{loss} model terbaik ditampilkan pada Gambar \ref{Akurasi Training Model Terbaik} berikut. 
 
 
-          %  \begin{figure}[H]
-          %     \centering
-          %    \includegraphics[width= 1.0\linewidth]{figures/bab4/akurasi_plotfix.png}
-          %     \caption{Akurasi \textit{Training} Model}
-          %     \label{Akurasi Training Model Terbaik}
-          % \end{figure}
+           \begin{figure}[H]
+              \centering
+             \includegraphics[width= 1.0\linewidth]{figures/bab4/akurasi_plotfix.png}
+              \caption{Akurasi \textit{Training} Model}
+              \label{Akurasi Training Model Terbaik}
+          \end{figure}
 
-          % \begin{figure}[H]
-          %     \centering
-          %     \includegraphics[width=1.0\linewidth]{figures/bab4/loss_plotfix.png}
-          %     \caption{\textit{Loss Training} Model}
-          %     \label{Loss Training Model Terbaik}
-          % \end{figure}
+          \begin{figure}[H]
+              \centering
+              \includegraphics[width=1.0\linewidth]{figures/bab4/loss_plotfix.png}
+              \caption{\textit{Loss Training} Model}
+              \label{Loss Training Model Terbaik}
+          \end{figure}
 
     Dapat dilihat akurasi dan \textit{loss} stabil di semua \textit{fold}, semakin tinggi nilai \textit{epoch} akurasi semakin meningkat dan akurasi di atas 90\%. Begitu juga dengan nilai \textit{loss} semakin tinggi \textit{epoch} semakin mengecil nilai \textit{loss} yang dihasilkan dan mendekati nilai nol.  Hal ini menunjukkan bahwa model mampu belajar dari data dan tidak hanya menghafal data pelatihan. Ini berarti model memiliki kinerja baik pada data baru yang tidak dilihat saat pelatihan.
 
@@ -1096,12 +1096,12 @@
 
         Pada tahap selanjutnya model di uji menggunakan data \textit{test} yang merupakan data baru yang tidak dilihat pada saat pelatihan. Hasil \textit{testing} model ditampilkan pada Gambar \ref{akurasi model terbaik} berikut.
 
-          % \begin{figure}[H]
-          %     \centering
-          %     \includegraphics[width=0.75\linewidth]{figures/bab4/confusion matriks.png}
-          %     \caption{Performa Matriks Model CNN}
-          %     \label{akurasi model terbaik}
-          % \end{figure}
+          \begin{figure}[H]
+              \centering
+              \includegraphics[width=0.75\linewidth]{figures/bab4/confusion matriks.png}
+              \caption{Performa Matriks Model CNN}
+              \label{akurasi model terbaik}
+          \end{figure}
 
         Dapat dilihat dari hasil evaluasi menggunakan \textit{confusion matrics}. Nilai akurasi dan metriks yang dihasilkan tidak berbeda jauh dengan pengujian yang dilakukan sebelumnya. Hasil evaluasi ditampilkan pada Tabel \ref{Evaluasi Model} berikut.
 
