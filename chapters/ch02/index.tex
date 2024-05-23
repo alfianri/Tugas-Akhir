@@ -2,6 +2,7 @@
 
 \section{Tinjauan Pustaka}
 
+
     Dalam penelitian ini, beberapa teori dasar akan digunakan untuk memberikan penjelasan yang lebih komprehensif terhadap proses penelitian dan mendalami pemahaman terkait dengan topik yang diadopsi. Untuk mendukung metodologi penelitian ini, beberapa sumber referensi tersebut akan digunakan sebagai acuan untuk mengkaji konsep dasar pengolahan citra digital, pengenalan gambar dalam bentuk objek digital, serta metode yang digunakan. Metode penelitian yang dipilih yaitu \textit{Convolutional Neural Network}  (CNN) akan dijelaskan secara rinci pada bagian selanjutnya. Metode CNN digunakan dikarena pendekatan ini merupakan jenis teknik \textit{neural network} yang secara khusus dibuat untuk mengatasi masalah pada data dua dimensi (2D) yang terdiri dari berbagai ukuran piksel \cite{Lindholm2022}. Beberapa penelitian mengenai deteksi kantuk dapat dilihat pada Tabel \ref{Tabel Perbandingan Referensi} berikut.
 
     
@@ -50,7 +51,7 @@
 
         \end{tabular}
     \end{table}
-            
+
 
 
 
@@ -336,16 +337,14 @@
 
     Praktik membuat gambar dan memodifikasi kecerahan dan kontras untuk setiap gambar baru dikenal sebagai meningkatkan nilai kecerahan dan kontras gambar. Karena dapat meningkatkan performa pengenalan gambar pada model, strategi augmentasi ini sering digunakan dalam penelitian terkait pembelajaran mesin \cite{mikolajczyk2018data}\cite{Yang2022}. Ada beberapa metode untuk menerapkan kedua modifikasi ini. Salah satu metode untuk meningkatkan tingkat kecerahan adalah dengan mengubah gambar RGB menjadi HSV, yang memisahkan tiga saluran warna (h, s, dan v). Saluran \textit{value} (v) nilainya berkisar antara $-50 < v < 50$ yang mengontrol kecerahan gambar, \textit{saturation} (S) mengukur intensitas atau kemurnian warna dan \textit{hue} (h) merepresentasikan jenis warna yang dirasakan manusia, seperti merah, hijau, biru, kuning, dll. Gambar segar dengan kecerahan yang diubah dihasilkan dengan mengubah saluran v yang dimodifikasi kembali menjadi RGB seperti Gambar \ref{Contoh Augmentasi Contrast} \cite{oza2020empirical}\cite{Stollnitz1996}.
 
-    % \begin{figure}[H]
-    %   \centering
-    %   \includegraphics[width=0.85\textwidth]{figures/bab2/Lighting-Transforms-Contrast-augmentation.jpg}
-    %   \caption{Contoh Augmentasi \textit{Brightness} dan\textit{ Contrast}}
-    %   \label{Contoh Augmentasi Contrast}
-    %   \vspace{-\abovecaptionskip}
-    %     \caption*{(Sumber: https://datamonje.com/image-data-augmentation/)}
+    \begin{figure}[H]
+      \centering
+      \includegraphics[width=0.85\textwidth]{figures/bab2/Lighting-Transforms-Contrast-augmentation.jpg}
+      \caption{Contoh Augmentasi \textit{Brightness} dan\textit{ Contrast} \cite{anand}}
+      \label{Contoh Augmentasi Contrast}
 
     
-    % \end{figure} 
+    \end{figure} 
     
     Berbagai teknik, termasuk penyesuaian kontras linier, mengubah skala nilai piksel individual, menggunakan metode berbasis histogram, dan teknik berbasis resonansi, dapat digunakan untuk mengubah nilai kontras gambar melalui augmentasi \cite{Bebis2021, Maragatham2015, szeliski2021computer}. Teknik sederhana yang dapat digunakan untuk mengontrol nilai kontras pada suatu gambar dapat dilakukan dengan Persamaan \ref{Augmentasi Nilai Kontras} sebagai berikut.
 
