@@ -16,7 +16,8 @@ jobs:
         uses: xu-cheng/latex-action@v3
         with:
           root_file: thesis.tex
-          args: -f
+          args: -pdf -file-line-error -interaction=nonstopmode -synctex=1 -f
+          texlive_version: 2023
 
       - name: Rename document
         run: mkdir dist && mv thesis.pdf dist/buku-ta.pdf
