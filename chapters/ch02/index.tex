@@ -440,12 +440,12 @@ sudut kiri mulut, yang tengara ditandai dalam searah jarum jam di sekitar sisany
 wilayah tersebut. MAR diukur dengan membagi vertikal jarak antara bibir atas dan bibir bawah dengan horizontal jarak antara kedua bibir \cite{inproceedings, jimaging9050091}. Dapat dilihat pada Persamaan \ref{rumus mar} berikut.
 
 
-    % \begin{figure}[H]
-    %   \centering
-    %   \includegraphics[width=0.85\textwidth]{figures/bab2/mar.png}
-    %   \caption{Ilustrasi Perhitungan Nilai MAR}
-    %   \label{Ilustrasi Perhitungan Nilai MAR}
-    % \end{figure}
+    \begin{figure}[H]
+      \centering
+      \includegraphics[width=0.85\textwidth]{figures/bab2/mar.png}
+      \caption{Ilustrasi Perhitungan Nilai MAR}
+      \label{Ilustrasi Perhitungan Nilai MAR}
+    \end{figure}
 
      \begin{equation}
     \label{rumus mar}
@@ -469,13 +469,13 @@ wilayah tersebut. MAR diukur dengan membagi vertikal jarak antara bibir atas dan
 
     \textit{Convolutional Neural Network} (CNN) adalah sub tipe \textit{Artificial Neural Network} (ANN) yang dibuat khusus untuk mengatasi tantangan terkait data dua dimensi (2D). \textit{Convolutional Neural Network} (CNN) menjalani proses pembelajaran berdasarkan data pelatihan yang diberikan. Mirip dengan jaringan saraf manusia ketika mencoba untuk memahami atau mengenali sesuatu, proses pembelajaran ini menghasilkan pola yang sesuai. Selanjutnya, setelah mengekstraksi data fitur dari kumpulan data pelatihan, data tersebut dapat diterapkan untuk mengatasi masalah klasifikasi. Istilah pada CNN dibahas pada  berikut  \cite{Alzubaidi2021}. 
     
-  % \begin{figure}[H]
-  %     \centering
-  %     \includegraphics[width=1\textwidth]{figures/bab2/arsitektur cnn.jpg}
-  %     \caption{Arsitektur \textit{Convolutional Neural Network} (CNN) \cite{Prabhu}}
-  %     \label{Arsitektur CNN}
+  \begin{figure}[H]
+      \centering
+      \includegraphics[width=1\textwidth]{figures/bab2/arsitektur cnn.jpg}
+      \caption{Arsitektur \textit{Convolutional Neural Network} (CNN) \cite{Prabhu}}
+      \label{Arsitektur CNN}
     
-  %   \end{figure}
+    \end{figure}
 
 \subsection{\textit{Convolution Layer}}
 
@@ -486,13 +486,13 @@ wilayah tersebut. MAR diukur dengan membagi vertikal jarak antara bibir atas dan
     menjadi ukuran \textit{stride} yang telah ditetapkan.
     Operasi yang dilakukan pada lapisan ini mirip dengan operasi konvolusi, yang melibatkan penggabungan berbagai nilai piksel lokal melalui \textit{filter linier}. \textit{Filter} ini berfungsi sebagai reseptor atau penerima neuron. Lapisan yang mendasari arsitektur CNN dirancang untuk mengekstrak fitur atau informasi dari gambar yang diberikan. Berikut ilustrasi proses pergeseran pada \textit{convolution layer} yang di tujukan pada Gambar \ref{Ilustrasi Proses Pergeseran Filter Pada Convolutional Layer} berikut \cite{Dewi2018}.
 
- %  \begin{figure}[H]
- %      \centering
- %      \includegraphics[width=0.8\textwidth]{figures/bab2/cnn.png}
- %      \caption{Ilustrasi Proses Pergeseran \textit{Filter} \cite{Reynolds}}
- %      \label{Ilustrasi Proses Pergeseran Filter Pada Convolutional Layer}
+  \begin{figure}[H]
+      \centering
+      \includegraphics[width=0.8\textwidth]{figures/bab2/cnn.png}
+      \caption{Ilustrasi Proses Pergeseran \textit{Filter} \cite{Reynolds}}
+      \label{Ilustrasi Proses Pergeseran Filter Pada Convolutional Layer}
     
- % \end{figure}
+ \end{figure}
 
 \subsection{\textit{Stride}}
 
@@ -644,13 +644,13 @@ Adam didesain untuk mengatasi kekurangan \textit{Stochastic Gradient Descent} (S
 
     Banyak lapisan tersembunyi yang biasanya disertakan dalam model \textit{deep learning}, yang membuatnya lebih mudah untuk memahami interaksi yang kompleks antara \textit{input} dan \textit{output}. \textit{Overfitting} adalah masalah yang umum terjadi meskipun ada manfaatnya, terutama pada dataset yang kecil \cite{Srivastava2014}. Untuk mengatasi hal ini, banyak strategi yang telah dikembangkan; salah satunya adalah \textit{dropout}. Selain mencegah \textit{overfitting}, lapisan \textit{dropout} secara efektif menggabungkan beberapa jaringan saraf yang terhubung. Hal ini dilakukan dengan menggabungkan lapisan tersembunyi dengan lapisan lain sambil menghapusnya secara bebas dan sesaat \cite{Srivastava2014}. Pada Gambar \ref{Proses Pada Dropout Layer} berikut menunjukkan proses \textit{dropout layer}.
 
-    % \begin{figure}[H]
-    %   \centering
-    %   \includegraphics[width=0.85\textwidth]{figures/bab2/drop out.jpg}
-    %   \caption{Proses Pada \textit{Dropout Layer} \cite{ida}}
-    %   \label{Proses Pada Dropout Layer}
+    \begin{figure}[H]
+      \centering
+      \includegraphics[width=0.85\textwidth]{figures/bab2/drop out.jpg}
+      \caption{Proses Pada \textit{Dropout Layer} \cite{ida}}
+      \label{Proses Pada Dropout Layer}
     
-    % \end{figure} 
+    \end{figure} 
     
 
 \subsection{\textit{Maxpooling Layer}}
@@ -658,14 +658,14 @@ Adam didesain untuk mengatasi kekurangan \textit{Stochastic Gradient Descent} (S
     Lapisan \textit{max pooling} bertanggung jawab untuk menangani matriks \textit{output} dari lapisan sebelumnya, mengurangi ukuran gambar sambil mempertahankan nilai fitur yang penting. Hal ini dilakukan dengan memilih nilai maksimum dari \textit{output} yang dihasilkan oleh lapisan sebelumnya. Pendekatan ini memungkinkan model untuk melakukan proses generalisasi dengan cepat \cite{Gholamalinezhad2020, Nagi2011MaxpoolingCN}. Ilustrasi dari proses \textit{max pooling} ditampilkan pada Gambar \ref{Proses Pada Max Pooling Layer} berikut.
 
 
-    % \begin{figure}[H]
-    %   \centering
-    %   \includegraphics[width=0.80\textwidth]{figures/bab2/pool.png}
-    %   \caption{Proses Pada \textit{Max Pooling Layer} \cite{fiki}}
-    %   \label{Proses Pada Max Pooling Layer}
+    \begin{figure}[H]
+      \centering
+      \includegraphics[width=0.80\textwidth]{figures/bab2/pool.png}
+      \caption{Proses Pada \textit{Max Pooling Layer} \cite{fiki}}
+      \label{Proses Pada Max Pooling Layer}
 
     
-    % \end{figure}
+    \end{figure}
 
 
 \subsection{\textit{Fully Conected Layer}}
@@ -678,13 +678,13 @@ Adam didesain untuk mengatasi kekurangan \textit{Stochastic Gradient Descent} (S
 
     Mengevaluasi efektivitas model penilaian melibatkan pemeriksaan parameter kinerja seperti \textit{accuracy}, \textit{precision}, \textit{recall}, dan \textit{F1-Score}. Perhitungan parameter ini memerlukan penggunaan \textit{confusion matrix}, seperti yang digambarkan pada Gambar \ref{Confusion Matrix} \cite{Nurhikmat2018}.
 
-    % \begin{figure}[H]
-    %   \centering
-    %   \includegraphics[width=0.85\textwidth]{figures/bab2/confusion matriks.png}
-    %   \caption{\textit{Confusion Matrix}}
-    %   \label{Confusion Matrix}
+    \begin{figure}[H]
+      \centering
+      \includegraphics[width=0.85\textwidth]{figures/bab2/confusion matriks.png}
+      \caption{\textit{Confusion Matrix}}
+      \label{Confusion Matrix}
     
-    % \end{figure}
+    \end{figure}
 
     Gambar 2.14 menampilkan empat nilai, yaitu "\textit{True Positive}" (TP), "\textit{False Negative}" (FN), "\textit{False Positive}" (FP), dan "\textit{True Negative}" (TN). Keempat nilai tersebut dapat digunakan untuk menghitung parameter-parameter seperti \textit{accuracy}, \textit{precision}, \textit{recall}, dan \textit{F1-Score} \cite{Nurhikmat2018}.
 
