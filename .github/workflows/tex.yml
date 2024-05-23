@@ -16,9 +16,13 @@ jobs:
         uses: xu-cheng/latex-action@v3
         with:
           root_file: thesis.tex
+          args: -pdf -file-line-error -interaction=nonstopmode -synctex=1 -f
+          texlive_version: 2023
+        continue-on-error: true
 
       - name: Rename document
-        run: mkdir dist && mv thesis.tex dist/buku-ta.pdf
+        run: mkdir dist && mv thesis.pdf dist/buku-ta.pdf
+        continue-on-error: true
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3.0.1
