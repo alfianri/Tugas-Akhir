@@ -3,26 +3,26 @@
 
 \section{Ekplorasi Dataset}
 
-    Penelitian ini menggunakan data sekunder dalam format video (.avi). Jumlah data berjumlah 316 video yang terdiri dari pengemudi pria dan wanita dengan resolusi 640 x 480 piksel dan kecepatan tiga puluh \textit{frame} per detik (FPS). Dataset ini memiliki beberapa penjelesan terkait dengan kondisi video, yaitu:
-    
-    \begin{enumerate}
-        \item \textit{Participant Number}: Variabel yang memberikan informasi terkait dengan nomor partisifasi dalam dataset.
-        \item \textit{Action}: Memberikan informasi terkait hal yang terjadi pada pengemudi.
-        \item \textit{Scarf}:  Memberikan informasi apakah pengendara menggunakan syal atau tidak.
-        \item \textit{Background Movement}: Memberitahukan kondisi latar belakang video, bergerak atau tidak.
-        \item \textit{Lighting}: Memberikan informasi kondisi kencahayaan.
-        \item  \textit{Type of Glasses}: Jenis kacamata yang digunakan.
-        \item  \textit{Ethnicity}: Jenis etnis pengendara.
+        Penelitian ini menggunakan data sekunder dalam format video (.avi). Jumlah data berjumlah 316 video yang terdiri dari pengemudi pria dan wanita dengan resolusi 640 x 480 piksel dan kecepatan tiga puluh \textit{frame} per detik (FPS). Dataset ini memiliki beberapa penjelesan terkait dengan kondisi video, yaitu:
         
-    \end{enumerate}
+        \begin{enumerate}
+            \item \textit{Participant Number}: Variabel yang memberikan informasi terkait dengan nomor partisifasi dalam dataset.
+            \item \textit{Action}: Memberikan informasi terkait hal yang terjadi pada pengemudi.
+            \item \textit{Scarf}:  Memberikan informasi apakah pengendara menggunakan syal atau tidak.
+            \item \textit{Background Movement}: Memberitahukan kondisi latar belakang video, bergerak atau tidak.
+            \item \textit{Lighting}: Memberikan informasi kondisi kencahayaan.
+            \item  \textit{Type of Glasses}: Jenis kacamata yang digunakan.
+            \item  \textit{Ethnicity}: Jenis etnis pengendara.
+            
+        \end{enumerate}
 
-    Penjelesan dataset untuk setiap videonya disajikan dalam tabel untuk seperti Tabel \ref{Penjelasan Dataset} berikut.
+        Penjelesan dataset untuk setiap videonya disajikan dalam tabel untuk seperti Tabel \ref{Penjelasan Dataset} berikut.
 
-  \begin{table}[htbp]
+    \begin{table}[htbp]
         \centering
         \caption{Penjelasan Dataset}
         \label{Penjelasan Dataset}
-    \scriptsize
+        \scriptsize
         \begin{tabular}{p{1.2 cm} p{1.5 cm} p{1.1cm} p{1.3 cm} {0.5 cm} {1.0 cm} {0.8 cm}{0.7cm}}
         \hline
         \textbf{Participant Number} & \textbf{Action} & \textbf{Scarf} & \textbf{BG Movement} & \textbf{Glasses} & \textbf{Lighting} & \textbf{Ethnicity} \\
@@ -50,7 +50,7 @@
         160 & Yawning & No & Yes & Prescription & Sunny & Middle Eastern \\
         \hline
         \end{tabular}
-        \end{table}
+    \end{table}
 
     Contoh dataset awal yang berupa video ditampilkan seperti Gambar \ref{Dataset Video} berikut.
 
@@ -61,7 +61,7 @@
              \centering
              \includegraphics[width=\textwidth]{figures/bab4/data video.png}
              \caption{a) \textit{Male}, b) \textit{Female}}
-             \label{Dataset Video}
+        \label{Dataset Video}
      \end{figure}
 
     
@@ -102,6 +102,7 @@
    
 
      \begin{figure}[H]
+        \centering
          \includegraphics[width=0.75\linewidth]{figures/bab4/data_male.png}
          \caption{Proporsi Data \textit{Male} Berdasarkan \textit{"Action"}}
          \label{Proporsi Data Male Berdasarkan "Action"}
@@ -207,6 +208,7 @@
      Terdapat 154 video pada kategori \textit{"female"}, fitur \textit{action} pada data mencakup keadaan \textit{"yawning"}, \textit{"talking"},\textit{"normal"} dan \textit{"yawning \& talking"}. Berikut proprosi untuk kategori \textit{action} di tampilkan pada Gambar \ref{Proporsi Data Female Berdasarkan "Action"} berikut.
 
      \begin{figure}[H]
+        \centering
          \includegraphics[width=0.75\linewidth]{figures/bab4/data_female.png}
          \caption{Proporsi Data \textit{Female }Berdasarkan \textit{"Action"}}
          \label{Proporsi Data Female Berdasarkan "Action"}
@@ -286,9 +288,7 @@
         149 & Yawning & No & No & Prescription & Sunny & Middle Eastern  \\
         152 & Yawning & No & No & Sun Glasses & Sunny & Middle Eastern  \\
         155 & Yawning & No & No & No Glasses & Sunny & Middle Eastern \\
-     
         
-
          \hline
         \end{tabular}
         \end{table}
