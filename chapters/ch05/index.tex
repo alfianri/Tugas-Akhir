@@ -1,0 +1,23 @@
+\chapter{Penutup}
+
+\section{Kesimpulan}
+
+    \begin{enumerate}
+        \item Deteksi kantuk pada pengendara di di klasifikasi berdasarkan nilai \textit{Eye Aspect Ratio} (EAR) dan \textit{Mouth Aspect Ratio} (MAR).
+        Terdapat tiga kelas yang dilatih menggunakan \textit{Convolutional Neural Network} (CNN) untuk mengidentifikasi pola pengendara menggunakan seperti ’mengantuk dan menguap’, ’mengantuk tidak menguap’ dan ’menguap tidak mengantuk’, ketiga kelas tersebut merupakan kombinasi antara parameter EAR \& MAR.
+        
+        \item Performa terbaik model diperoleh pada skenario pengujian parameter dengan nilai \textit{learning rate} sebesar 0,0001, \textit{activation} ReLu dan \textit{Optimizer} SGD. Perubahan \textit{learning rate} dari 0.01 menjadi 0.001 mengalami peningkatan akurasi yang signifikan. Pada \textit{activation softmax} tidak mengalami perubahan yang cukup berarti pada beberapa \textit{learning rate}, sehingga buruk dalam melakukan klasifikasi. Setelah dilakukan beberapa pengujian parameter, model dengan parameter terbaik mencapai nilai akurasi sebesar 92.97\%, \textit{precision} sebesar 93.32\%, \textit{recall} sebesar 92.72\%, dan \textit{F1-Score} sebesar 92.98\%.
+    \end{enumerate}
+
+
+\section{Saran}
+
+Berdasarkan penelitian yang telah dilakukan, dengan deteksi kantuk dapat menggunakan metode \textit{Convolutional Neural Network} (CNN) mempertimbangkan nilai parameter \textit{Eye Aspect Ratio} (EAR) dan \textit{Mouth Aspect Ratio} (MAR) untuk ekstraksi data video menjadi gambar pada kelas yang ditentukan. Untuk pencarian model CNN terbaik, parameter yang di \textit{tuning} adalah \textit{learning rate}, \textit{activation} dan \textit{optimizer}. Penelitian selanjutnya disarankan untuk menggunakan nilai EAR dan MAR yang berbeda untuk ektraksi data, serta menggunakan metode lain untuk melakukan \textit{tuning} parameter.
+
+
+
+
+
+
+
+

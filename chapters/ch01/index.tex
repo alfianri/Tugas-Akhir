@@ -1,0 +1,52 @@
+\chapter{PENDAHULUAN}
+\pagestyle{plain}
+\section{Latar Belakang}
+
+    Kecelakaan lalu lintas merupakan masalah serius yang dihadapi masyarakat, karena peristiwa ini tidak terduga dan melibatkan kendaraan lain atau pengemudi lain di jalan raya \cite{himawan2022deteksi}. Organisasi Kesehatan Dunia (WHO) mencatat bahwa pada tahun 2019, kecelakaan di jalan raya telah menyebabkan kehilangan nyawa sebanyak 1,35 juta orang di seluruh dunia, 20\%-30\% disebabkan karena kelalaian manusia \cite{kojo2024analisis}. Kelalaian manusia seperti kantuk dapat menyebabkan kecelakaan yang merugikan secara materi dan non materi. Banyak pengendara yang mengabaikan rasa kantuk, mereka tetap memaksakan dirinya untuk mengemudi padahal sudah seharusnya untuk beristirahat   \cite{Puteri2020}.
+
+    Kantuk merupakan kondisi alami yang dialami oleh manusia seperti waktu reaksi yang lebih lambat. Kantuk dapat menyebabkan penurunan respons dan kinerja tubuh \cite{Chaabene2021}. Keadaan mengantuk sangat berbahaya, terutama pada saat berkendara. Pengemudi yang mengantuk memiliki waktu reaksi yang lama dan tidak dapat membuat keputusan dengan cepat, sehingga dapat menyebabkan kecelakaan lalu lintas \cite{Cui2021}. Mengemudi dalam keadaan mengantuk merupakan sebuah tindakan yang sangat berbahaya karena dapat mengancam keselamatan banyak orang \cite{Ngxande2017}. Masalah utama bagi pengemudi yaitu, ketika mereka tidak dapat mengetahui tingkat dimana mereka harus berhenti untuk mengemudi dengan aman. Untuk mengatasi masalah tersebut dapat diminimalisir dengan melakukan deteksi kantuk pada pengemudi, serta memberikan peringatan apabila pengemudi mengantuk \cite{Zhu2022}. 
+
+    Kantuk yang menyebabkan kecelakaan dapat dicegah dengan bantuan sistem deteksi kantuk pada pengemudi. Sistem memantau pengemudi dan memberikan pering-atan untuk meminta pengemudi menghentikan kendaraan selama pengemudi mengantuk \cite{Cui2021}. Deteksi keadaan mengantuk pada pengemudi di implementasikan dengan menggunakan kamera dan pengolahan citra digital. Keadaan mata (terbuka atau tertutup) menjadi parameter dalam menentukan pengendara mengantuk \cite{sethu2023application}. Kamera akan mengambil gambar kemudian ditentukan apakah objek yang diamati sedang dalam keadaan mengantuk atau tidak. Pada saat pengendara terdeteksi sedang mengantuk, sistem dengan segera akan memberikan peringatan agar pengemudi dapat beristirahat dan melakukan pergantian sopir. Untuk menciptakan sistem seperti itu, dapat digunakan metode \textit{deep learning} dan kombinasi pemrosesan dan pengenalan pola dalam gambar digital \cite{Imanuddin2019}.
+
+    \textit{Deep learning} telah berkembang pesat dan tak lagi terbatas pada pengenalan gambar. Saat ini, \textit{deep learning} diaplikasikan untuk berbagai macam permasalahan, termasuk klasifikasi. \textit{Convolutional Neural Network} (CNN) digunakan untuk mengidentifikasi pola citra pengendara kantuk pada saat berkendara. 
+    Setelah kepopuleran \textit{deep learning} meningkat pasca kemunculan \textit{AlexNet}, variasi arsitektur \textit{Convolutional Neural Network} (CNN) berhasil memenangkan \textit{ImageNet Large Scale Visual Recognition Challenge} (ILSVRC) pada tahun 2012. AlexNet merupakan arsitektur \textit{Convolutional Neural Network} (CNN) yang memainkan peran penting dalam perkembangan \textit{deep learning}, khususnya dalam pengolahan gambar. Diperkenalkan pada tahun 2012 oleh Alex Krizhevsky, Ilya Sutskever, dan Geoffrey Hinton. 
+    
+    
+    \textit{Convolutional Neural Network} (CNN) telah menjadi metode yang banyak diguna-kan di berbagai bidang, termasuk pertanian dan perkebunan. Sebagai contoh, dalam penelitian yang dilakukan oleh Mauricio Rodriguez dkk, metode CNN digunakan untuk mengklasifikasikan tingkat kematangan lima jenis buah. Hasil yang diperoleh menunjukkan bahwa model terbaik, dengan akurasi 96,34\%, telah berhasil mengidentifikasi kualitas kematangan dari lima buah tersebut \cite{Rodriguez2021}. Penelitian yang dilakukan Cahya Aji Saputra menggunakan metode CNN untuk mendeteksi rasa kantuk pada pengemudi. Perangkat mengenali mata terbuka dan tertutup. Akurasi 95,4\% pada jarak 30 hingga 50 cm dan akurasi waktu nyata sebesar 93,9\%, metode ini berpotensi untuk mengurangi kemungkinan terjadinya kecelakaan akibat rasa kantuk yang tidak diperoleh pengemudi \cite{Saputra2021}.
+
+    Dengan menerapkan metode \textit{Convolutional Neural Network} (CNN), dalam studi ini akan dilakukan deteksi keadaan pengendara dengan mengidentifikasi tanda-tanda kantuk pada pengemudi melalui analisis citra dari kondisi mata dan mulut. Penentuan kondisi mata dan mulut dilakukan dengan menghitung nilai 
+    \textit{Eye Aspect Ratio} (EAR) dan \textit{Mouth Aspect Ratio} (MAR). Data yang dihasilkan berdasarkan kondisi tersebut akan dilakukan klasifikasi menggunakan \textit{Convolutional Neural Network} (CNN). Hasil penelitian ini diharapkan dapat mendeteksi kondisi pengendara yang mengantuk.
+
+   
+\section{Rumusan Masalah}
+Rumusan masalah dalam penelitian ini adalah berikut:
+\begin{enumerate}
+
+    \item Bagaimana penerapan \textit{Convolution Neural Network} (CNN) dalam mendeteksi kantuk berdasarkan kondisi mata dan mulut?
+
+    \item Berapa dan bagaimana pengaruh parameter \textit{Convolution Neural Network} (CNN) yang optimal untuk meningkatkan performa klasifikasi kantuk?
+\end{enumerate}
+
+
+\section{Tujuan}
+Tujuan dari penelitian ini adalah sebagai berikut.
+
+\begin{enumerate}
+
+    \item Melakukan deteksi kantuk pada pengendara dengan metode \textit{Convolutional Neural Network} (CNN) berdasarkan kondisi mata dan mulut.
+    
+    \item Menganalisis pengaruh parameter CNN terhadap performa klasifikasi kantuk.
+
+\end{enumerate}
+\section{Batasan Masalah}
+Batasan permasalahan pada penelitian ini adalah sebagai berikut:
+\begin{enumerate}
+
+    \item Data yang digunakan merupakan data berupa video pengendara yang berasal dari YAWDD: YAWNING DETECTION DATASET. 
+    \item Penelitian ini akan berfokus pada kondisi mata dan mulut untuk deteksi keadaan pengendara. Aspek lain seperti deteksi wajah tidak akan dibahas secara rinci. 
+    \item Parameter CNN yang digunakan adalah \textit{activation layer}, \textit{learning rate} dan \textit{optimazer}
+    \item Pembuatan model terbatas hanya untuk klasifikasi kantuk pada tiga kelas yaitu: “mengantuk dan menguap”, “mengantuk tidak menguap” dan “menguap tidak mengantuk”
+
+    
+
+\end{enumerate}
