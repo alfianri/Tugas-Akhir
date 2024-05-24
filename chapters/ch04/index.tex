@@ -55,13 +55,13 @@
 
 
            
-     % \begin{figure}[H]
-     %     \centering
-     %         \centering
-     %         \includegraphics[width=\textwidth]{figures/bab4/data video.png}
-     %         \caption{a) \textit{Male}, b) \textit{Female}}
-     %         \label{Dataset Video}
-     % \end{figure}
+     \begin{figure}[H]
+         \centering
+             \centering
+             \includegraphics[width=\textwidth]{figures/bab4/data video.png}
+             \caption{a) \textit{Male}, b) \textit{Female}}
+             \label{Dataset Video}
+     \end{figure}
 
     
 
@@ -73,13 +73,13 @@
     
    Sebelum memasuki tahap selanjutnya, data akan memasuki seleksi fitur. Hal ini bertujuan untuk mereduksi data atau fitur yang tidak dibutuhkan. Pemilihan data dilakukan dengan memfilter data sesuai dengan deskripsi data setiap video yang telah diberikan sebelumnya seperti pada Tabel \ref{Penjelasan Dataset}. Data dipisahkan secara manual berdasarkan penamaan video pada setiap folder, seperti Gambar \ref{Seleksi_Fitur} berikut.
 
-     % \begin{figure}[H]
-     %     \centering
-     %         \centering
-     %         \includegraphics[width=\textwidth]{figures/bab4/seleksi_fitur.png}
-     %         \caption{Seleksi Fitur}
-     %         \label{Seleksi_Fitur}
-     % \end{figure}
+     \begin{figure}[H]
+         \centering
+             \centering
+             \includegraphics[width=\textwidth]{figures/bab4/seleksi_fitur.png}
+             \caption{Seleksi Fitur}
+             \label{Seleksi_Fitur}
+     \end{figure}
    
    
    Pada penelitian ini, fokus diarahkan pada fitur \textit{'action}', hanya keadaan\textit{'yawning'} dan \textit{'yawning \& talking'}  yang dipilih. Kondisi ini dipilih karena pengambilan data difokuskan pada pengemudi yang mengantuk dan menguap. Data kemudian diekstrak ke dalam format gambar (.jpg) dan dilatih pada model \textit{Convolutional Neural Network} (CNN). Seleksi data dilakukan berdasarkan dua kategori, yaitu \textit{'male'}dan \textit{'female'}.
@@ -87,24 +87,24 @@
 \subsubsection{\textit{Male}}
           Sebelum proses seleksi data, dilakukan eksplorasi data awal terkait fitur-fitur pada data. Hal ini bertujuan untuk memahami karakteristik data dan meninjau kembali kelayakan fitur-fitur yang telah dipilih. Contoh data dengan kategori \textit{'male}' ditampilkan pada Gambar \ref{male gambar1} berikut.
        
-     % \begin{figure}[H]
-     %     \centering
-     %         \includegraphics[width=\textwidth]{figures/bab4/male_contoh.png}
-     %         \caption{Penampilan Data \textit{Male}}
-     %         \label{male gambar1}
-     % \end{figure}
+     \begin{figure}[H]
+         \centering
+             \includegraphics[width=\textwidth]{figures/bab4/male_contoh.png}
+             \caption{Penampilan Data \textit{Male}}
+             \label{male gambar1}
+     \end{figure}
 
     Pada kategori data \textit{male} terdapat total 162 video (.avi). Berdasarkan deskripsi data pada fitur \textit{"action"} mencakup kondisi seperti \textit{"talking"}, \textit{"yawning"}, \textit{"normal"} dan \textit{"yawning \& talking"}. Proporsi dan persentase data berdasarkan fitur \textit{action} pada kategori \textit{male} ditamilkan pada Gambar \ref{Proporsi Data Male Berdasarkan "Action"} berikut.
     
 
    
 
-     % \begin{figure}[H]
-     %         \centering
-     %     \includegraphics[width=0.75\linewidth]{figures/bab4/data_male.png}
-     %     \caption{Proporsi Data \textit{Male} Berdasarkan \textit{"Action"}}
-     %     \label{Proporsi Data Male Berdasarkan "Action"}
-     % \end{figure}
+     \begin{figure}[H]
+             \centering
+         \includegraphics[width=0.75\linewidth]{figures/bab4/data_male.png}
+         \caption{Proporsi Data \textit{Male} Berdasarkan \textit{"Action"}}
+         \label{Proporsi Data Male Berdasarkan "Action"}
+     \end{figure}
 
   
 
@@ -1120,7 +1120,7 @@
         \label{Evaluasi Model}
     \end{table}
 
-    Untuk hasil prediksi ditampilkan pada gambar berikut.
+    Untuk hasil prediksi ditampilkan pada Gambar \ref{hasil prediksi} berikut.
           \begin{figure}[H]
               \centering
               \includegraphics[width=1.0\linewidth]{figures/bab4/hasil_prediksi.png}

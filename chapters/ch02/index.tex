@@ -139,12 +139,12 @@
     \textit{Computer Vision} diidentifikasi sebagai disiplin ilmu dengan seperangkat teknik yang bertujuan untuk memungkinkan komputer memahami konten gambar digital. Bidang multidisiplin ini sebagian besar dibangun di atas konsep pembelajaran mesin, yang menggabungkan algoritma pembelajaran yang terus berkembang. Tujuan utamanya adalah mengembangkan sistem otomatis yang mampu mengekstraksi informasi dari gambar digital yang diberikan.  Deskripsi mengenai \textit{computer vision}, seperti yang diilustrasikan pada Gambar \ref{Konsep Dasar Computer Vision} \cite{Guntara2023} berikut.
 
 
-    % \begin{figure}[H]
-    %     \centering
-    %     \includegraphics[width=0.7\textwidth]{figures/bab2/computer vision.jpg}
-    %     \caption{Ilustrasi \textit{Computer Vision} \cite{ideas}}
-    %     \label{Konsep Dasar Computer Vision}
-    % \end{figure}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.7\textwidth]{figures/bab2/computer vision.jpg}
+        \caption{Ilustrasi \textit{Computer Vision} \cite{ideas}}
+        \label{Konsep Dasar Computer Vision}
+    \end{figure}
 
 
    
@@ -169,12 +169,12 @@
   Untuk pemahaman yang lebih mendalam mengenai perkembangan pada setiap tahap pemrosesan gambar digital, berikut representasi visual yang ditunjukkan pada Gambar \ref{Proses Dalam Pengolahan Citra Digital} berikut ini.
 
 
-%     \begin{figure}[H]
-%     \centering
-%     \includegraphics[width=0.85\textwidth]{figures/bab2/Block-diagram.jpg}
-%     \caption{Proses Pengolahan Citra Digital \cite{sathiya2017novel}}
-%     \label{Proses Dalam Pengolahan Citra Digital}
-% \end{figure}
+    \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.85\textwidth]{figures/bab2/Block-diagram.jpg}
+    \caption{Proses Pengolahan Citra Digital \cite{sathiya2017novel}}
+    \label{Proses Dalam Pengolahan Citra Digital}
+\end{figure}
 
     
 
@@ -185,12 +185,12 @@
 
     Citra digital merupakan representasi gambar dua dimensi menggunakan satu set nilai digital tertentu, yang sering disebut sebagai piksel atau elemen gambar. Citra terdiri dari $m \times n$ piksel, di mana setiap piksel diwakili oleh $k$ bit. Sebuah piksel, dilambangkan dengan $k$-bit, memiliki $2^k$ corak berbeda dalam gambar skala abu-abu. Nilai piksel ini biasanya terdiri dari bilangan bulat dalam rentang 0 (mewakili piksel hitam) hingga $(2^k - 1)$ (mewakili piksel putih). Besaran nilai piksel ini memainkan peran penting dalam menentukan resolusi dan mempengaruhi kualitas gambar secara keseluruhan \cite{book}. Nilai yang menentukan intensitas gambar atau derajat skala abu-abu atau warna dalam suatu gambar dinyatakan sebagai fungsi dari intensitas gambar, dilambangkan dengan $f(x, y)$. Hal ini muncul dari representasi suatu gambar sebagai matriks dua dimensi, seperti yang digambarkan pada Gambar \ref{Sistem Koordinat Matematis Sebuah Citra} \cite{Andono2018} berikut.
 
-    % \begin{figure}[H]
-    %   \centering
-    %   \includegraphics[width=0.85\textwidth]{figures/bab2/citra_digital.png}
-    %   \caption{Sistem Koordinat Matematis Sebuah Citra \cite{Kirana2021}}
-    %   \label{Sistem Koordinat Matematis Sebuah Citra}
-    % \end{figure}
+    \begin{figure}[H]
+      \centering
+      \includegraphics[width=0.85\textwidth]{figures/bab2/citra_digital.png}
+      \caption{Sistem Koordinat Matematis Sebuah Citra \cite{Kirana2021}}
+      \label{Sistem Koordinat Matematis Sebuah Citra}
+    \end{figure}
 
 
 
@@ -211,12 +211,12 @@
     Augmentasi gambar digital bertujuan untuk memperluas jumlah kumpulan data yang tersedia. Hal ini dilakukan untuk meningkatkan keragaman data tanpa memerlukan proses akuisisi berulang, yang biasanya memakan waktu dan biaya mahal. Salah satu praktik umum dalam proses augmentasi citra digital melibatkan transformasi bentuk data awal yang diperoleh melalui proses akuisisi. Modifikasi yang potensial mencakup memutar gambar digital saat ini pada berbagai sudut, mengubah ruang warna, memperkenalkan \textit{noise}, serta menerjemahkan dan memotong gambar. Tujuannya adalah untuk mencegah \textit{overfitting}, di mana model secara berulang-ulang mengidentifikasi fitur yang sama selama tahap-tahap selanjutnya dari proses pelatihan. Pendekatan ini bertujuan untuk meningkatkan kinerja model ketika ditugaskan untuk mengenali data uji. Ilustrasi augmentasi gambar digital dapat dilihat pada Gambar \ref{Contoh Augmentasi Citra} berikut \cite{Shorten2019, shorten2019survey}.
 
     
-    % \begin{figure}[H]
-    %   \centering
-    %   \includegraphics[width=0.85\textwidth]{figures/bab2/augmentation.jpg}
-    %   \caption{Contoh Augmentasi Citra \cite{info11020125}}
-    %   \label{Contoh Augmentasi Citra}
-    % \end{figure}
+    \begin{figure}[H]
+      \centering
+      \includegraphics[width=0.85\textwidth]{figures/bab2/augmentation.jpg}
+      \caption{Contoh Augmentasi Citra \cite{info11020125}}
+      \label{Contoh Augmentasi Citra}
+    \end{figure}
 
 
     Untuk lebih detail terkait metode-metode augmentasi dijabarkan sebagai berikut
@@ -337,14 +337,14 @@
 
     Praktik membuat gambar dan memodifikasi kecerahan dan kontras untuk setiap gambar baru dikenal sebagai meningkatkan nilai kecerahan dan kontras gambar. Karena dapat meningkatkan performa pengenalan gambar pada model, strategi augmentasi ini sering digunakan dalam penelitian terkait pembelajaran mesin \cite{mikolajczyk2018data}\cite{Yang2022}. Ada beberapa metode untuk menerapkan kedua modifikasi ini. Salah satu metode untuk meningkatkan tingkat kecerahan adalah dengan mengubah gambar RGB menjadi HSV, yang memisahkan tiga saluran warna (h, s, dan v). Saluran \textit{value} (v) nilainya berkisar antara $-50 < v < 50$ yang mengontrol kecerahan gambar, \textit{saturation} (S) mengukur intensitas atau kemurnian warna dan \textit{hue} (h) merepresentasikan jenis warna yang dirasakan manusia, seperti merah, hijau, biru, kuning, dll. Gambar segar dengan kecerahan yang diubah dihasilkan dengan mengubah saluran v yang dimodifikasi kembali menjadi RGB seperti Gambar \ref{Contoh Augmentasi Contrast} \cite{oza2020empirical}\cite{Stollnitz1996}.
 
-    % \begin{figure}[H]
-    %   \centering
-    %   \includegraphics[width=0.85\textwidth]{figures/bab2/Lighting-Transforms-Contrast-augmentation.jpg}
-    %   \caption{Contoh Augmentasi \textit{Brightness} dan\textit{ Contrast} \cite{anand}}
-    %   \label{Contoh Augmentasi Contrast}
+    \begin{figure}[H]
+      \centering
+      \includegraphics[width=0.85\textwidth]{figures/bab2/Lighting-Transforms-Contrast-augmentation.jpg}
+      \caption{Contoh Augmentasi \textit{Brightness} dan\textit{ Contrast} \cite{anand}}
+      \label{Contoh Augmentasi Contrast}
 
     
-    % \end{figure} 
+     \end{figure} 
     
     Berbagai teknik, termasuk penyesuaian kontras linier, mengubah skala nilai piksel individual, menggunakan metode berbasis histogram, dan teknik berbasis resonansi, dapat digunakan untuk mengubah nilai kontras gambar melalui augmentasi \cite{Bebis2021, Maragatham2015, szeliski2021computer}. Teknik sederhana yang dapat digunakan untuk mengontrol nilai kontras pada suatu gambar dapat dilakukan dengan Persamaan \ref{Augmentasi Nilai Kontras} sebagai berikut.
 
@@ -424,12 +424,12 @@
 
     Pada persamaan EAR dijelaskan diatas, di mana P1 hingga P6 mewakili lokasi \textit{landmark 2D} pada retina. P2, P3, P5, dan P6 digunakan untuk mengukur tinggi mata, sedangkan P1 dan P4 digunakan untuk mengukur lebar mata. Saat mata tertutup, nilai EAR dengan cepat turun hingga hampir nol, berbeda dengan saat mata terbuka, yang nilai EARnya tetap konstan. Hal ini digambarkan pada Gambar \ref{Ilustrasi Perhitungan Nilai EAR} berikut.
 
-    % \begin{figure}[H]
-    %   \centering
-    %   \includegraphics[width=0.85\textwidth]{figures/bab2/EAR.png}
-    %   \caption{Ilustrasi Perhitungan Nilai EAR}
-    %   \label{Ilustrasi Perhitungan Nilai EAR}
-    % \end{figure}
+    \begin{figure}[H]
+      \centering
+      \includegraphics[width=0.85\textwidth]{figures/bab2/EAR.png}
+      \caption{Ilustrasi Perhitungan Nilai EAR}
+      \label{Ilustrasi Perhitungan Nilai EAR}
+    \end{figure}
     
      untuk mengukur tingkat kesalahan deteksi yang terjadi. Tingkat kesalahan deteksi dapat memberikan informasi berharga mengenai akurasi dalam mengidentifikasi kondisi yang benar. Kesalahan deteksi dapat dihitung menggunakan Persamaan \ref{rumus error} berikut.
 
@@ -456,12 +456,12 @@ sudut kiri mulut, yang tengara ditandai dalam searah jarum jam di sekitar sisany
 wilayah tersebut. MAR diukur dengan membagi vertikal jarak antara bibir atas dan bibir bawah dengan horizontal jarak antara kedua bibir \cite{inproceedings, jimaging9050091}. Dapat dilihat pada Persamaan \ref{rumus mar} berikut.
 
 
-    % \begin{figure}[H]
-    %   \centering
-    %   \includegraphics[width=0.85\textwidth]{figures/bab2/mar.png}
-    %   \caption{Ilustrasi Perhitungan Nilai MAR}
-    %   \label{Ilustrasi Perhitungan Nilai MAR}
-    % \end{figure}
+    \begin{figure}[H]
+      \centering
+      \includegraphics[width=0.85\textwidth]{figures/bab2/mar.png}
+      \caption{Ilustrasi Perhitungan Nilai MAR}
+      \label{Ilustrasi Perhitungan Nilai MAR}
+    \end{figure}
 
      \begin{equation}
     \label{rumus mar}
@@ -485,13 +485,13 @@ wilayah tersebut. MAR diukur dengan membagi vertikal jarak antara bibir atas dan
 
     \textit{Convolutional Neural Network} (CNN) adalah sub tipe \textit{Artificial Neural Network} (ANN) yang dibuat khusus untuk mengatasi tantangan terkait data dua dimensi (2D). \textit{Convolutional Neural Network} (CNN) menjalani proses pembelajaran berdasarkan data pelatihan yang diberikan. Mirip dengan jaringan saraf manusia ketika mencoba untuk memahami atau mengenali sesuatu, proses pembelajaran ini menghasilkan pola yang sesuai. Selanjutnya, setelah mengekstraksi data fitur dari kumpulan data pelatihan, data tersebut dapat diterapkan untuk mengatasi masalah klasifikasi. Istilah pada CNN dibahas pada  berikut  \cite{Alzubaidi2021}. 
     
-  % \begin{figure}[H]
-  %     \centering
-  %     \includegraphics[width=1\textwidth]{figures/bab2/arsitektur cnn.jpg}
-  %     \caption{Arsitektur \textit{Convolutional Neural Network} (CNN) \cite{Prabhu}}
-  %     \label{Arsitektur CNN}
+  \begin{figure}[H]
+      \centering
+      \includegraphics[width=1\textwidth]{figures/bab2/arsitektur cnn.jpg}
+      \caption{Arsitektur \textit{Convolutional Neural Network} (CNN) \cite{Prabhu}}
+      \label{Arsitektur CNN}
     
-  %   \end{figure}
+    \end{figure}
 
 \subsection{\textit{Convolution Layer}}
 
@@ -502,13 +502,13 @@ wilayah tersebut. MAR diukur dengan membagi vertikal jarak antara bibir atas dan
     menjadi ukuran \textit{stride} yang telah ditetapkan.
     Operasi yang dilakukan pada lapisan ini mirip dengan operasi konvolusi, yang melibatkan penggabungan berbagai nilai piksel lokal melalui \textit{filter linier}. \textit{Filter} ini berfungsi sebagai reseptor atau penerima neuron. Lapisan yang mendasari arsitektur CNN dirancang untuk mengekstrak fitur atau informasi dari gambar yang diberikan. Berikut ilustrasi proses pergeseran pada \textit{convolution layer} yang di tujukan pada Gambar \ref{Ilustrasi Proses Pergeseran Filter Pada Convolutional Layer} berikut \cite{Dewi2018}.
 
- %  \begin{figure}[H]
- %      \centering
- %      \includegraphics[width=0.8\textwidth]{figures/bab2/cnn.png}
- %      \caption{Ilustrasi Proses Pergeseran \textit{Filter} \cite{Reynolds}}
- %      \label{Ilustrasi Proses Pergeseran Filter Pada Convolutional Layer}
+  \begin{figure}[H]
+      \centering
+      \includegraphics[width=0.8\textwidth]{figures/bab2/cnn.png}
+      \caption{Ilustrasi Proses Pergeseran \textit{Filter} \cite{Reynolds}}
+      \label{Ilustrasi Proses Pergeseran Filter Pada Convolutional Layer}
     
- % \end{figure}
+ \end{figure}
 
 \subsection{\textit{Stride}}
 
@@ -660,13 +660,13 @@ Adam didesain untuk mengatasi kekurangan \textit{Stochastic Gradient Descent} (S
 
     Banyak lapisan tersembunyi yang biasanya disertakan dalam model \textit{deep learning}, yang membuatnya lebih mudah untuk memahami interaksi yang kompleks antara \textit{input} dan \textit{output}. \textit{Overfitting} adalah masalah yang umum terjadi meskipun ada manfaatnya, terutama pada dataset yang kecil \cite{Srivastava2014}. Untuk mengatasi hal ini, banyak strategi yang telah dikembangkan; salah satunya adalah \textit{dropout}. Selain mencegah \textit{overfitting}, lapisan \textit{dropout} secara efektif menggabungkan beberapa jaringan saraf yang terhubung. Hal ini dilakukan dengan menggabungkan lapisan tersembunyi dengan lapisan lain sambil menghapusnya secara bebas dan sesaat \cite{Srivastava2014}. Pada Gambar \ref{Proses Pada Dropout Layer} berikut menunjukkan proses \textit{dropout layer}.
 
-    % \begin{figure}[H]
-    %   \centering
-    %   \includegraphics[width=0.85\textwidth]{figures/bab2/drop out.jpg}
-    %   \caption{Proses Pada \textit{Dropout Layer} \cite{ida}}
-    %   \label{Proses Pada Dropout Layer}
+    \begin{figure}[H]
+      \centering
+      \includegraphics[width=0.85\textwidth]{figures/bab2/drop out.jpg}
+      \caption{Proses Pada \textit{Dropout Layer} \cite{ida}}
+      \label{Proses Pada Dropout Layer}
     
-    % \end{figure} 
+    \end{figure} 
     
 
 \subsection{\textit{Maxpooling Layer}}
@@ -674,14 +674,14 @@ Adam didesain untuk mengatasi kekurangan \textit{Stochastic Gradient Descent} (S
     Lapisan \textit{max pooling} bertanggung jawab untuk menangani matriks \textit{output} dari lapisan sebelumnya, mengurangi ukuran gambar sambil mempertahankan nilai fitur yang penting. Hal ini dilakukan dengan memilih nilai maksimum dari \textit{output} yang dihasilkan oleh lapisan sebelumnya. Pendekatan ini memungkinkan model untuk melakukan proses generalisasi dengan cepat \cite{Gholamalinezhad2020, Nagi2011MaxpoolingCN}. Ilustrasi dari proses \textit{max pooling} ditampilkan pada Gambar \ref{Proses Pada Max Pooling Layer} berikut.
 
 
-    % \begin{figure}[H]
-    %   \centering
-    %   \includegraphics[width=0.80\textwidth]{figures/bab2/pool.png}
-    %   \caption{Proses Pada \textit{Max Pooling Layer} \cite{fiki}}
-    %   \label{Proses Pada Max Pooling Layer}
+    \begin{figure}[H]
+      \centering
+      \includegraphics[width=0.80\textwidth]{figures/bab2/pool.png}
+      \caption{Proses Pada \textit{Max Pooling Layer} \cite{fiki}}
+      \label{Proses Pada Max Pooling Layer}
 
     
-    % \end{figure}
+    \end{figure}
 
 
 \subsection{\textit{Fully Conected Layer}}
@@ -694,13 +694,13 @@ Adam didesain untuk mengatasi kekurangan \textit{Stochastic Gradient Descent} (S
 
     Mengevaluasi efektivitas model penilaian melibatkan pemeriksaan parameter kinerja seperti \textit{accuracy}, \textit{precision}, \textit{recall}, dan \textit{F1-Score}. Perhitungan parameter ini memerlukan penggunaan \textit{confusion matrix}, seperti yang digambarkan pada Gambar \ref{Confusion Matrix} \cite{Nurhikmat2018}.
 
-    % \begin{figure}[H]
-    %   \centering
-    %   \includegraphics[width=0.85\textwidth]{figures/bab2/confusion matriks.png}
-    %   \caption{\textit{Confusion Matrix}}
-    %   \label{Confusion Matrix}
+    \begin{figure}[H]
+      \centering
+      \includegraphics[width=0.85\textwidth]{figures/bab2/confusion matriks.png}
+      \caption{\textit{Confusion Matrix}}
+      \label{Confusion Matrix}
     
-    % \end{figure}
+    \end{figure}
 
     Gambar 2.14 menampilkan empat nilai, yaitu "\textit{True Positive}" (TP), "\textit{False Negative}" (FN), "\textit{False Positive}" (FP), dan "\textit{True Negative}" (TN). Keempat nilai tersebut dapat digunakan untuk menghitung parameter-parameter seperti \textit{accuracy}, \textit{precision}, \textit{recall}, dan \textit{F1-Score} \cite{Nurhikmat2018}.
 
