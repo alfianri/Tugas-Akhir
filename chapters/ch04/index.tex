@@ -25,7 +25,7 @@
     \scriptsize
         \begin{tabular}{p{0.5cm} p{1.2 cm} p{1.5 cm} p{1.1cm} p{1.3 cm} {0.5 cm} {1.0 cm} {0.8 cm}{0.7cm}}
         \hline
-        \textbf{Id} & \textbf{Participant Number} & \textbf{Action} & \textbf{Scarf} & \textbf{BG Movement} & \textbf{Glasses} & \textbf{Lighting} & \textbf{Ethnicity} \\
+        \textbf{No.} & \textbf{Participant Number} & \textbf{Action} & \textbf{Scarf} & \textbf{BG Movement} & \textbf{Glasses} & \textbf{Lighting} & \textbf{Ethnicity} \\
         \hline
 
         \hline
@@ -40,13 +40,13 @@
         ... &... & ... & ... & ... & ... & ... & ...  \\
         ... &... & ... & ... & ... & ... & ... & ...  \\
         ... &... & ... & ... & ... & ... & ... & ...  \\
-        9 &142 & Yawning & No & No & No Glasses & Sunny & Middle Eastern \\
-        10 & 145 & Yawning & No & No & No Glasses & Sunny & Middle Eastern \\
-         11 &148 & Yawning & No & Yes & No Glasses & Sunny & Caucasian  \\
-         12 &151 & Yawning & No & No & No Glasses & Sunny & Caucasian \\
-         13 &154 & Yawning & No & Yes & No Glasses & Sunny & Middle Eastern \\
-         14 &157 & Yawning & No & Yes & No Glasses & Sunny & Middle Eastern \\
-         15 &160 & Yawning & No & Yes & Prescription & Sunny & Middle Eastern \\
+        156 &142 & Yawning & No & No & No Glasses & Sunny & Middle Eastern \\
+        157 & 145 & Yawning & No & No & No Glasses & Sunny & Middle Eastern \\
+        158 &148 & Yawning & No & Yes & No Glasses & Sunny & Caucasian  \\
+        159 &151 & Yawning & No & No & No Glasses & Sunny & Caucasian \\
+        160 &154 & Yawning & No & Yes & No Glasses & Sunny & Middle Eastern \\
+        161 &157 & Yawning & No & Yes & No Glasses & Sunny & Middle Eastern \\
+        162 &160 & Yawning & No & Yes & Prescription & Sunny & Middle Eastern \\
         \hline
         \end{tabular}
         \end{table}
@@ -351,7 +351,7 @@
              \begin{figure}[H]
              \centering
                  \includegraphics[width=0.8\textwidth]{figures/bab4/penentuan nilai ear.png}
-                 \caption{Eksperimen Penentuan Nilai EAR}
+                 \caption{a) Percobaan Nilai EAR, b) Nilai \textit{Error} EAR}
                  \label{Eksperimen Penentuan Nilai EAR}
              \end{figure}
 
@@ -384,7 +384,7 @@
         
             \begin{table}[h]
             \centering
-            \caption{Eksperimen Penentuan Nilai MAR}
+            \caption{a) Percobaan Nilai MAR, b) Nilai \textit{Error} MAR}
             \begin{tabular}{ccccc}
                 \toprule
                 \textbf{No} &\textbf{Nilai MAR} & \textbf{Jumlah Menguap} & \textbf{Salah Deteksi} & \textbf{\textit{Error} (\%)} \\
@@ -408,7 +408,7 @@
             \end{table}
 
 
-         Visualisasi nilai MAR yang diuju dapat dilihat pada Gambar \ref{Eksperimen Penentuan Nilai MAR} berikut.
+         %Visualisasi nilai MAR yang diuju dapat dilihat pada Gambar \ref{Eksperimen Penentuan Nilai MAR} berikut.
 
          \begin{figure}[H]
                \centering
@@ -476,7 +476,17 @@
     
     \subsection{Pembagian Data}
     
-    Sebelum data dilatih, dilakukan pembagian data menjadi data \textit{train} dan data \textit{test}. Pembagian data ini dilakukan dengan menggunakan metode \textit{K-Fold Cross Validation}. Teknik ini melibatkan pembagian data menjadi beberapa \textit{subset}. Menerapkan pembagian data dengan \textit{K-Fold Cross Validation} bertujuan untuk mencegah \textit{overfitting}, menghasilkan estimasi performa model yang stabil, membandingkan model, dan memperkirakan generalisasi model. Dengan hal ini dapat memperoleh perkiraan kinerja model yang lebih akurat dan membantu dalam pemilihan model terbaik pada saat \textit{training} dilakukan. 
+    Sebelum data dilatih, dilakukan pembagian data menjadi data 
+    \textit{train} dan data \textit{test}. Pembagian data ini 
+    dilakukan dengan menggunakan metode \textit{KFold Cross Validation}. 
+    Teknik ini melibatkan pembagian data menjadi beberapa \textit{subset}. 
+    Menerapkan pembagian data dengan \textit{KFold Cross Validation} 
+    bertujuan untuk mencegah \textit{overfitting}, 
+    menghasilkan estimasi performa model yang stabil, 
+    membandingkan model, dan memperkirakan generalisasi model. 
+    Dengan hal ini dapat memperoleh perkiraan kinerja model yang 
+    lebih akurat dan membantu dalam pemilihan model terbaik pada 
+    saat \textit{training} dilakukan. 
     
     Peneliti menerapkan \textit{fold} sebesar lima untuk mempekecil waktu komputasi. Sehingga keseluruhan data dibagi menjadi lima lipatan dan dilatih sebanyak lima kali berdasarkan jumlah \textit{fold }yang telah ditentukan sebelumnya. Pembagian data diilustrasikan seperti pada Gambar \ref{Pembagian Data} berikut.
 
@@ -662,11 +672,6 @@
      Pada fungsi aktivasi \textit{sigmoid} diperoleh nilai rata-rata pada \textit{precision} sebesar 33.33\%, \textit{recall} sebsar 34.04\% dan\textit{ F1-Score} sebesar 50.73\%. Hasil untuk \textit{sigmoid} menunjukkan bahwa model hanya dapat memprediksi satu kelas saja, hal ini dapat di lihat pada nilai \textit{precision} yang sama setiap iterasi KFold. Pada fungsi aktivasi \textit{softmax} diperoleh nilai rata-rata pada \textit{precision} sebesar 33.33\%, \textit{recall} sebesar 33.83\% dan \textit{F1-Score} sebesar 50.55\%.
      Berdasarkan hasil evaluasi, fungsi aktivasi ReLU menghasilkan performa terbaik dengan rata-rata \textit{F1-Score} tertinggi. \textit{Sigmoid} dan Softmax memiliki performa yang jauh lebih rendah dan perlu dioptimalkan lebih lanjut.
 
-     x\\
-     x\\
-
-
-     
 
  
 
@@ -835,10 +840,6 @@
     tidak selalu mengalami peningkatan akurasi. 
 
     Pada fungsi aktivasi \textit{sofmaxt} memiliki akurasi rata-rata untuk \textit{training} sebesar 33.21\%, validasi sebesar 32.83\% dan test sebesar 32.83\%. Hasil fungsi aktivasi \textit{sofmaxt} tidak mengalami perubahan yang begitu besar dari penggunaan \textit{learning rate} 0.0001, 0.001, 0.01, Sehingga dapat disimpulkan pengaruh \textit{learning rate} untuk \textit{softmax }tidak cukup berpengaruh.
-
-    x\\
-    x\\
-    x\\
 
 
 
@@ -1043,6 +1044,7 @@
 
     \begin{table}[H]
         \centering
+        \caption{Evaluasi Model Terbaik}
         \begin{tabular}{cccccc}
             \toprule
             \textbf{\textit{Optimizer}} & \textbf{\textit{Activation}} &
@@ -1060,6 +1062,7 @@
             
             \bottomrule
         \end{tabular}
+        \label{Evaluasi Model Terbaik}
     \end{table}
 
 
