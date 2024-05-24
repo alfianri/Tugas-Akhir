@@ -292,14 +292,21 @@
 
 
 
-    Setelah proses seleksi fitur, di mana hanya fitur \textit{"action"} dengan keadaan \textit{"yawning" }dan \textit{"yawning \& talking"} yang dipilih. Ditemukan sebanyak 58 video untuk kategori \textit{"male"} dan sebanyak 52 video untuk kategori \textit{"female"}. Dengan demikian, total data yang diekstraksi menjadi gambar ada sebanyak 110 video.
+    Setelah proses seleksi fitur, di mana hanya fitur
+     \textit{"action"} dengan keadaan \textit{"yawning" }dan
+      \textit{"yawning \& talking"} yang dipilih. Ditemukan sebanyak 58
+       video untuk kategori \textit{"female"} dan sebanyak 56 video 
+       untuk kategori \textit{"male"}. Dengan demikian, total data yang 
+       diekstraksi menjadi gambar ada sebanyak 114 video.
 
 
 \subsection{Penentuan Nilai EAR dan MAR}
 
     
     Nilai \textit{Eye Aspect Ratio} (EAR) dan \textit{Mouth Aspect Ratio} (MAR) digunakan untuk mengekstrak video menjadi format gambar (.jpg). Nilai EAR dan MAR pada video yang berjumlah 110 hasil seleksi fitur akan di visualisasikan menggunakan bantuan \textit{library} pada \textit{python} yaitu \textit{Open CV} dan \textit{Dlib}. Visualisasi ini bertujuan untuk melihat di angka berapa data tersebut mengantuk dan menguap. Keadaan mata kantuk dapat di lihat pada saat nilai EAR berada dibawah rata-rata dan menuju nilai nol. Keadaan menguap dapat dilihat pada saat nilai MAR berada diatas rata-rata. Namun untuk menentukan ambang batas nilai MAR dan EAR dapat mendeteksi kantuk dan menguap dengan baik, dilakukan beberapa  percobaan pada nilai EAR dan MAR. Percobaan ini menggunakan 10 video yang diambil secara acak mewakili kategori \textit{male} dan \textit{female}.
-    \textit{Eye Aspect Ratio} (EAR) dan \textit{Mouth Aspect Ratio} (MAR) yang memiliki nilai kesalahan terkecil akan digunakan untuk melakukan ekstraksi 110 video sebelumnya menjadi gambar.
+    \textit{Eye Aspect Ratio} (EAR) dan \textit{Mouth Aspect Ratio} 
+    (MAR) yang memiliki nilai kesalahan terkecil akan digunakan 
+    untuk melakukan ekstraksi 114 video sebelumnya menjadi gambar.
 
 \subsubsection{\textit{Eye Aspect Ratio} (EAR)}
 
