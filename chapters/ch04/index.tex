@@ -3,66 +3,65 @@
 
 \section{Ekplorasi Dataset}
 
-        Penelitian ini menggunakan data sekunder dalam format video (.avi). Jumlah data berjumlah 316 video yang terdiri dari pengemudi pria dan wanita dengan resolusi 640 x 480 piksel dan kecepatan tiga puluh \textit{frame} per detik (FPS). Dataset ini memiliki beberapa penjelesan terkait dengan kondisi video, yaitu:
+    Penelitian ini menggunakan data sekunder dalam format video (.avi). Jumlah data berjumlah 316 video yang terdiri dari pengemudi pria dan wanita dengan resolusi 640 x 480 piksel dan kecepatan tiga puluh \textit{frame} per detik (FPS). Dataset ini memiliki beberapa penjelesan terkait dengan kondisi video, yaitu:
+    
+    \begin{enumerate}
+        \item \textit{Participant Number}: Variabel yang memberikan informasi terkait dengan nomor partisifasi dalam dataset.
+        \item \textit{Action}: Memberikan informasi terkait hal yang terjadi pada pengemudi.
+        \item \textit{Scarf}:  Memberikan informasi apakah pengendara menggunakan syal atau tidak.
+        \item \textit{Background Movement}: Memberitahukan kondisi latar belakang video, bergerak atau tidak.
+        \item \textit{Lighting}: Memberikan informasi kondisi kencahayaan.
+        \item  \textit{Type of Glasses}: Jenis kacamata yang digunakan.
+        \item  \textit{Ethnicity}: Jenis etnis pengendara.
         
-        \begin{enumerate}
-            \item \textit{Participant Number}: Variabel yang memberikan informasi terkait dengan nomor partisifasi dalam dataset.
-            \item \textit{Action}: Memberikan informasi terkait hal yang terjadi pada pengemudi.
-            \item \textit{Scarf}:  Memberikan informasi apakah pengendara menggunakan syal atau tidak.
-            \item \textit{Background Movement}: Memberitahukan kondisi latar belakang video, bergerak atau tidak.
-            \item \textit{Lighting}: Memberikan informasi kondisi kencahayaan.
-            \item  \textit{Type of Glasses}: Jenis kacamata yang digunakan.
-            \item  \textit{Ethnicity}: Jenis etnis pengendara.
-            
-        \end{enumerate}
+    \end{enumerate}
 
-        Penjelesan dataset untuk setiap videonya disajikan dalam tabel untuk seperti Tabel \ref{Penjelasan Dataset} berikut.
+    Penjelesan dataset untuk setiap videonya disajikan dalam tabel untuk seperti Tabel \ref{Penjelasan Dataset} berikut.
 
-    \begin{table}[htbp]
+  \begin{table}[htbp]
         \centering
         \caption{Penjelasan Dataset}
         \label{Penjelasan Dataset}
-        \scriptsize
-        \begin{tabular}{p{1.2 cm} p{1.5 cm} p{1.1cm} p{1.3 cm} {0.5 cm} {1.0 cm} {0.8 cm}{0.7cm}}
+    \scriptsize
+        \begin{tabular}{p{0.5cm} p{1.2 cm} p{1.5 cm} p{1.1cm} p{1.3 cm} {0.5 cm} {1.0 cm} {0.8 cm}{0.7cm}}
         \hline
-        \textbf{Participant Number} & \textbf{Action} & \textbf{Scarf} & \textbf{BG Movement} & \textbf{Glasses} & \textbf{Lighting} & \textbf{Ethnicity} \\
+        \textbf{Id} & \textbf{Participant Number} & \textbf{Action} & \textbf{Scarf} & \textbf{BG Movement} & \textbf{Glasses} & \textbf{Lighting} & \textbf{Ethnicity} \\
         \hline
 
-
         \hline
-        1 & Talking & No & No & No Glasses & Sunny & Caucasian \\
-        1 & Yawning & No & No & Sun glasses & Sunny & Caucasian  \\
-        1 & Normal & No & Yes & Prescription & Sunny & Middle Eastern \\
-        1 & Yawning & No & No & Prescription & Sunny & Caucasian  \\
-        2 & Yawning & No & Yes & No Glasses & Sunny & Caucasian  \\
-        2 & Talking & No & No & No Glasses & Sunny & Caucasian \\
-        2 & Yawning & No & No & Sun glasses & Sunny & Caucasian  \\
-        3 & Normal & No & Yes & Prescription & Sunny & Middle Eastern \\
-        ... & ... & ... & ... & ... & ... & ...  \\
-        ... & ... & ... & ... & ... & ... & ...  \\
-        ... & ... & ... & ... & ... & ... & ...  \\
-        142 & Yawning & No & No & No Glasses & Sunny & Middle Eastern \\
-        145 & Yawning & No & No & No Glasses & Sunny & Middle Eastern \\
-        148 & Yawning & No & Yes & No Glasses & Sunny & Caucasian  \\
-        151 & Yawning & No & No & No Glasses & Sunny & Caucasian \\
-        154 & Yawning & No & Yes & No Glasses & Sunny & Middle Eastern \\
-        157 & Yawning & No & Yes & No Glasses & Sunny & Middle Eastern \\
-        160 & Yawning & No & Yes & Prescription & Sunny & Middle Eastern \\
+        1 & 1 & Talking & No & No & No Glasses & Sunny & Caucasian \\
+        2 & 1 & Yawning & No & No & Sun glasses & Sunny & Caucasian  \\
+        3 & 1 & Normal & No & Yes & Prescription & Sunny & Middle Eastern \\
+        4 & 1 & Yawning & No & No & Prescription & Sunny & Caucasian  \\
+        5 & 2 & Yawning & No & Yes & No Glasses & Sunny & Caucasian  \\
+        6 & 2 & Talking & No & No & No Glasses & Sunny & Caucasian \\
+        7 & 2 & Yawning & No & No & Sun glasses & Sunny & Caucasian  \\
+        8 & 3 & Normal & No & Yes & Prescription & Sunny & Middle Eastern \\
+        ... &... & ... & ... & ... & ... & ... & ...  \\
+        ... &... & ... & ... & ... & ... & ... & ...  \\
+        ... &... & ... & ... & ... & ... & ... & ...  \\
+        9 &142 & Yawning & No & No & No Glasses & Sunny & Middle Eastern \\
+        10 & 145 & Yawning & No & No & No Glasses & Sunny & Middle Eastern \\
+         11 &148 & Yawning & No & Yes & No Glasses & Sunny & Caucasian  \\
+         12 &151 & Yawning & No & No & No Glasses & Sunny & Caucasian \\
+         13 &154 & Yawning & No & Yes & No Glasses & Sunny & Middle Eastern \\
+         14 &157 & Yawning & No & Yes & No Glasses & Sunny & Middle Eastern \\
+         15 &160 & Yawning & No & Yes & Prescription & Sunny & Middle Eastern \\
         \hline
         \end{tabular}
-    \end{table}
+        \end{table}
 
     Contoh dataset awal yang berupa video ditampilkan seperti Gambar \ref{Dataset Video} berikut.
 
 
            
-     \begin{figure}[H]
-         \centering
-             \centering
-             \includegraphics[width=\textwidth]{figures/bab4/data video.png}
-             \caption{a) \textit{Male}, b) \textit{Female}}
-        \label{Dataset Video}
-     \end{figure}
+     % \begin{figure}[H]
+     %     \centering
+     %         \centering
+     %         \includegraphics[width=\textwidth]{figures/bab4/data video.png}
+     %         \caption{a) \textit{Male}, b) \textit{Female}}
+     %         \label{Dataset Video}
+     % \end{figure}
 
     
 
@@ -74,13 +73,13 @@
     
    Sebelum memasuki tahap selanjutnya, data akan memasuki seleksi fitur. Hal ini bertujuan untuk mereduksi data atau fitur yang tidak dibutuhkan. Pemilihan data dilakukan dengan memfilter data sesuai dengan deskripsi data setiap video yang telah diberikan sebelumnya seperti pada Tabel \ref{Penjelasan Dataset}. Data dipisahkan secara manual berdasarkan penamaan video pada setiap folder, seperti Gambar \ref{Seleksi_Fitur} berikut.
 
-     \begin{figure}[H]
-         \centering
-             \centering
-             \includegraphics[width=\textwidth]{figures/bab4/seleksi_fitur.png}
-             \caption{Seleksi Fitur}
-             \label{Seleksi_Fitur}
-     \end{figure}
+     % \begin{figure}[H]
+     %     \centering
+     %         \centering
+     %         \includegraphics[width=\textwidth]{figures/bab4/seleksi_fitur.png}
+     %         \caption{Seleksi Fitur}
+     %         \label{Seleksi_Fitur}
+     % \end{figure}
    
    
    Pada penelitian ini, fokus diarahkan pada fitur \textit{'action}', hanya keadaan\textit{'yawning'} dan \textit{'yawning \& talking'}  yang dipilih. Kondisi ini dipilih karena pengambilan data difokuskan pada pengemudi yang mengantuk dan menguap. Data kemudian diekstrak ke dalam format gambar (.jpg) dan dilatih pada model \textit{Convolutional Neural Network} (CNN). Seleksi data dilakukan berdasarkan dua kategori, yaitu \textit{'male'}dan \textit{'female'}.
@@ -88,106 +87,106 @@
 \subsubsection{\textit{Male}}
           Sebelum proses seleksi data, dilakukan eksplorasi data awal terkait fitur-fitur pada data. Hal ini bertujuan untuk memahami karakteristik data dan meninjau kembali kelayakan fitur-fitur yang telah dipilih. Contoh data dengan kategori \textit{'male}' ditampilkan pada Gambar \ref{male gambar1} berikut.
        
-     \begin{figure}[H]
-         \centering
-             \centering
-             \includegraphics[width=\textwidth]{figures/bab4/male_contoh.png}
-             \caption{Penampilan Data \textit{Male}}
-             \label{male gambar1}
-     \end{figure}
+     % \begin{figure}[H]
+     %     \centering
+     %         \includegraphics[width=\textwidth]{figures/bab4/male_contoh.png}
+     %         \caption{Penampilan Data \textit{Male}}
+     %         \label{male gambar1}
+     % \end{figure}
 
     Pada kategori data \textit{male} terdapat total 162 video (.avi). Berdasarkan deskripsi data pada fitur \textit{"action"} mencakup kondisi seperti \textit{"talking"}, \textit{"yawning"}, \textit{"normal"} dan \textit{"yawning \& talking"}. Proporsi dan persentase data berdasarkan fitur \textit{action} pada kategori \textit{male} ditamilkan pada Gambar \ref{Proporsi Data Male Berdasarkan "Action"} berikut.
     
 
    
 
-     \begin{figure}[H]
-        \centering
-         \includegraphics[width=0.75\linewidth]{figures/bab4/data_male.png}
-         \caption{Proporsi Data \textit{Male} Berdasarkan \textit{"Action"}}
-         \label{Proporsi Data Male Berdasarkan "Action"}
-     \end{figure}
+     % \begin{figure}[H]
+     %         \centering
+     %     \includegraphics[width=0.75\linewidth]{figures/bab4/data_male.png}
+     %     \caption{Proporsi Data \textit{Male} Berdasarkan \textit{"Action"}}
+     %     \label{Proporsi Data Male Berdasarkan "Action"}
+     % \end{figure}
 
   
 
 
     Setelah dilakukan pemilihan fitur, di hasilkan jumlah data untuk \textit{male} sebanyak 59 video. Deskripsi untuk setiap data setelah sudah dilakukan pemilihan fitur untuk kategori \textit{male} ditampilkan pada Tabel \ref{Data male setelah dilakukan pemilihan fitur} berikut.
 
-    \begin{table}[htbp]
-        \centering
-        \caption{Data \textit{Male} Setelah Dilakukan Pemilihan Fitur}
-        \label{Data male setelah dilakukan pemilihan fitur}
+   \begin{table}[H]
+    \centering
+    \caption{Data \textit{Male} Setelah Dilakukan Pemilihan Fitur}
+    \label{Data male setelah dilakukan pemilihan fitur}
     \scriptsize
 
-    \begin{tabular}{p{1.2 cm} p{1.5 cm} p{1.0cm} p{1.3 cm} {0.5 cm} {1.0 cm} {0.8 cm}{0.7cm}}
+    
+    \begin{tabular}{p{0.2cm}p{1.2 cm}p{1.5cm}p{1.0cm}{0.5cm}{1.0 cm}{0.8 cm}{0.6cm}}
+      
+    
         \hline
-        \textbf{Participant Number} & \textbf{Action} & \textbf{Scarf} & \textbf{BG Movement} & \textbf{Glasses} & \textbf{Lighting} & \textbf{Ethnicity} \\
+        \textbf{No.} & \textbf{Participant Number} & \textbf{Action} & \textbf{Scarf} & \textbf{BG Movement} & \textbf{Glasses} & \textbf{Lighting} & \textbf{Ethnicity} \\
         \hline
+        1 & 1 & Yawning & No & No & No Glasses & Sunny & Caucasian \\
+        2 & 3 & Yawning & No & No & Sun glasses & Sunny & Caucasian \\
+        3 & 6 & Yawning & No & Yes & Prescription & Sunny & Middle Eastern \\
+        4 & 9 & Yawning & No & No & Prescription & Sunny & Caucasian \\
+        5 & 11 & Yawning & No & Yes & No Glasses & Sunny & Caucasian \\
+        6 & 14 & Yawning & No & No & No Glasses & Sunny & Middle Eastern \\
+        7 & 17 & Yawning & No & No & Sun glasses & Sunny & Middle Eastern \\
+        8 & 20 & Yawning & No & No & No Glasses & Sunny & Middle Eastern \\
+        9 & 23 & Yawning & No & No & Prescription & Sunny & Middle Eastern \\
+        10 & 26 & Yawning & Beard & Yes & Prescription & Sunny & Middle Eastern \\
+        11 & 29 & Yawning & No & No & No Glasses & Sunny & Caucasian \\
+        12 & 32 & Yawning & No & No & No Glasses & Sunny & Middle Eastern \\
+        13 & 35 & Yawning & No & No & Prescription & Sunny & Middle Eastern \\
+        14 & 38 & Talking \& Yawning & No & Yes & Prescription & Sunny & Middle Eastern \\
+        15 & 41 & Yawning & Beard & Yes & Prescription & Rainy & African \\
+        16 & 46 & Yawning & Beard & No & No Glasses & Rainy & African \\
+        17 & 51 & Yawning & No & No & No Glasses & Sunny & Middle Eastern \\
+        18 & 54 & Yawning & No & No & No Glasses & Sunny & Middle Eastern \\
+        19 & 57 & Yawning & Moustache & No & Prescription & Sunny & Middle Eastern \\
+        20 & 60 & Talking \& Yawning & No & No & Prescription & Sunny & Middle Eastern \\
+        21 & 61 & Yawning & No & No & Prescription & Sunny & Middle Eastern \\
+        22 & 63 & Yawning & No & No & Prescription & Sunny & Middle Eastern \\
+        23 & 65 & Yawning & Moustache & No & Prescription & Sunny & Middle Eastern \\
+        24 & 68 & Talking \& Yawning & Beard & No & Prescription & Sunny & Middle Eastern \\
+        25 & 70 & Yawning & Beard & No & Prescription & Sunny & Middle Eastern \\
+        26 & 73 & Yawning & No & No & No Glasses & Sunny & Middle Eastern \\
+        27 & 76 & Yawning & No & No & Prescription & Cloudy & Middle Eastern \\
+        28 & 79 & Yawning & Beard & No & Prescription & Cloudy & Middle Eastern \\
+        29 & 82 & Yawning & Beard & No & Sun glasses & Cloudy & Middle Eastern \\
+        30 & 85 & Yawning & No & Yes & No Glasses & Sunny & Middle Eastern \\
+        31 & 88 & Yawning & No & No & Prescription & Sunny & Middle Eastern \\
+        32 & 91 & Yawning & No & No & No Glasses & Sunny & Middle Eastern \\
+        33 & 94 & Yawning & No & No & Prescription & Cloudy & Middle Eastern \\
+        34 & 97 & Yawning & No & No & No Glasses & Cloudy & Middle Eastern \\
+        35 & 98 & Yawning & No & No & No Glasses & Cloudy & Middle Eastern \\
+        36 & 100 & Yawning & No & Yes & No Glasses & Sunny & Caucasian \\
+        37 & 102 & Talking \& Yawning & No & Yes & Prescription & Sunny & Middle Eastern \\
+        38 & 104 & Yawning & No & Yes & Prescription & Sunny & Middle Eastern \\
+        39 & 107 & Yawning & Beard & No & Prescription & Sunny & Middle Eastern \\
+        40 & 109 & Talking \& Yawning & No & Yes & Prescription & Cloudy & Middle Eastern \\
+        41 & 111 & Yawning & No & No & Prescription & Cloudy & Middle Eastern \\
+        42 & 113 & Talking \& Yawning & No & Yes & Prescription & Sunny & Middle Eastern \\
+        43 & 115 & Yawning & No & No & Prescription & Sunny & Middle Eastern \\
+        44 & 118 & Yawning & No & Yes & No Glasses & Sunny & Caucasian \\
+        45 & 121 & Yawning & No & No & No Glasses & Sunny & Middle Eastern \\
+        46 & 124 & Yawning & No & Yes & No Glasses & Sunny & Caucasian \\
+        47 & 127 & Yawning & No & No & Sun glasses & Sunny & Caucasian \\
+        48 & 130 & Yawning & Beard & Yes & No Glasses & Sunny & African \\
+        49 & 133 & Yawning & Beard & No & No Glasses & Sunny & African \\
+        50 & 136 & Yawning & Beard & Yes & Sun glasses & Sunny & African \\
+        51 & 139 & Yawning & No & No & Prescription & Sunny & Asian \\
+        52 & 140 & Yawning & No & No & Prescription & Sunny & Asian \\
+        53 & 142 & Yawning & No & No & No Glasses & Sunny & Middle Eastern \\
+        54 & 145 & Yawning & No & No & No Glasses & Sunny & Middle Eastern \\
+        55 & 148 & Yawning & No & Yes & No Glasses & Sunny & Caucasian \\
+        56 & 151 & Yawning & No & No & No Glasses & Sunny & Caucasian \\
+        57 & 154 & Yawning & No & Yes & No Glasses & Sunny & Middle Eastern \\
+        58 & 157 & Yawning & No & Yes & No Glasses & Sunny & Middle Eastern \\
+        %59 & 160 & Yawning & No & Yes & Prescription & Sunny & Middle Eastern \\
+        \hline
+    \end{tabular}
+\end{table}
 
-
-        \hline
-        1 & Yawning & No & No & No Glasses & Sunny & Caucasian \\
-        3 & Yawning & No & No & Sun glasses & Sunny & Caucasian  \\
-        6 & Yawning & No & Yes & Prescription & Sunny & Middle Eastern \\
-        9 & Yawning & No & No & Prescription & Sunny & Caucasian  \\
-        11 & Yawning & No & Yes & No Glasses & Sunny & Caucasian  \\
-        14 & Yawning & No & No & No Glasses & Sunny & Middle Eastern  \\
-        17 & Yawning & No & No & Sun glasses & Sunny & Middle Eastern \\
-        20 & Yawning & No & No & No Glasses & Sunny & Middle Eastern  \\
-        23 & Yawning & No & No & Prescription & Sunny & Middle Eastern \\
-        26 & Yawning & Beard & Yes & Prescription & Sunny & Middle Eastern \\
-        29 & Yawning & No & No & No Glasses & Sunny & Caucasian \\
-        32 & Yawning & No & No & No Glasses & Sunny & Middle Eastern  \\
-        35 & Yawning & No & No & Prescription & Sunny & Middle Eastern \\
-        38 & Talking \& Yawning & No & Yes & Prescription & Sunny & Middle Eastern \\
-        41 & Yawning & Beard & Yes & Prescription & Rainy & African \\
-        46 & Yawning & Beard & No & No Glasses & Rainy & African \\
-        51 & Yawning & No & No & No Glasses & Sunny & Middle Eastern  \\
-        54 & Yawning & No & No & No Glasses & Sunny & Middle Eastern \\
-        57 & Yawning & Moustache & No & Prescription & Sunny & Middle Eastern \\
-        60 & Talking \& Yawning & No & No & Prescription & Sunny & Middle Eastern  \\
-        61 & Yawning & No & No & Prescription & Sunny & Middle Eastern  \\
-        63 & Yawning & No & No & Prescription & Sunny & Middle Eastern \\
-        65 & Yawning & Moustache & No & Prescription & Sunny & Middle Eastern \\
-        68 & Talking \& Yawning & Beard & No & Prescription & Sunny & Middle Eastern \\
-        70 & Yawning & Beard & No & Prescription & Sunny & Middle Eastern  \\
-        73 & Yawning & No & No & No Glasses & Sunny & Middle Eastern \\
-        76 & Yawning & No & No & Prescription & Cloudy & Middle Eastern  \\
-        79 & Yawning & Beard & No & Prescription & Cloudy & Middle Eastern  \\
-        82 & Yawning & Beard & No & Sun glasses & Cloudy & Middle Eastern \\
-        85 & Yawning & No & Yes & No Glasses & Sunny & Middle Eastern  \\
-        88 & Yawning & No & No & Prescription & Sunny & Middle Eastern  \\
-        91 & Yawning & No & No & No Glasses & Sunny & Middle Eastern  \\
-        94 & Yawning & No & No & Prescription & Cloudy & Middle Eastern  \\
-        97 & Yawning & No & No & No Glasses & Cloudy & Middle Eastern  \\
-        98 & Yawning & No & No & No Glasses & Cloudy & Middle Eastern  \\
-        100 & Yawning & No & Yes & No Glasses & Sunny & Caucasian  \\
-        102 & Talking \& Yawning & No & Yes & Prescription & Sunny & Middle Eastern  \\
-        104 & Yawning & No & Yes & Prescription & Sunny & Middle Eastern  \\
-        107 & Yawning & Beard & No & Prescription & Sunny & Middle Eastern  \\
-        109 & Talking \& Yawning & No & Yes & Prescription & Cloudy & Middle Eastern  \\
-        111 & Yawning & No & No & Prescription & Cloudy & Middle Eastern  \\
-        113 & Talking \& Yawning & No & Yes & Prescription & Sunny & Middle Eastern \\
-        115 & Yawning & No & No & Prescription & Sunny & Middle Eastern  \\
-        118 & Yawning & No & Yes & No Glasses & Sunny & Caucasian  \\
-        121 & Yawning & No & No & No Glasses & Sunny & Middle Eastern  \\
-        124 & Yawning & No & Yes & No Glasses & Sunny & Caucasian  \\
-        127 & Yawning & No & No & Sun glasses & Sunny & Caucasian \\
-        130 & Yawning & Beard & Yes & No Glasses & Sunny & African \\
-        133 & Yawning & Beard & No & No Glasses & Sunny & African  \\
-        136 & Yawning & Beard & Yes & Sun glasses & Sunny & African  \\
-        139 & Yawning & No & No & Prescription & Sunny & Asian  \\
-        140 & Yawning & No & No & Prescription & Sunny & Asian  \\
-        142 & Yawning & No & No & No Glasses & Sunny & Middle Eastern \\
-        145 & Yawning & No & No & No Glasses & Sunny & Middle Eastern \\
-        148 & Yawning & No & Yes & No Glasses & Sunny & Caucasian  \\
-        151 & Yawning & No & No & No Glasses & Sunny & Caucasian \\
-        154 & Yawning & No & Yes & No Glasses & Sunny & Middle Eastern \\
-        157 & Yawning & No & Yes & No Glasses & Sunny & Middle Eastern \\
-        160 & Yawning & No & Yes & Prescription & Sunny & Middle Eastern \\
-        \hline
-        \end{tabular}
-        \end{table}
 
 
 
@@ -208,7 +207,7 @@
      Terdapat 154 video pada kategori \textit{"female"}, fitur \textit{action} pada data mencakup keadaan \textit{"yawning"}, \textit{"talking"},\textit{"normal"} dan \textit{"yawning \& talking"}. Berikut proprosi untuk kategori \textit{action} di tampilkan pada Gambar \ref{Proporsi Data Female Berdasarkan "Action"} berikut.
 
      \begin{figure}[H]
-        \centering
+         \centering
          \includegraphics[width=0.75\linewidth]{figures/bab4/data_female.png}
          \caption{Proporsi Data \textit{Female }Berdasarkan \textit{"Action"}}
          \label{Proporsi Data Female Berdasarkan "Action"}
@@ -216,82 +215,82 @@
 
         Setelah dilakukan pemilihan fitur berdasarkan kolom \textit{action}, yaitu hanya keadaan \textit{"yawning"} dan \textit{"talking \& yawning"} yang dipilih. Dihasilkan jumlah data untuk kategori \textit{female} sebanyak 58 video. Data \textit{female} setelah dilakukan pemilihan fitur ditampilkan pada Tabel \ref{Data female setelah dilakukan pemilihan fitur} berikut.
 
+        \begin{table}[H]
+\centering
+\caption{Data \textit{Female} Setelah Dilakukan Pemilihan Fitur}
+\label{Data female setelah dilakukan pemilihan fitur}
+\scriptsize
+
+    \begin{tabular}{p{0.2cm}p{1.2 cm}p{1.5cm}p{1.0cm}{0.5cm}{1.0 cm}{0.8 cm}{0.6cm}}
+    
+    \hline
+    \textbf{No.} & \textbf{Participant Number} & \textbf{Action} & \textbf{Scarf} & \textbf{BG Movement} & \textbf{Glasses} & \textbf{Lighting} & \textbf{Ethnicity} \\
+    \hline
+    1 & 2 & Yawning & No & No & No Glasses & Sunny & Middle Eastern \\
+    2 & 5 & Yawning & No & No & No Glasses & Sunny & Middle Eastern  \\
+    3 & 8 & Yawning & No & No & Prescription & Rainy & Caucasian  \\
+    4 & 11 & Yawning & No & No & Prescription & Rainy & Caucasian \\
+    5 & 14 & Yawning & No & No & Prescription & Rainy & Caucasian\\
+    6 & 17 & Yawning & No & No & No Glasses & Rainy & Middle Eastern  \\
+    7 & 20 & Yawning & No & No & Prescription & Cloudy & Middle Eastern \\
+    8 & 23 & Yawning & No & No & Prescription & Cloudy & Middle Eastern  \\
+    9 & 26 & Yawning & No & No & No Glasses & Cloudy & Middle Eastern \\
+    10 & 29 & Yawning & No & No & No Glasses & Cloudy & Middle Eastern  \\
+    11 & 32 & Yawning & No & Yes & No Glasses & Cloudy & Middle Eastern  \\
+    12 & 35 & Yawning & No & Yes & No Glasses & Rainy & Middle Eastern \\
+    13 & 38 & Talking \& Yawning & No & Yes & No Glasses & Sunny & Caucasian \\
+    14 & 41 & Yawning & No & No & No Glasses & Sunny & Middle Eastern \\
+    15 & 44 & Yawning & No & No & Prescription & Sunny & Middle Eastern  \\
+    16 & 46 & Yawning & No & No & Sun glasses & Sunny & Middle Eastern  \\
+    17 & 49 & Yawning & No & No & Prescription & Sunny & Middle Eastern \\
+    18 & 52 & Yawning & No & No & No Glasses & Sunny & Middle Eastern \\
+    19 & 55 & Yawning & No & No & Sun Glasses & Sunny & Middle Eastern  \\
+    20 & 58 & Yawning & No & No & No Glasses & Sunny & Middle Eastern \\
+    21 & 61 & Talking \& Yawning & No & No & Sun Glasses & Sunny & Middle Eastern  \\
+    22 & 64 & Talking & No & No & No Glasses & Sunny & Middle Eastern  \\
+    23 & 65 & Yawning & No & Yes & No Glasses & Sunny & Middle Eastern  \\
+    24 & 68 & Yawning & No & Yes & No Glasses & Sunny & Middle Eastern \\
+    25 & 71 & Yawning & Yes & No & No Glasses & Sunny & Middle Eastern  \\
+    26 & 74 & Yawning & No & Yes & No Glasses & Sunny & Middle Eastern \\
+    27 & 77 & Yawning & No & Yes & Sun Glasses & Cloudy & Middle Eastern \\
+    28 & 79 & Talking & No & No & No Glasses & Cloudy & Middle Eastern  \\
+    29 & 81 & Yawning & No & No & No Glasses & Cloudy & Middle Eastern  \\
+    30 & 84 & Yawning & No & No & No Glasses & Sunny & Middle Eastern  \\
+    31 & 86 & Yawning & No & No & No Glasses & Sunny & Caucasian  \\
+    32 & 89 & Yawning & No & Yes & Sun glasses & Sunny & Caucasian \\
+    33 & 92 & Yawning & No & No & Prescription & Sunny & Caucasian \\
+    34 & 94 & Yawning & No & Yes & Sun glasses & Sunny & Caucasian  \\
+    35 & 96 & Talking \& Yawning & No & No & No Glasses & Sunny & Caucasian \\
+    36 & 99 & Yawning & No & No & Sun Glasses & Sunny & Caucasian  \\
+    37 & 102 & Yawning & No & No & No Glasses & Sunny & Caucasian  \\
+    38 & 105 & Yawning & No & No & No Glasses & Sunny & Middle Eastern  \\
+    39 & 108 & Yawning & No & No & No Glasses & Sunny & Middle Eastern  \\
+    40 & 111 & Yawning & No & Yes & Prescription & Cloudy & Asian  \\
+    41 & 114 & Yawning & No & No & No Glasses & Cloudy & Asian  \\
+    42 & 117 & Yawning & No & No & Sun Glasses & Cloudy & Middle Eastern \\
+    43 & 120 & Yawning & No & Yes & No Glasses & Sunny & Middle Eastern \\
+    44 & 122 & Talking \& Yawning & No & Yes & No Glasses & Sunny & Caucasian \\
+    45 & 124 & Yawning & No & No & No Glasses & Sunny & Caucasian \\
+    46 & 126 & Talking \& Yawning & No & No & No Glasses & Sunny & Middle Eastern \\
+    47 & 128 & Yawning & No & Yes & No Glasses & Sunny & Middle Eastern  \\
+    48 & 130 & Talking \& Yawning& No & Yes & No Glasses & Sunny & Middle Eastern  \\
+    49 & 132 & Yawning & No & No & No Glasses & Sunny & Middle Eastern  \\
+    50 & 134 & Talking \& Yawning& Yes & Yes & No Glasses & Sunny & Middle Eastern  \\
+    51 & 136 & Yawning & Yes & No & No Glasses & Sunny & Middle Eastern  \\
+    52 & 139 & Yawning & Yes & No & No Glasses & Sunny & Middle Eastern \\
+    53 & 141 & Talking \& Yawning& No & Yes & No Glasses & Sunny & Middle Eastern  \\
+    54 & 143 & Yawning & No & No & No Glasses & Sunny & Middle Eastern \\
+    55 & 146 & Yawning & No & No & No Glasses & Sunny & Caucasian \\
+    56 & 149 & Yawning & No & No & Prescription & Sunny & Middle Eastern  \\
+    57 & 152 & Yawning & No & No & Sun Glasses & Sunny & Middle Eastern  \\
+    58 & 155 & Yawning & No & No & No Glasses & Sunny & Middle Eastern \\
+    \hline
+\end{tabular}
+\end{table}
 
 
-    \begin{table}[H]
-    \centering
-    \caption{Data \textit{Female} Setelah Dilakukan Pemilihan Fitur}
-    \label{Data female setelah dilakukan pemilihan fitur}
-    \scriptsize
 
-    \begin{tabular}{p{1.2 cm}p{1.2 cm}p{1.2cm}p{1.8 cm}{0.5 cm}{1.0 cm}{0.8 cm}{0.7cm}}
-        \hline
-        \textbf{Participant Number} & \textbf{Action} & \textbf{Scarf} & \textbf{BG Movement} & \textbf{Glasses} & \textbf{Lighting} & \textbf{Ethnicity} \\
-        \hline
-        2 & Yawning & No & No & No Glasses & Sunny & Middle Eastern \\
-        5 & Yawning & No & No & No Glasses & Sunny & Middle Eastern  \\
-        8 & Yawning & No & No & Prescription & Rainy & Caucasian  \\
-        11 & Yawning & No & No & Prescription & Rainy & Caucasian \\
-        14 & Yawning & No & No & Prescription & Rainy & Caucasian\\
-        17 & Yawning & No & No & No Glasses & Rainy & Middle Eastern  \\
-        20 & Yawning & No & No & Prescription & Cloudy & Middle Eastern \\
-        23 & Yawning & No & No & Prescription & Cloudy & Middle Eastern  \\
-        26 & Yawning & No & No & No Glasses & Cloudy & Middle Eastern \\
-        29 & Yawning & No & No & No Glasses & Cloudy & Middle Eastern  \\
-        32 & Yawning & No & Yes & No Glasses & Cloudy & Middle Eastern  \\
-        35 & Yawning & No & Yes & No Glasses & Rainy & Middle Eastern \\
-        38 & Talking \& Yawning & No & Yes & No Glasses & Sunny & Caucasian \\
-        
-        41 & Yawning & No & No & No Glasses & Sunny & Middle Eastern \\
-        44 & Yawning & No & No & Prescription & Sunny & Middle Eastern  \\
-        46 & Yawning & No & No & Sun glasses & Sunny & Middle Eastern  \\
-        49 & Yawning & No & No & Prescription & Sunny & Middle Eastern \\
-        52 & Yawning & No & No & No Glasses & Sunny & Middle Eastern \\
-        55 & Yawning & No & No & Sun Glasses & Sunny & Middle Eastern  \\
-        58 & Yawning & No & No & No Glasses & Sunny & Middle Eastern \\
-        61 & Talking \& Yawning & No & No & Sun Glasses & Sunny & Middle Eastern  \\
-        64 & Talking & No & No & No Glasses & Sunny & Middle Eastern  \\
-        65 & Yawning & No & Yes & No Glasses & Sunny & Middle Eastern  \\
-        68 & Yawning & No & Yes & No Glasses & Sunny & Middle Eastern \\
-        71 & Yawning & Yes & No & No Glasses & Sunny & Middle Eastern  \\
-        74 & Yawning & No & Yes & No Glasses & Sunny & Middle Eastern \\
-        77 & Yawning & No & Yes & Sun Glasses & Cloudy & Middle Eastern \\
-        79 & Talking & No & No & No Glasses & Cloudy & Middle Eastern  \\
-        81 & Yawning & No & No & No Glasses & Cloudy & Middle Eastern  \\
-        84 & Yawning & No & No & No Glasses & Sunny & Middle Eastern  \\
-        
-        86 & Yawning & No & No & No Glasses & Sunny & Caucasian  \\
-        89 & Yawning & No & Yes & Sun glasses & Sunny & Caucasian \\
-        92 & Yawning & No & No & Prescription & Sunny & Caucasian \\
-        94 & Yawning & No & Yes & Sun glasses & Sunny & Caucasian  \\
-        96 & Talking \& Yawning & No & No & No Glasses & Sunny & Caucasian \\
-        99 & Yawning & No & No & Sun Glasses & Sunny & Caucasian  \\
-        102 & Yawning & No & No & No Glasses & Sunny & Caucasian  \\
-        105 & Yawning & No & No & No Glasses & Sunny & Middle Eastern  \\
-        108 & Yawning & No & No & No Glasses & Sunny & Middle Eastern  \\
-        111 & Yawning & No & Yes & Prescription & Cloudy & Asian  \\
-        114 & Yawning & No & No & No Glasses & Cloudy & Asian  \\
-        117 & Yawning & No & No & Sun Glasses & Cloudy & Middle Eastern \\
-        120 & Yawning & No & Yes & No Glasses & Sunny & Middle Eastern \\
-        122 & Talking \& Yawning & No & Yes & No Glasses & Sunny & Caucasian \\
-        124 & Yawning & No & No & No Glasses & Sunny & Caucasian \\
-        126 & Talking \& Yawning & No & No & No Glasses & Sunny & Middle Eastern \\
-        128 & Yawning & No & Yes & No Glasses & Sunny & Middle Eastern  \\
-        130 & Talking \& Yawning& No & Yes & No Glasses & Sunny & Middle Eastern  \\
-        132 & Yawning & No & No & No Glasses & Sunny & Middle Eastern  \\
-        134 & Talking \& Yawning& Yes & Yes & No Glasses & Sunny & Middle Eastern  \\
-        136 & Yawning & Yes & No & No Glasses & Sunny & Middle Eastern  \\
-        139 & Yawning & Yes & No & No Glasses & Sunny & Middle Eastern \\
-        141 & Talking \& Yawning& No & Yes & No Glasses & Sunny & Middle Eastern  \\
-        143 & Yawning & No & No & No Glasses & Sunny & Middle Eastern \\
-        146 & Yawning & No & No & No Glasses & Sunny & Caucasian \\
-        149 & Yawning & No & No & Prescription & Sunny & Middle Eastern  \\
-        152 & Yawning & No & No & Sun Glasses & Sunny & Middle Eastern  \\
-        155 & Yawning & No & No & No Glasses & Sunny & Middle Eastern \\
-        
-         \hline
-        \end{tabular}
-        \end{table}
+
 
     Setelah proses seleksi fitur, di mana hanya fitur \textit{"action"} dengan keadaan \textit{"yawning" }dan \textit{"yawning \& talking"} yang dipilih. Ditemukan sebanyak 58 video untuk kategori \textit{"male"} dan sebanyak 52 video untuk kategori \textit{"female"}. Dengan demikian, total data yang diekstraksi menjadi gambar ada sebanyak 110 video.
 
@@ -299,16 +298,8 @@
 \subsection{Penentuan Nilai EAR dan MAR}
 
     
-    Nilai \textit{Eye Aspect Ratio} (EAR) dan \textit{Mouth Aspect Ratio} (MAR) digunakan untuk mengekstrak video menjadi format gambar (.jpg). Nilai EAR dan MAR pada video yang berjumlah 110 hasil seleksi fitur akan di visualisasikan menggunakan bantuan \textit{library} pada \textit{python} yaitu \textit{Open CV} dan \textit{Dlib}. Visualisasi ini bertujuan untuk melihat di angka berapa data tersebut mengantuk dan menguap. Keadaan mata kantuk dapat di lihat pada saat nilai EAR berada dibawah rata-rata dan menuju nilai nol. Keadaan menguap dapat dilihat pada saat nilai MAR berada diatas rata-rata. Namun untuk menentukan ambang batas nilai MAR dan EAR dapat mendeteksi kantuk dan menguap dengan baik, dilakukan beberapa  percobaan pada nilai EAR dan MAR. Percobaan ini menggunakan 10 video yang diambil secara acak mewakili kategori \textit{male} dan \textit{female}. Kesalahan deteksi dapat dihitung dengan Persamaan \ref{rumus error} berikut.
-
-    \begin{equation}
-        \label{rumus error}
-        \begin{aligned}
-        \text{\textit{error}} = \left(\frac{\text{salah deteksi}}{\text{hasil deteksi}}\right) \times 100\%
-        \end{aligned}
-    \end{equation}
-
-   \textit{Eye Aspect Ratio} (EAR) dan \textit{Mouth Aspect Ratio} (MAR) yang memiliki nilai kesalahan terkecil akan digunakan untuk melakukan ekstraksi 110 video sebelumnya menjadi gambar.
+    Nilai \textit{Eye Aspect Ratio} (EAR) dan \textit{Mouth Aspect Ratio} (MAR) digunakan untuk mengekstrak video menjadi format gambar (.jpg). Nilai EAR dan MAR pada video yang berjumlah 110 hasil seleksi fitur akan di visualisasikan menggunakan bantuan \textit{library} pada \textit{python} yaitu \textit{Open CV} dan \textit{Dlib}. Visualisasi ini bertujuan untuk melihat di angka berapa data tersebut mengantuk dan menguap. Keadaan mata kantuk dapat di lihat pada saat nilai EAR berada dibawah rata-rata dan menuju nilai nol. Keadaan menguap dapat dilihat pada saat nilai MAR berada diatas rata-rata. Namun untuk menentukan ambang batas nilai MAR dan EAR dapat mendeteksi kantuk dan menguap dengan baik, dilakukan beberapa  percobaan pada nilai EAR dan MAR. Percobaan ini menggunakan 10 video yang diambil secara acak mewakili kategori \textit{male} dan \textit{female}.
+    \textit{Eye Aspect Ratio} (EAR) dan \textit{Mouth Aspect Ratio} (MAR) yang memiliki nilai kesalahan terkecil akan digunakan untuk melakukan ekstraksi 110 video sebelumnya menjadi gambar.
 
 \subsubsection{\textit{Eye Aspect Ratio} (EAR)}
 
@@ -417,7 +408,7 @@
             \end{table}
 
 
-         %Visualisasi nilai MAR yang diuju dapat dilihat pada Gambar \ref{Eksperimen Penentuan Nilai MAR} berikut.
+         Visualisasi nilai MAR yang diuju dapat dilihat pada Gambar \ref{Eksperimen Penentuan Nilai MAR} berikut.
 
          \begin{figure}[H]
                \centering
@@ -530,9 +521,9 @@
 
     \begin{table}[H]
         \centering
+        \scriptsize
         \caption{Desain Arsitektur}
         \label{Desain arsitektur}
-        \scriptsize
         \renewcommand{\arraystretch}{1.5}
         \begin{tabular}{p{1cm}p{4.5cm}p{4cm}p{2.5cm}}
         \hline
@@ -775,7 +766,9 @@
             \bottomrule
         \end{tabular}
         \label{Evaluasi Learning Rate 0.001 }
-    \end{table}
+    \end{table} 
+
+\vspace{1cm}
 
 
     Evaluasi model untuk fungsi aktivasi dengan \textit{learning rate} 0.001 menunjukkan bahwa fungsi aktivasi \textit{ReLu} menghasilkan nilai rata-rata \textit{precision} sebesar 91.12\%, \textit{recall} 90.84\%, dan \textit{ F1-Score} 90.84\%. Hasil ini jauh lebih baik dari pada penggunaan \textit{learning rate} 0.01 karena nilai rata-rata yang lebih tinggi dan untuk setiap metriks yang dihasilkan juga stabil. 
@@ -785,8 +778,7 @@
      
      Pada penggunaan \textit{learning rate} 0.001 hasil evaluasi menunjukkan fungsi aktivasi terbaik diperoleh pada ReLu nilai \textit{ F1-Score} 90.84\%.
      
-     x\\
-     x\\
+  
 
     
 
@@ -1128,6 +1120,14 @@
         \label{Evaluasi Model}
     \end{table}
 
+    Untuk hasil prediksi ditampilkan pada gambar berikut.
+          \begin{figure}[H]
+              \centering
+              \includegraphics[width=1.0\linewidth]{figures/bab4/hasil_prediksi.png}
+              \caption{Hasil prediksi}
+              \label{hasil prediksi}
+          \end{figure}
+
     
         
         
@@ -1138,7 +1138,6 @@
         \centering
         \caption{Penelitian Mengenai Deteksi Kantuk}
          \label{Tabel Perbandingan Referensi}
-          \scriptsize
         \begin{tabular}%{p{0.5cm}p{1.8cm}p{2.9cm}p{1.1cm}p{4.1cm}p{1cm}}
               {  >{\raggedright\arraybackslash}p{0.3cm} 
         >{\raggedright\arraybackslash}p{2.0cm} 
