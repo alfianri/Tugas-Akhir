@@ -575,7 +575,7 @@
             \textbf{\textit{Activation}} & \multicolumn{1}{c}{\textbf{\textit{KFold}}} & \textbf{\textit{Train Acc (\%)} } & \textbf{\textit{Val Acc (\%)}} & \textbf{\textit{Test Acc (\%)}}  \\
     
             \midrule
-            \multirow{5}{*}{ReLu} 
+            \multirow{5}{*}{ReLU} 
             & 1 & 48.19 & 48.48 & 54.42  \\
             & 2 & 67.88 & 62.13 & 63.08 \\
             & 3 & 51.34 & 46.77 & 51.81 \\
@@ -625,7 +625,7 @@
             \textbf{\textit{Activation}} & \multicolumn{1}{c}{\textbf{\textit{KFold}}} & \textbf{\textit{Precision (\%)} } & \textbf{\textit{Recall (\%)}} & \textbf{\textit{F1-Score (\%)}}  \\
     
             \midrule
-            \multirow{5}{*}{ReLu} 
+            \multirow{5}{*}{ReLU} 
 
             & 1 & 81.54 & 54.42 & 63.25  \\
             & 2 & 76.90 & 63.08 & 65.95 \\
@@ -657,10 +657,10 @@
         \label{Evaluasi Learning Rate 0.01 }
     \end{table}
 
-      Evaluasi model pada fungsi aktivasi dengan \textit{learning rate} 0.01 menunjukkan bahwa fungsi aktivasi \textit{ReLu} menghasilkan nilai rata-rata \textit{precision} sebesar 82,44\%, \textit{recall} 50,10\%, dan\textit{ F1-Score} 58,87\%. Hal ini menunjukkan kecenderungan fungsi aktivasi \textit{ReLu} untuk memprioritaskan prediksi positif daripada mengidentifikasi semua contoh positif. Hal ini terlihat dari nilai \textit{precision} yang jauh lebih tinggi dibandingkan \textit{recall}.
+      Evaluasi model pada fungsi aktivasi dengan \textit{learning rate} 0.01 menunjukkan bahwa fungsi aktivasi \textit{ReLU} menghasilkan nilai rata-rata \textit{precision} sebesar 82,44\%, \textit{recall} 50,10\%, dan\textit{ F1-Score} 58,87\%. Hal ini menunjukkan kecenderungan fungsi aktivasi \textit{ReLu} untuk memprioritaskan prediksi positif daripada mengidentifikasi semua contoh positif. Hal ini terlihat dari nilai \textit{precision} yang jauh lebih tinggi dibandingkan \textit{recall}.
 
      Pada fungsi aktivasi \textit{sigmoid} diperoleh nilai rata-rata pada \textit{precision} sebesar 33.33\%, \textit{recall} sebsar 34.04\% dan\textit{ F1-Score} sebesar 50.73\%. Hasil untuk \textit{sigmoid} menunjukkan bahwa model hanya dapat memprediksi satu kelas saja, hal ini dapat di lihat pada nilai \textit{precision} yang sama setiap iterasi KFold. Pada fungsi aktivasi \textit{softmax} diperoleh nilai rata-rata pada \textit{precision} sebesar 33.33\%, \textit{recall} sebesar 33.83\% dan \textit{F1-Score} sebesar 50.55\%.
-     Berdasarkan hasil evaluasi, fungsi aktivasi ReLu menghasilkan performa terbaik dengan rata-rata \textit{F1-Score} tertinggi. \textit{Sigmoid} dan Softmax memiliki performa yang jauh lebih rendah dan perlu dioptimalkan lebih lanjut.
+     Berdasarkan hasil evaluasi, fungsi aktivasi ReLU menghasilkan performa terbaik dengan rata-rata \textit{F1-Score} tertinggi. \textit{Sigmoid} dan Softmax memiliki performa yang jauh lebih rendah dan perlu dioptimalkan lebih lanjut.
 
      x\\
      x\\
@@ -682,7 +682,7 @@
             \textbf{\textit{Activation}} & \multicolumn{1}{c}{\textbf{\textit{KFold}}} & \textbf{\textit{Train Acc (\%)} } & \textbf{\textit{Val Acc (\%)}} & \textbf{\textit{Test Acc (\%)}}  \\
     
             \midrule
-            \multirow{5}{*}{ReLu} 
+            \multirow{5}{*}{ReLU} 
             & 1 & 91.41 & 86.98 & 90.70  \\
             & 2 & 90.84 & 86.12 & 91.84 \\
             & 3 & 89.42 & 80.49 & 87.70 \\
@@ -717,7 +717,7 @@
 
     Fungsi aktivasi \textit{sigmoid} memiliki akurasi rata-rata untuk \textit{training} sebesar 73.40\%, validasi sebesar 49.26\% dan test sebesar 64.69\%. Penggunaan \textit{learning rate} 0.001 untuk fungsi aktivasi \textit{sigmoid} juga mengalami peningkatan yang tinggi dari sebelumnya rata-rata akurasi untuk \textit{training} sebesar 33.33\%, validasi sebesar 34.04\% dan test sebesar 50.73\%. Namun pada setiap iterasi \textit{KFold} akurasi sangat tidak stabil hal ini dibuktikan terdapat akurasi tertinggi sebesar 93.72\% dan terendah sebesar 33.56\%. Hal ini menunjukkan pembagian data sangat sensitif pada fungsi aktivasi sigmoid. Pada fungsi aktivasi \textit{softmax} memiliki akurasi rata-rata untuk \textit{training} sebesar 33.13\%, validasi sebesar 32.66\% dan test sebesar 33.94\%. Pada \textit{softmax} tidak ada perubahan yang cukup signifikan dari penggunaan \textit{learning rate} sebelumnya. 
 
-     Penurunan \textit{learning rate} dari 0.01 ke 0.001 menunjukkan pengaruh yang signifikan terhadap kinerja fungsi aktivasi \textit{ReLu} dan \textit{sigmoid}. Namun pada perubahan \textit{learning rate} tidak menunjukkan efek yang substansial pada fungsi aktivasi \textit{softmax}.
+     Penurunan \textit{learning rate} dari 0.01 ke 0.001 menunjukkan pengaruh yang signifikan terhadap kinerja fungsi aktivasi \textit{ReLU} dan \textit{sigmoid}. Namun pada perubahan \textit{learning rate} tidak menunjukkan efek yang substansial pada fungsi aktivasi \textit{softmax}.
     
     
     
@@ -735,7 +735,7 @@
             \textbf{\textit{Activation}} & \multicolumn{1}{c}{\textbf{\textit{KFold}}} & \textbf{\textit{Precision (\%)} } & \textbf{\textit{Recall (\%)}} & \textbf{\textit{F1-Score (\%)}}  \\
     
             \midrule
-            \multirow{5}{*}{ReLu} 
+            \multirow{5}{*}{ReLU} 
 
             & 1 & 91.89 & 90.70 & 90.80  \\
             & 2 & 92.04 & 91.83 & 91.80 \\
@@ -771,12 +771,12 @@
 \vspace{1cm}
 
 
-    Evaluasi model untuk fungsi aktivasi dengan \textit{learning rate} 0.001 menunjukkan bahwa fungsi aktivasi \textit{ReLu} menghasilkan nilai rata-rata \textit{precision} sebesar 91.12\%, \textit{recall} 90.84\%, dan \textit{ F1-Score} 90.84\%. Hasil ini jauh lebih baik dari pada penggunaan \textit{learning rate} 0.01 karena nilai rata-rata yang lebih tinggi dan untuk setiap metriks yang dihasilkan juga stabil. 
+    Evaluasi model untuk fungsi aktivasi dengan \textit{learning rate} 0.001 menunjukkan bahwa fungsi aktivasi \textit{ReLU} menghasilkan nilai rata-rata \textit{precision} sebesar 91.12\%, \textit{recall} 90.84\%, dan \textit{ F1-Score} 90.84\%. Hasil ini jauh lebih baik dari pada penggunaan \textit{learning rate} 0.01 karena nilai rata-rata yang lebih tinggi dan untuk setiap metriks yang dihasilkan juga stabil. 
     
      Pada fungsi aktivasi \textit{sigmoid} diperoleh nilai rata-rata pada \textit{precision} sebesar 86.02\%, \textit{recall} sebsar 64.69\% dan\textit{ F1-Score} sebesar 70.68\%. Hasil pada \textit{sigmoid} menunjukkan perubahaan \textit{learning rate} menjadi 0.01 cukup berarti, hal ini dibuktikan adanya peningkatan nilai pada setiap mariks evaluasi. Sementara pada fungsi aktivasi \textit{softmax} diperoleh nilai rata-rata pada \textit{precision} sebesar 33.33\%, \textit{recall} sebsar 33.94\% dan\textit{ F1-Score} sebesar 50.68\%.
      Perubahan \textit{learning rate} pada fungsi aktivasi \textit{sigmoid} tidak memiliki hasil yang berarti. 
      
-     Pada penggunaan \textit{learning rate} 0.001 hasil evaluasi menunjukkan fungsi aktivasi terbaik diperoleh pada ReLu nilai \textit{ F1-Score} 90.84\%.
+     Pada penggunaan \textit{learning rate} 0.001 hasil evaluasi menunjukkan fungsi aktivasi terbaik diperoleh pada ReLU nilai \textit{ F1-Score} 90.84\%.
      
   
 
@@ -795,7 +795,7 @@
             \textbf{\textit{Activation}} & \multicolumn{1}{c}{\textbf{\textit{KFold}}} & \textbf{\textit{Train Acc (\%)} } & \textbf{\textit{Val Acc (\%)}} & \textbf{\textit{Test Acc (\%)}}  \\
     
             \midrule
-            \multirow{5}{*}{ReLu} 
+            \multirow{5}{*}{ReLU} 
 
             & 1 & 90.46 & 87.02 & 91.88 \\
             & 2 & 93.00 & 89.02 & 91.97 \\
@@ -829,7 +829,7 @@
     \end{table}
 
     Pengujian fungsi aktivasi untuk \textit{learning rate} 0.0001 
-    pada \textit{ReLu} diperoleh rata-rata akurasi untuk \textit{training} sebesar 92.79\%, validasi sebesar 88.03\% dan test sebesar 91.70\%. Pada \textit{learning rate} 0.0001 terjadi peningkatan akurasi sekitar dua persen dari penggunaan \textit{learning rate} 0.001. 
+    pada \textit{ReLU} diperoleh rata-rata akurasi untuk \textit{training} sebesar 92.79\%, validasi sebesar 88.03\% dan test sebesar 91.70\%. Pada \textit{learning rate} 0.0001 terjadi peningkatan akurasi sekitar dua persen dari penggunaan \textit{learning rate} 0.001. 
     
     Penggunaan fungsi aktivasi \textit{sigmoid} memiliki akurasi rata-rata untuk \textit{training} sebesar 72.25\%, validasi sebesar 48.37\% dan test sebesar 65.15\%. Penggunaan \textit{learning rate} 0.0001 untuk fungsi aktivasi \textit{sigmoid} tidak terdapat pola peningkatan akurasi malah mengalami penurunan akurasi sekitar satu persen. Pada hasil ini menunjukkan bahwa penurunan nilai \textit{learning rate} pada fungsi aktivasi \textit{sigmoid}
     tidak selalu mengalami peningkatan akurasi. 
@@ -852,7 +852,7 @@
             \textbf{\textit{Activation}} & \multicolumn{1}{c}{\textbf{\textit{KFold}}} & \textbf{\textit{Precision (\%)} } & \textbf{\textit{Recall (\%)}} & \textbf{\textit{F1-Score (\%)}}  \\
     
             \midrule
-            \multirow{5}{*}{ReLu} 
+            \multirow{5}{*}{ReLU} 
             
             & 1 & 92.09 & 91.88 & 91.87 \\
             & 2 & 92.28 & 91.97 & 91.95 \\
@@ -887,7 +887,7 @@
         \label{Evaluasi Learning Rate 0.0001 }
     \end{table}
 
-      Evaluasi model pada fungsi aktivasi dengan \textit{learning rate} 0.0001 fungsi aktivasi \textit{ReLu} menghasilkan nilai rata-rata \textit{precision} sebesar 91.01\%, \textit{recall} 91.70\%, dan\textit{ F1-Score} 91.71\%. Pada 
+      Evaluasi model pada fungsi aktivasi dengan \textit{learning rate} 0.0001 fungsi aktivasi \textit{ReLU} menghasilkan nilai rata-rata \textit{precision} sebesar 91.01\%, \textit{recall} 91.70\%, dan\textit{ F1-Score} 91.71\%. Pada 
       Penggunaan \textit{learning rate} 0.0001 hasil prediksi setiap kelasnya cukup stabil di bandingkan sebelumnya. 
       
       Pada fungsi aktivasi \textit{sigmoid} diperoleh nilai rata-rata pada \textit{precision} sebesar 73.55\%, \textit{recall} sebsar 65.15\% dan\textit{ F1-Score} sebesar 66.89\%. Hasil untuk \textit{sigmoid} menunjukkan lebih rendah dengan penggunaan \textit{learning rate} 0.001 yaitu dengan nilai rata-rata pada \textit{precision} sebesar 86.02\%, \textit{recall} sebsar 64.69\% dan\textit{ F1-Score} sebesar 70.68\%. Sementara pada fungsi aktivasi \textit{softmax} diperoleh nilai rata-rata pada \textit{precision} sebesar 33.33\%, \textit{recall} sebsar 32.83\% dan\textit{ F1-Score} sebesar 49.42\%.
@@ -895,7 +895,7 @@
      
      
      
-    Pengujian dan evaluasi fungsi aktivasi \textit{ReLu, sigmoid dan sigmoid} pada \textit{learning rate} 0.0001, 0.001, 0.01 diperoleh hasil yang terbaik pada  fungsi aktivasi \textit{ReLu} dengan \textit{learning rate} 0.0001. Fungsi aktivasi ini menghasilkan nilai rata-rata  akurasi untuk \textit{training} sebesar 92.79\%, validasi sebesar 88.03\% dan test sebesar 91.70\%, \textit{precision} sebesar 91.01\%, \textit{recall} 91.70\%, dan\textit{ F1-Score} 91.71\%.
+    Pengujian dan evaluasi fungsi aktivasi \textit{ReLU, sigmoid dan sigmoid} pada \textit{learning rate} 0.0001, 0.001, 0.01 diperoleh hasil yang terbaik pada  fungsi aktivasi \textit{ReLU} dengan \textit{learning rate} 0.0001. Fungsi aktivasi ini menghasilkan nilai rata-rata  akurasi untuk \textit{training} sebesar 92.79\%, validasi sebesar 88.03\% dan test sebesar 91.70\%, \textit{precision} sebesar 91.01\%, \textit{recall} 91.70\%, dan\textit{ F1-Score} 91.71\%.
 
 \subsection{Pengujian \textit{Optmizer}}
 
@@ -987,33 +987,33 @@
         & & & \textbf{\textit{Accuracy}} & \textbf{\textit{Precision}} & \textbf{\textit{Recall}} & \textbf{\textit{F1-Score}} \\
         & & & \textbf{\textit{(\%)}} & \textbf{\textit{(\%)}} & \textbf{\textit{(\%)}} & \textbf{\textit{(\%)}} \\
         \midrule
-        0.01 & ReLu    & Adam  & 50.10 & 82.24 & 50.10 & 58.87\\
+        0.01 & ReLU   & Adam  & 50.10 & 82.24 & 50.10 & 58.87\\
         0.01 & Sigmoid & Adam  & 34.04 & 33.33 & 34.04 & 50.73 \\
         0.01 & Softmax & Adam  & 33.83 & 33.33 & 33.83 & 50.55\\
         \midrule
-        0.001 & ReLu    & Adam  & 90.84 & 91.12 & 90.84 & 90.84\\
+        0.001 & ReLU    & Adam  & 90.84 & 91.12 & 90.84 & 90.84\\
         0.001 & Sigmoid & Adam  & 64.69 & 86.02 & 64.69 & 70.68 \\
         0.001 & Softmax & Adam  & 33.94 & 33.33 & 33.94 & 50.68\\
         \midrule
-        0.0001 & ReLu & Adam  & 91.70 & 91.01 & 91.70 & 91.71\\
+        0.0001 & ReLU & Adam  & 91.70 & 91.01 & 91.70 & 91.71\\
         0.0001 & Sigmoid & Adam  & 72.25 & 73.55 & 65.15 & 66.89\\
         0.0001 & Softmax & Adam & 32.83 & 33.33 & 32.83 & 49.42\\
         \midrule
-        0.0001 & ReLu & Adam  & 91.70 & 91.01 & 91.70 & 91.71\\
-        \textbf{0.0001} & \textbf{ReLu} & \textbf{SGD} & \textbf{92.97} & \textbf{93.32} & \textbf{92.72} & \textbf{92.98}\\
+        0.0001 & ReLU & Adam  & 91.70 & 91.01 & 91.70 & 91.71\\
+        \textbf{0.0001} & \textbf{ReLU} & \textbf{SGD} & \textbf{92.97} & \textbf{93.32} & \textbf{92.72} & \textbf{92.98}\\
         \bottomrule
     \end{tabular}
     \label{Ringkasan Hasil Percobaan}
 \end{table}
 
 
-    Dari hasil evaluasi menunjukkan bahwa parameter terbaik yang diperoleh dengan skenario \textit{learning rate} 0.0001, fungsi aktivasi ReLu dan \textit{optimizer} SGD. Dengan nilai rata-rata akurasi sebesar 92.72\% \textit{precision} sebesar 93.32\%, \textit{recall} sebesar 92.72\%, dan \textit{F1-Score} sebesar 92.98\%.
+    Dari hasil evaluasi menunjukkan bahwa parameter terbaik yang diperoleh dengan skenario \textit{learning rate} 0.0001, fungsi aktivasi ReLU dan \textit{optimizer} SGD. Dengan nilai rata-rata akurasi sebesar 92.72\% \textit{precision} sebesar 93.32\%, \textit{recall} sebesar 92.72\%, dan \textit{F1-Score} sebesar 92.98\%.
 
 
 \section{Analisis dan Evaluasi}
     \subsection{Analisis Akurasi dan \textit{Loss} Model Terbaik}
 
-    Dari pengujian parameter yang telah dilakukan di peroleh model terbaik dengan \textit{learning rate} sebesar 0.0001, \textit{activation} ReLu dan \textit{optimizer} SGD. Dari kelima \textit{KFold} yang ditetapkan diperoleh model terbaik pada \textit{KFold} pertama dengan akurasi \textit{training} sebesar 92.85\%, validasi sebesar 90.74\% dan test sebesar 94.78\%. Sementara untuk hasil evaluasi matriks diperoleh \textit{precision} sebesar 94.94\%, \textit{recall} sebesar 94.78\%, dan \textit{F1-Score} sebesar 94.78\%
+    Dari pengujian parameter yang telah dilakukan di peroleh model terbaik dengan \textit{learning rate} sebesar 0.0001, \textit{activation} ReLU dan \textit{optimizer} SGD. Dari kelima \textit{KFold} yang ditetapkan diperoleh model terbaik pada \textit{KFold} pertama dengan akurasi \textit{training} sebesar 92.85\%, validasi sebesar 90.74\% dan test sebesar 94.78\%. Sementara untuk hasil evaluasi matriks diperoleh \textit{precision} sebesar 94.94\%, \textit{recall} sebesar 94.78\%, dan \textit{F1-Score} sebesar 94.78\%
     
     
     
