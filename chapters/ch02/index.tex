@@ -441,18 +441,19 @@
     \text{EAR} = \frac{1}{2}(\text{EAR}_{\text{left}} + \text{EAR}_{\text{right}})
     \end{equation}
 
-    \vec{p}_2
 
     \textbf{Keterangan:}
     \begin{align*}
         \vec{p}_i & : \text{Vektor posisi dari titik ke-i}\\
-        \|\vec{p}_2 - \vec{p}_6\| & : \text{Jarak antara titik $p_2$ dan $p_6$}\\
-        \|\vec{p}_3 - \vec{p}_5\| & : \text{Jarak antara titik $p_3$ dan $p_5$}\\
-        \|\vec{p}_1 - \vec{p}_4\| & : \text{Jarak antara titik $p_1$ dan $p_4$}\\
+        \|\vec{p}_2 - \vec{p}_6\| & : \text{Jarak antara titik vec{p}_2 dan vec{p}_6}\\
+        \|\vec{p}_3 - \vec{p}_5\| & : \text{Jarak antara titik vec{p}_3 dan vec{p}_5}\\
+        \|\vec{p}_1 - \vec{p}_4\| & : \text{Jarak antara titik vec{p}_1 dan vec{p}_4}\\
 
     \end{align*}
 
-    Pada persamaan EAR dijelaskan diatas, di mana P1 hingga P6 mewakili lokasi \textit{landmark 2D} pada retina. P2, P3, P5, dan P6 digunakan untuk mengukur tinggi mata, sedangkan P1 dan P4 digunakan untuk mengukur lebar mata. Saat mata tertutup, nilai EAR dengan cepat turun hingga hampir nol, berbeda dengan saat mata terbuka, yang nilai EARnya tetap konstan. Hal ini digambarkan pada Gambar \ref{Ilustrasi Perhitungan Nilai EAR} berikut.
+    Pada persamaan EAR dijelaskan diatas, di mana \vec{p}_1 hingga \vec{p}_6 mewakili lokasi
+     \textit{landmark 2D} pada retina. \vec{p}_2, \vec{p}_3, \vec{p}_5, dan \vec{p}_6 digunakan 
+     untuk mengukur tinggi mata, sedangkan \vec{p}_1 dan \vec{p}_4 digunakan untuk mengukur lebar mata. Saat mata tertutup, nilai EAR dengan cepat turun hingga hampir nol, berbeda dengan saat mata terbuka, yang nilai EARnya tetap konstan. Hal ini digambarkan pada Gambar \ref{Ilustrasi Perhitungan Nilai EAR} berikut.
 
     \begin{figure}[H]
       \centering
@@ -501,11 +502,13 @@ wilayah tersebut. MAR diukur dengan membagi vertikal jarak antara bibir atas dan
 
       \textbf{Keterangan:}
     \begin{align*}
-         p_i & : \text{Vektor posisi dari titik ke-i}\\
-        \|p_2 - p_8\| & : \text{Jarak antara titik $p_2$ dan $p_8$}\\
-        \|p_3 - p_7\| & : \text{Jarak antara titik $p_3$ dan $p_7$}\\
-        \|p_4 - p_6\| & : \text{Jarak antara titik $p_4$ dan $p_6$}\\
-        \|p_5 - p_1\| & : \text{Jarak antara titik $p_5$ dan $p_1$}\\
+        \vec{p}_i & : \text{Vektor posisi dari titik ke-i}\\
+
+        \|vec{p}_2 - vec{p}_8\| & : \text{Jarak antara titik vec{p}_2 dan vec{p}_8}\\
+        \|vec{p}_3 - vec{p}_7\| & : \text{Jarak antara titik vec{p}_3 dan vec{p}_7}\\
+        \|vec{p}_4 - vec{p}_6\| & : \text{Jarak antara titik vec{p}_4 dan vec{p}_6}\\
+        \|vec{p}_5 - vec{p}_1\| & : \text{Jarak antara titik vec{p}_5 dan vec{p}_1}\\
+
     \end{align*}
 
 
