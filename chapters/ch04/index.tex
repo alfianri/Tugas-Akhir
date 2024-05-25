@@ -851,7 +851,7 @@
     tidak selalu mengalami peningkatan akurasi. 
 
     Pada fungsi aktivasi \textit{softmax} memiliki akurasi rata-rata untuk \textit{training} sebesar 33.21\%, validasi sebesar 32.83\% dan test sebesar 32.83\%. Hasil fungsi aktivasi \textit{sofmaxt} tidak mengalami perubahan yang begitu besar dari penggunaan \textit{learning rate} 0.0001, 0.001, 0.01, Sehingga dapat disimpulkan pengaruh \textit{learning rate} untuk \textit{softmax }tidak cukup berpengaruh.
-t
+
 
 
     \begin{table}[H]
@@ -946,7 +946,17 @@ t
     \end{table}
 
 
-    Setelah dilakukan pengujian \textit{optimizer} dan membandingkan hasil \textit{Stochastic Gradient Descent} (SGD) dan \textit{Adaptive Moment Estimation} (Adam). Pada Adam diperoleh rata-rata akurasi \textit{training} sebesar 92.79\%, validasi sebesar 88.03\% dan test sebesar 91.70\%. Jika dibandingkan dengan SGD yaitu \textit{training} sebesar 91.74\%, validasi sebesar 91.84\% dan test sebesar 92.97\%. Pada akurasi \textit{training} Adam lebih unggul dibandingkan dengan SGD sebesar 1.05\% namun SGD lebih stabil dan konsisten pada setiap iterasi \textit{KFold} dan akurasi validasi dan test pada SGD juga lebih tinggi dari pada Adam.
+    Setelah dilakukan pengujian \textit{optimizer} dan membandingkan 
+    hasil \textit{Stochastic Gradient Descent} (SGD) 
+     \textit{Adaptive Moment Estimation} (Adam). 
+     Pada Adam diperoleh rata-rata akurasi \textit{training} 
+     sebesar 92.79\%, validasi sebesar 88.03\% dan test sebesar 91.70\%. 
+     Jika dibandingkan dengan SGD yaitu \textit{training} sebesar 91.74\%, 
+     validasi sebesar 91.84\% dan test sebesar 92.97\%. Pada 
+      \textit{training} Adam lebih unggul dibandingkan dengan 
+       sebesar 1.05\% namun SGD lebih stabil dan konsisten pada 
+        iterasi \textit{KFold} dan akurasi validasi dan test pada SGD
+         juga lebih tinggi dari pada Adam.
     
 
         \begin{table}[H]
@@ -1025,11 +1035,7 @@ t
 \section{Analisis dan Evaluasi}
     \subsection{Analisis Akurasi dan \textit{Loss} Model Terbaik}
 
-    Dari pengujian parameter yang telah dilakukan di peroleh model terbaik dengan \textit{learning rate} sebesar 0.0001, \textit{activation} ReLU dan \textit{optimizer} SGD. Dari kelima \textit{KFold} yang ditetapkan diperoleh model terbaik pada \textit{KFold} pertama dengan akurasi \textit{training} sebesar 92.85\%, validasi sebesar 90.74\% dan test sebesar 94.78\%. Sementara untuk hasil evaluasi matriks diperoleh \textit{precision} sebesar 94.94\%, \textit{recall} sebesar 94.78\%, dan \textit{F1-Score} sebesar 94.78\%
-    
-    
-    
-    dapat di lihat pada Tabel \ref{Model Terbaik} berikut.
+    Dari pengujian parameter yang telah dilakukan di peroleh model terbaik dengan \textit{learning rate} sebesar 0.0001, \textit{activation} ReLU dan \textit{optimizer} SGD. Dari kelima \textit{KFold} yang ditetapkan diperoleh model terbaik pada \textit{KFold} pertama dengan akurasi \textit{training} sebesar 92.85\%, validasi sebesar 90.74\% dan test sebesar 94.78\%. Sementara untuk hasil evaluasi matriks diperoleh \textit{precision} sebesar 94.94\%, \textit{recall} sebesar 94.78\%, dan \textit{F1-Score} sebesar 94.78\% dapat di lihat pada Tabel \ref{Model Terbaik} berikut.
 
     \begin{table}[H]
         \centering
