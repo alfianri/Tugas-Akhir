@@ -101,12 +101,12 @@
     
     Proses klasifikasi secara umum dimulai dengan eksplorasi data video yang berfokus pada fitur-fitur video yang relevan. Tahap selanjutnya adalah praproses awal, yang meliputi seleksi fitur, penentuan nilai EAR (\textit{Eye Aspect Ratio}) dan MAR \textit{(Mouth Aspect Ratio}), dan konversi data video menjadi data gambar. Sebelum memasuki tahap klasifikasi menggunakan CNN \textit{(Convolutional Neural Network}), data terlebih dahulu menjalani praproses kedua, yaitu proses augmentasi data dan melakukan pembagian data menjadi data latih (\textit{training}) dan set data uji (\textit{testing}).
 
-    Pada tahap klasifikasi, model akan menghasilkan metrik evaluasi seperti akurasi,\textit{ precision}, \textit{recall}, dan \textit{f1-score}. Hasil evaluasi ini kemudian dianalisis dan dievaluasi. Jika hasil evaluasi telah memenuhi kriteria yang ditetapkan, maka proses klasifikasi selesai. Namun, jika hasil evaluasi belum memenuhi kriteria, maka proses klasifikasi akan diulangi dengan kembali ke tahap praproses awal. Setiap tahap dalam proses klasifikasi digambarkan secara visual dalam Gambar \ref{flowchart}.
+    Pada tahap klasifikasi, model akan menghasilkan metrik akan seperti akurasi,\textit{ precision}, \textit{recall}, dan \textit{f1-Score}. Hasil ini kemudian dianalisis dan dievaluasi. Jika hasil evaluasi telah memenuhi kriteria yang ditetapkan, maka proses klasifikasi selesai. Namun, jika hasil evaluasi belum memenuhi kriteria, maka proses klasifikasi akan diulangi dengan kembali ke tahap praproses awal. Setiap tahap dalam proses klasifikasi digambarkan secara visual dalam Gambar \ref{flowchart} berikut.
 
 
     \begin{figure}[H]
       \centering
-      \includegraphics[width=0.6\textwidth]{figures/bab3/1flowchart.png}
+      \includegraphics[width=0.6\textwidth]{figures/bab3/fowchart.png}
       \caption{Gambaran Umum Sistem Klasifikasi}
       \label{flowchart}
       \medskip % spasi vertikal
@@ -142,11 +142,11 @@ Dalam penelitian ini, proses pelatihan CNN dilakukan dengan menggunakan layanan 
     
 \section{Penjabaran Langkah Penelitian}
 
-    Untuk memperjelas setiap langkah-langkah yang telah didefinisikan pada Gambar \ref{Diagram Alir Penelitian}. Berikut ini akan dijabarkan secara rinci tahapan-tahapan yang dilakukan dalam penelitian ini.
+    Untuk memperjelas setiap langkah-langkah yang telah didefinisikan pada Gambar \ref{Diagram Alir Penelitian}, berikut ini akan dijabarkan secara rinci tahapan-tahapan yang dilakukan dalam penelitian ini.
     
 \subsection{Studi literatur}
 
-    Langkah awal penelitian ini melibatkan pengumplan literatur untuk menghimpun informasi, referensi, konsep dasar, dan pengetahuan yang menjadi dasar penelitian. Proses ini mencakup pencarian dan pembacaan berbagai sumber seperti buku, jurnal, dan artikel yang terkait dengan penelitian ini. Selain itu, dilakukan analisis menyeluruh terhadap penelitian-penelitian sebelumnya untuk memahami berbagai perkembangan penelitian dibidang yang sama.
+    Langkah awal penelitian ini melibatkan pengumpulan literatur untuk menghimpun informasi, referensi, konsep dasar, dan pengetahuan yang menjadi dasar penelitian. Proses ini mencakup pencarian dan pembacaan berbagai sumber seperti buku, jurnal, dan artikel yang terkait dengan penelitian ini. Selain itu, dilakukan analisis menyeluruh terhadap penelitian-penelitian sebelumnya untuk memahami berbagai perkembangan penelitian dibidang yang sama.
 
     
 \subsection{Data}
@@ -160,9 +160,9 @@ Dalam penelitian ini, proses pelatihan CNN dilakukan dengan menggunakan layanan 
         \item Video diambil dalam kondisi pencahayaan yang nyata dan bervariasi.
         \item Kamera dipasang di bawah kaca spion depan mobil dan \textit{dashboard} mobil. 
         \item  Setiap peserta memiliki tiga/empat video dan setiap video berisi kondisi mulut yang berbeda seperti normal berbicara/menyanyi, dan menguap. 
-        \item Dataset ini menyediakan 316 video yang terdiri dari pengemudi pria dan 
+        \item Dataset ini menyediakan 319 video yang terdiri dari pengemudi pria dan 
         pengemudi pria dan wanita, dengan dan tanpa kacamata, dari etnis yang berbeda.
-        \item Situasi: mengemudi normal (tidak berbicara), berbicara atau bernyanyi saat mengemudi, dan menguap menguap saat mengemudi.
+        \item Situasi: mengemudi normal (tidak berbicara), berbicara atau bernyanyi saat mengemudi, dan menguap saat mengemudi.
 
 
 
@@ -184,11 +184,11 @@ Dalam penelitian ini, proses pelatihan CNN dilakukan dengan menggunakan layanan 
     
 \subsection{\textit{Preprocessing }Data}
    
-    Proses ini terkait dengan ekstraksi data, augmentasi data, pembagian data, ekstraksi fitur citra, dan klasifikasi citra. Tujuannya adalah untuk mencapai efisiensi yang baik dalam pelatihan model, baik dari segi akurasi maupun waktu, sehingga dapat meningkatkan kualitas dan kinerja model, serta memastikan keakuratan hasil.
+    Proses ini terkait dengan ekstraksi data, augmentasi data, pembagian data, ekstraksi fitur citra, dan klasifikasi citra. Tujuannya adalah untuk mencapai efisiensi yang baik dalam pelatihan model, baik dari segi akurasi maupun waktu kemudian akan meningkatkan kualitas dan kinerja model, serta memastikan keakuratan hasil.
     
   
 \subsubsection{Ekstraksi Data}
-    Penelitian ini menggunakan data berformat video (.avi) dengan ukuran 640 $x$ 480 piksel dengan resolusi 30 FPS. Sehingga perlu dilakukan  ekstrak video ke dalam bentuk gambar (.jpg). Eksraksi video ke gambar merupakan langkah penting dalam proses deteksi kantuk. Video diubah menjadi bingkai/gambar, kemudian dilakukan klasifikasi berdasarkan ekstraksi untuk daerah mata dan mulut. Penelitian ini menggunakan \textit{library} Dlib untuk detektor wajah dan 68 \textit{facial landmark predictors} untuk mata dan mulut. Proses ini melibatkan konversi setiap \textit{frame} video menjadi gambar langsung di kelompokkan berdasarkan kelasnya. Nilai EAR (\textit{Eye Aspect Ratio}) dan MAR \textit{(Mouth Aspect Ratio}) akan digunakan dalam klasifikasi pada setiap \textit{frame}.
+    Penelitian ini menggunakan data berformat video (.avi) dengan ukuran 640 $x$ 480 piksel dengan resolusi 30 FPS. Kemudian akan dilakukan  ekstrak video ke dalam bentuk gambar (.jpg). Eksraksi video ke gambar merupakan langkah penting dalam proses deteksi kantuk. Video diubah menjadi bingkai/gambar, kemudian dilakukan klasifikasi berdasarkan ekstraksi untuk daerah mata dan mulut. Penelitian ini menggunakan \textit{library} Dlib untuk detektor wajah dan 68 \textit{facial landmark predictors} untuk mata dan mulut. Proses ini melibatkan konversi setiap \textit{frame} video menjadi gambar langsung di kelompokkan berdasarkan kelasnya. Nilai EAR (\textit{Eye Aspect Ratio}) dan MAR \textit{(Mouth Aspect Ratio}) akan digunakan dalam klasifikasi pada setiap \textit{frame}.
     
     \begin{enumerate}
         \item     \textit{\textbf{Eye Aspect Ratio (EAR)}} digunakan untuk mengukur keterbukaan mata. EAR dihitung dengan menggunakan rasio jarak antara beberapa\textit{ landmark }mata. Nilai EAR berkisar antara 0 dan 1. Nilai EAR yang mendekati nol menunjukkan bahwa mata tertutup, sedangkan nilai EAR yang mendekati satu menunjukkan bahwa mata terbuka lebar
@@ -196,7 +196,7 @@ Dalam penelitian ini, proses pelatihan CNN dilakukan dengan menggunakan layanan 
         \item \textbf{\textit{Mouth Aspect Ratio }}(MAR) digunakan untuk mengukur lebar bukaan mulut. MAR dihitung dengan menggunakan rasio jarak antara beberapa \textit{landmark} di sekitar mulut. Nilai MAR yang mendekati nol menunjukkan bahwa mulut tertutup rapat, sedangkan nilai MAR yang mendekati satu menunjukkan bahwa mulut terbuka lebar. 
     \end{enumerate}
 
-    Untuk lebih jelasnya terkait ekstraksi video ke dalam bentuk foto dengan EAR dan MAR, akan ditampilkan ilustrasi pada Gambar \ref{Alur Ekstraksi Video} berikut.
+    Ilustrasi proses terkait ekstraksi video ke dalam bentuk foto dengan EAR dan MAR, ditampilkan pada Gambar \ref{Alur Ekstraksi Video} berikut.
     
   
     \begin{figure}[H]
@@ -206,11 +206,9 @@ Dalam penelitian ini, proses pelatihan CNN dilakukan dengan menggunakan layanan 
     \end{figure}
 
     
-
     
-
-    
-    Setiap data yang diekstrak ke bentuk gambar akan dikelompokkan berdasarkan kelasnya, di mana setiap \textit{frame}nya akan dikelompokkan berdasarkan kelasnya. Kelas pada dataset digunakan berdasarkan kondisi mata dan mulut. Kedua parameter ini akan digunakan untuk mendeteksi kantuk. Mata yang terbuka ditandai dengan nilai EAR yang mengecil dan akan dikelompokkan pada kategori mengantuk untuk setiap \textit{frame}, sedangkan yang lainnya tidak mengantuk. Sementara itu, mulut digunakan untuk mengkategorikan keadaan menguap atau tidak. Nilai MAR yang semakin bertambah menandakan mulut terbuka dan dikategorikan sebagai menguap, sedangkan yang lainnya tidak menguap. Kombinasi dari kedua parameter tersebut akan menghasilkan beberapa kelas yang akan dilatih pada arsitektur CNN. Berikut ini adalah kategori kelas yang akan digunakan. Yang dapat dilihat pada Tabel \ref{Keterangan Anotasi Kelas} berikut.
+    Setiap data yang diekstrak ke bentuk gambar akan dikelompokkan, di mana setiap \textit{frame}nya akan dikelompokkan berdasarkan kelasnya. Kelas pada dataset digunakan berdasarkan kondisi mata dan mulut. Kedua parameter ini akan digunakan untuk mendeteksi kantuk. Mata terbuka yang ditandai dengan nilai EAR yang mengecil akan dikelompokkan pada kategori mengantuk untuk setiap \textit{frame}, 
+    sedangkan yang lainnya dikelompokkan pada kategori tidak mengantuk. Sementara itu, mulut digunakan untuk mengkategorikan keadaan menguap atau tidak. Nilai MAR yang semakin bertambah menandakan mulut terbuka dan dikategorikan sebagai menguap, sedangkan yang lainnya dikelompokkan pada kategori tidak menguap. Kombinasi dari kedua parameter tersebut akan menghasilkan beberapa kelas yang akan dilatih pada arsitektur CNN. Berikut ini adalah kategori kelas yang akan digunakan, yang dapat dilihat pada Tabel \ref{Keterangan Anotasi Kelas} berikut.
 
 
     
@@ -233,15 +231,18 @@ Dalam penelitian ini, proses pelatihan CNN dilakukan dengan menggunakan layanan 
 
 \subsubsection{Augmentasi Data}
 
-    Setelah video di ekstraksi ke bentuk gambar, perlu dilakukan proses pengolahan citra dari data yang sebelumnya diperoleh. Proses augmentasi adalah teknik yang sering digunakan untuk meningkatkan ukuran kumpulan data tanpa memerlukan pengambilan data tambahan. Teknik ini melibatkan pengambilan data selama tahap pengumpulan dan persiapan data sebelumnya. Salah satu pendekatannya melibatkan penerapan transformasi pada data gambar asli. Transformasi ini dapat dilakukan berupa rotasi, pemberian \textit{noise}, penskalaan, pemotongan, dan penambahan nilai piksel melalui modifikasi kecerahan. Semuanya ini dilakukan untuk meningkatkan ukuran dan variasi data. Teknik ini dilakukan dengan tujuan untuk mengurangi resiko \textit{overfitting}.
+   Augmentasi data dilakukan untuk memodifikasi data gambar sedemikian rupa sehingga, komputer menganggap gambar telah diubah sebagai gambar baru, meskipun manusia masih dapat mengenalinya sebagai gambar yang sama. Selanjutnya, hasil pemrosesan di evaluasi dan diuji dengan CNN pada tahap perbandingan model untuk menentukan model yang optimal untuk mengklasifikasikan dataset.
+   Setelah video di ekstraksi ke bentuk gambar, perlu dilakukan proses pengolahan citra dari data yang sebelumnya diperoleh. Proses augmentasi adalah teknik yang sering digunakan untuk meningkatkan ukuran kumpulan data tanpa memerlukan pengambilan data tambahan. Teknik ini melibatkan pengambilan data selama tahap pengumpulan dan persiapan data sebelumnya. 
+   
+   Salah satu pendekatannya melibatkan penerapan transformasi pada data gambar asli. Transformasi ini dapat dilakukan berupa rotasi, pemberian \textit{noise}, penskalaan, pemotongan, dan penambahan nilai piksel melalui modifikasi kecerahan. Semuanya ini dilakukan untuk meningkatkan ukuran dan variasi data. Teknik ini dilakukan dengan tujuan untuk mengurangi resiko \textit{overfitting}. \textit{Overfitting} merupakan fenomena dalam pembelajaran mesin di mana model menunjukkan performa yang sangat baik pada data pelatihan, namun performa tersebut menurun drastis ketika dihadapkan dengan data baru atau data uji. Hal ini terjadi karena model terlalu detail pada setiap pola dan \textit{noise} yang ada pada data pelatihan sehingga model tidak dapat melakukan generalisasi pada data baru.
 
 \subsubsection{\textit{Splitting} Data}
-   Data akan dipisahkan menjadi tiga kategori: data \textit{test}, data \textit{validation}, dan \textit{train}. Data \textit{train} ditujukan untuk memfasilitasi proses pembelajaran model selama fase pelatihan. Data \textit{validation} digunakan untuk memberikan informasi yang tidak bias kepada model. Selanjutnya, data ini secara konsisten digunakan selama percobaan, sehingga model sering terpapar dengan data tersebut. Hasil dari eksperimen yang dilakukan secara tidak langsung mempengaruhi model melalui data \textit{validation}. 
-   Data pengujian digunakan untuk menilai kinerja model dengan data baru yang belum pernah dilihat, yang digunakan hanya sekali pada eksperimen. Pembagian ini diimplementasikan dengan tujuan untuk mencapai distribusi yang seimbang dan untuk mengoptimalkan kemampuan generalisasi model.
+   Data akan dipisahkan menjadi tiga kategori: data \textit{test}, data \textit{validation}, dan \textit{train}. Data \textit{train} ditujukan untuk memfasilitasi proses pembelajaran model selama fase pelatihan. Data \textit{validation} digunakan untuk memberikan informasi yang tidak bias kepada model. Selanjutnya, data ini secara konsisten digunakan selama percobaan, sehingga model mempelajari pola dalam data tersebut. Hasil dari eksperimen yang dilakukan secara tidak langsung mempengaruhi model melalui data \textit{validation}. 
+   Data pengujian digunakan untuk menilai kinerja model dengan data baru yang belum pernah diproses, dimana data digunakan hanya sekali pada eksperimen. Pembagian data ini diimplementasikan dengan tujuan untuk mencapai distribusi yang seimbang dan untuk mengoptimalkan kemampuan generalisasi model.
 
 \subsection{Desain Arsitektur CNN}
 
-    Merancang struktur yang efektif dengan mengekstrak fitur penting dari data gambar disebut sebagai desain arsitektur \textit{Convolutional Neural Network} (CNN). CNN adalah tipe arsitektur yang umum digunakan dalam pemrosesan gambar dan berbagai aplikasi pengenalan pola. Tujuan dari klasifikasi ini adalah untuk menghasilkan luaran yang menunjukkan keadaan pengendara sesuai dengan kelas yang telah di tetapkan. Seperti mengantuk dan menguap, mengantuk dan tidak menguap, menguap tidak mengantuk.  Proses diilustrasikan pada Gambar \ref{Proses Convolusional Neural Network} berikut.
+    Merancang struktur yang efektif dengan mengekstrak fitur penting dari data gambar disebut sebagai desain arsitektur \textit{Convolutional Neural Network} (CNN). CNN adalah tipe arsitektur yang umum digunakan dalam pemrosesan gambar dan berbagai aplikasi pengenalan pola. Tujuan dari klasifikasi ini adalah untuk menghasilkan luaran yang menunjukkan keadaan pengendara sesuai dengan kelas yang telah di tetapkan. Seperti mengantuk dan menguap, mengantuk dan tidak menguap, menguap dan tidak mengantuk.  Alur kerja CNN diilustrasikan pada Gambar \ref{Proses Convolusional Neural Network} berikut.
  
      \begin{figure}[H]
       \centering
@@ -256,13 +257,18 @@ Dalam penelitian ini, proses pelatihan CNN dilakukan dengan menggunakan layanan 
       \end{minipage}
     \end{figure}
 
-    Proses pelatihan menggunakan data berlabel yang telah dipisahkan ke dalam kumpulan data \textit{train}, \textit{test}, dan \textit{validation}. Kemudian akan dilakukan \textit{tuning hyperparameter} seperti \textit{activation layer}, \textit{learning rate} dan \textit{optimizer}. Augmentasi data dilakukan untuk memodifikasi data gambar sedemikian rupa sehingga, meskipun komputer menganggap gambar telah diubah sebagai gambar baru, manusia masih dapat mengenalinya sebagai gambar yang sama. Selanjutnya, hasil pemrosesan di evaluasi dan diuji pada tahap perbandingan model untuk menentukan model yang optimal untuk mengklasifikasikan dataset.
+    
+
+    Proses pelatihan menggunakan data berlabel yang telah dipisahkan ke dalam kumpulan data \textit{train}, \textit{test}, dan \textit{validation}. Data yang berupa gambar akan melewati dua tahap penting dalam CNN, yaitu ekstraksi fitur dan klasifikasi. Pada tahap ekstraksi fitur data akan dikonvolusi menjadi sebuah matriks yang berukuran besar. Selanjutnya dilakukan proses \textit{maxpooling} untuk mengurangi dimensi dari fitur ektrasi data oleh layar konvolusi. Hal ini bertujuan untuk mengurangi komputasi dalam CNN
+    sehingga model lebih cepat dan efisien. Tahap terakhir akan dilakukan \textit{fully connected} yaitu informasi dari setiap fitur akan menentukan data tersebut dominan mirip pada salah satu kelas yang telah ditentukan sebelumnya.
+    
+    \textit{Tuning hyperparameter} diterapakan pada model seperti \textit{activation function}, \textit{learning rate} dan \textit{optimizer} untuk memperoleh model yang optimal. \textit{Activation function} berfungsi menentukan apakah sebuah neuron akan menjadi aktif atau tidak. \textit{Learning rate} mengatur seberapa besar perubahan yang diterapkan pada parameter model selama proses pelatihan, yang penting untuk memastikan konvergensi yang efisien tanpa melewatkan nilai optimal. \textit{Optimizer} digunakan untuk menemukan nilai terbaik dari parameter model dengan mengarahkan proses pembaruan bobot berdasarkan gradien \textit{error}. Kombinasi yang tepat dari \textit{hyperparameter} akan menentukan model yang dapat melakukan klasifikasi dengan baik.
+    
+ 
 
 \subsection{\textit{Traning} Data}
 
-    Setelah arsitektur CNN disesuaikan, penulis akan melatih model menggunakan data yang telah melalui tahap \textit{preprocessing}. Proses pelatihan melibatkan penyesuaian bobot dan \textit{bias} pada setiap lapisan CNN agar mampu mengenali citra dengan akurasi yang tinggi. Pada saat pelatihan di terapkan teknik \textit{early stopping} hal ini bertujuan untuk mencegah \textit{overfitting} dan mengoptimalkan waktu pelatihan. Teknik ini bekerja dengan menghentikan proses pelatihan lebih awal jika performa model pada data validasi tidak meningkat setelah sejumlah epoch tertentu.
-    
-    Untuk membuat model yang dapat mendeteksi kantuk serta dapat melakukan prediksi dengan efektif, dilakukan beberapa eksperimen yang saling berkaitan dan berhubungan satu sama lain.
+    Setelah arsitektur CNN telah disesuaikan, model akan dilatih menggunakan data yang telah melalui tahap \textit{preprocessing}. Proses pelatihan melibatkan penyesuaian bobot dan \textit{bias} pada setiap lapisan CNN agar mampu mengenali citra dengan akurasi yang tinggi. Pada saat pelatihan di terapkan teknik \textit{early stopping} hal ini bertujuan untuk mencegah \textit{overfitting} dan mengoptimalkan waktu pelatihan. Teknik ini bekerja dengan menghentikan proses pelatihan lebih awal jika performa model pada data validasi tidak meningkat setelah sejumlah \textit{epoch}. Satu siklus penuh melalui seluruh dataset selama proses pelatihan model disebut dengan \textit{epoch}. Pada satu \textit{epoch} setiap data digunakan sekali untuk memperbaharui parameter model. Untuk membuat model yang dapat mendeteksi kantuk serta dapat melakukan prediksi dengan efektif, dilakukan beberapa eksperimen yang saling berkaitan dan berhubungan satu sama lain.
 
      \begin{enumerate}
   
@@ -274,7 +280,7 @@ Dalam penelitian ini, proses pelatihan CNN dilakukan dengan menggunakan layanan 
 
             \begin{table}[h]
             \centering
-            \caption{Pengujian Parameter}
+            \caption{Pengujian \textit{hyperparameter}}
             \begin{tabular}{cccc}
                 \toprule
                 \textbf{} & \textbf{Parameter} \\
@@ -305,10 +311,6 @@ Dalam penelitian ini, proses pelatihan CNN dilakukan dengan menggunakan layanan 
 
 \section{Evaluasi Hasil}
 
-    Dalam penelitian ini, kinerja pengenalan atau klasifikasi diukur dengan menggunakan teknik yang telah banyak diterapkan dalam skenario penelitian serupa. Selain itu, pendekatan \textit{confusion matrix} juga diterapkan, seperti yang terlihat pada Gambar \ref{Confusion Matrix}, karena data yang digunakan adalah data berlabel. Pada tahap ini, Peneliti mengukur performa model CNN menggunakan \textit{confusion matrix} yang mencakup \textit{accuracy}, \textit{recall},\textit{ precision}, dan \textit{f-1 score}.
-
-    \textit{True Positive} (TP) menunjukkan jumlah gambar pengemudi yang mengantuk yang diidentifikasi dengan benar oleh model. Hal ini terjadi ketika model secara akurat menilai gambar pengemudi yang disediakan. Sebaliknya, \textit{False Positive} (FP) adalah jumlah data yang salah yang diklasifikasikan sebagai benar. \textit{False Negative} (FN) menunjukkan jumlah data yang benar yang salah diklasifikasikan sebagai salah. Hal ini terjadi ketika model gagal untuk secara akurat menilai gambar yang diberikan tentang pengemudi yang mengantuk, sehingga menghasilkan output yang tidak sesuai dengan input yang diberikan. Terakhir, \textit{True Negative} (TN) menunjukkan jumlah data yang sebenarnya salah yang berhasil diklasifikasikan oleh model.
-    
-    Keempat kriteria penilaian dalam \textit{confusion matrix }penelitian ini didasarkan pada kemampuan model dalam menilai setiap gambar berkendara yang telah diberi label sebelumnya. Semua prosedur eksperimental yang berhasil merupakan titik fokus utama dalam penyelidikan ini. Hasil dari setiap percobaan dibandingkan secara komprehensif untuk menyimpulkan analisis. Setiap eksperimen diteliti dan dinilai dengan cermat untuk menentukan potensinya dalam mencapai performa model tertinggi.
+    Dalam penelitian ini, kinerja pengenalan atau klasifikasi diukur dengan menggunakan teknik yang telah banyak diterapkan dalam skenario penelitian serupa. Seperti \textit{confusion matrix} yang dapat dilihat pada Gambar \ref{Confusion Matrix}, dimana data yang digunakan adalah data berlabel. Pada tahap ini, peneliti mengukur performa model CNN menggunakan \textit{confusion matrix} yang mencakup metriks \textit{accuracy}, \textit{recall},\textit{ precision}, dan \textit{F-1 Score}.
 
 

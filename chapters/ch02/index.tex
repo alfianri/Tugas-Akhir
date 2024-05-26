@@ -54,7 +54,7 @@
 
              2 
             & 
-            Ruben Florez, Facundo Palomino-Quispe, Roger Jesus Coaquira-Castillo, Julio Cesar, %Thuanne Paixão and Ana Beatriz Alvarez
+            Ruben Florez, Facundo Palomino-Quispe, Roger Jesus Coaquira-Castillo, Julio Cesar, Thuanne and Ana Beatriz
             & 
             \textit{A CNN-Based Approach for Driver Drowsiness Detection by Real-Time Eye State Identification}
             & 
@@ -168,12 +168,12 @@
     \textit{Computer Vision} diidentifikasi sebagai disiplin ilmu dengan seperangkat teknik yang bertujuan untuk memungkinkan komputer memahami konten gambar digital. Bidang multidisiplin ini sebagian besar dibangun di atas konsep pembelajaran mesin, yang menggabungkan algoritma pembelajaran yang terus berkembang. Tujuan utamanya adalah mengembangkan sistem otomatis yang mampu mengekstraksi informasi dari gambar digital yang diberikan.  Deskripsi mengenai \textit{computer vision}, seperti yang diilustrasikan pada Gambar \ref{Konsep Dasar Computer Vision} \cite{Guntara2023} berikut.
 
 
-    \begin{figure}[H]
-        \centering
-        \includegraphics[width=0.7\textwidth]{figures/bab2/computer vision.jpg}
-        \caption{Ilustrasi \textit{Computer Vision} \cite{ideas}}
-        \label{Konsep Dasar Computer Vision}
-    \end{figure}
+    % \begin{figure}[H]
+    %     \centering
+    %     \includegraphics[width=0.7\textwidth]{figures/bab2/computer vision.jpg}
+    %     \caption{Ilustrasi \textit{Computer Vision} \cite{ideas}}
+    %     \label{Konsep Dasar Computer Vision}
+    % \end{figure}
 
 
    
@@ -198,12 +198,12 @@
   Untuk pemahaman yang lebih mendalam mengenai perkembangan pada setiap tahap pemrosesan gambar digital, berikut representasi visual yang ditunjukkan pada Gambar \ref{Proses Dalam Pengolahan Citra Digital} berikut ini.
 
 
-    \begin{figure}[H]
-    \centering
-    \includegraphics[width=0.75\textwidth]{figures/bab2/Block-diagram.jpg}
-    \caption{Proses Pengolahan Citra Digital \cite{sathiya2017novel}}
-    \label{Proses Dalam Pengolahan Citra Digital}
-\end{figure}
+%     \begin{figure}[H]
+%     \centering
+%     \includegraphics[width=0.75\textwidth]{figures/bab2/Block-diagram.jpg}
+%     \caption{Proses Pengolahan Citra Digital \cite{sathiya2017novel}}
+%     \label{Proses Dalam Pengolahan Citra Digital}
+% \end{figure}
 
     
 
@@ -214,12 +214,12 @@
 
     Citra digital merupakan representasi gambar dua dimensi menggunakan satu set nilai digital tertentu, yang sering disebut sebagai piksel atau elemen gambar. Citra terdiri dari $m \times n$ piksel, di mana setiap piksel diwakili oleh $k$ bit. Sebuah piksel, dilambangkan dengan $k$-bit, memiliki $2^k$ corak berbeda dalam gambar skala abu-abu. Nilai piksel ini biasanya terdiri dari bilangan bulat dalam rentang 0 (mewakili piksel hitam) hingga $(2^k - 1)$ (mewakili piksel putih). Besaran nilai piksel ini memainkan peran penting dalam menentukan resolusi dan mempengaruhi kualitas gambar secara keseluruhan \cite{book}. Nilai yang menentukan intensitas gambar atau derajat skala abu-abu atau warna dalam suatu gambar dinyatakan sebagai fungsi dari intensitas gambar, dilambangkan dengan $f(x, y)$. Hal ini muncul dari representasi suatu gambar sebagai matriks dua dimensi, seperti yang digambarkan pada Gambar \ref{Sistem Koordinat Matematis Sebuah Citra} \cite{Andono2018} berikut.
 
-    \begin{figure}[H]
-      \centering
-      \includegraphics[width=0.85\textwidth]{figures/bab2/citra_digital.png}
-      \caption{Sistem Koordinat Matematis Sebuah Citra \cite{Kirana2021}}
-      \label{Sistem Koordinat Matematis Sebuah Citra}
-    \end{figure}
+    % \begin{figure}[H]
+    %   \centering
+    %   \includegraphics[width=0.85\textwidth]{figures/bab2/citra_digital.png}
+    %   \caption{Sistem Koordinat Matematis Sebuah Citra \cite{Kirana2021}}
+    %   \label{Sistem Koordinat Matematis Sebuah Citra}
+    % \end{figure}
 
 
 
@@ -240,12 +240,12 @@
     Augmentasi gambar digital bertujuan untuk memperluas jumlah kumpulan data yang tersedia. Hal ini dilakukan untuk meningkatkan keragaman data tanpa memerlukan proses akuisisi berulang, yang biasanya memakan waktu dan biaya mahal. Salah satu praktik umum dalam proses augmentasi citra digital melibatkan transformasi bentuk data awal yang diperoleh melalui proses akuisisi. Modifikasi yang potensial mencakup memutar gambar digital saat ini pada berbagai sudut, mengubah ruang warna, memperkenalkan \textit{noise}, serta menerjemahkan dan memotong gambar. Tujuannya adalah untuk mencegah \textit{overfitting}, di mana model secara berulang-ulang mengidentifikasi fitur yang sama selama tahap-tahap selanjutnya dari proses pelatihan. Pendekatan ini bertujuan untuk meningkatkan kinerja model ketika ditugaskan untuk mengenali data uji. Ilustrasi augmentasi gambar digital dapat dilihat pada Gambar \ref{Contoh Augmentasi Citra} berikut \cite{Shorten2019, shorten2019survey}.
 
     
-    \begin{figure}[H]
-      \centering
-      \includegraphics[width=0.85\textwidth]{figures/bab2/augmentation.jpg}
-      \caption{Contoh Augmentasi Citra \cite{info11020125}}
-      \label{Contoh Augmentasi Citra}
-    \end{figure}
+    % \begin{figure}[H]
+    %   \centering
+    %   \includegraphics[width=0.85\textwidth]{figures/bab2/augmentation.jpg}
+    %   \caption{Contoh Augmentasi Citra \cite{info11020125}}
+    %   \label{Contoh Augmentasi Citra}
+    % \end{figure}
 
 
     Untuk lebih detail terkait metode-metode augmentasi dijabarkan sebagai berikut
@@ -303,8 +303,8 @@
     %\scriptsize
     \begin{tabular}{
         >{\raggedright\arraybackslash}m{1.0cm} 
-        >{\centering\arraybackslash}m{3.0cm} 
-        >{\raggedright\arraybackslash}m{5.0cm}  
+        >{\centering\arraybackslash}m{3.5cm} 
+        >{\raggedright\arraybackslash}m{4.5cm}  
         >{\centering\arraybackslash}m{3.0cm}}
         \hline
         \textbf{Teknik} & \textbf{Matriks} & \textbf{Keterangan} & \textbf{Hasil} \\
@@ -335,6 +335,7 @@
         \end{bmatrix}\) &
         $s_x$ menunjukkan perubahan skala citra sepanjang sumbu $x$, sementara $s_y$ menggambarkan perubahan skala citra sepanjang sumbu $y$. &
         \includegraphics[width=2.0cm, height=2.0cm, keepaspectratio]{figures/bab2/zoom.png} \\
+        \\
         
         \textit{Shear} & 
         \(\begin{bmatrix}
@@ -353,6 +354,8 @@
         \end{bmatrix}\) &
         $\theta$ adalah besar sudut perputaran citra. &
         \includegraphics[width=2.0cm, height=2.0cm, keepaspectratio]{figures/bab2/rotasi} \\ 
+
+        \\
         \hline
     \end{tabular}
 \end{table}
@@ -364,16 +367,16 @@
 
 \subsubsection{\textit{Brightness} Dan \textit{Contrast}}
 
-    Praktik membuat gambar dan memodifikasi kecerahan dan kontras untuk setiap gambar baru dikenal sebagai meningkatkan nilai kecerahan dan kontras gambar. Karena dapat meningkatkan performa pengenalan gambar pada model, strategi augmentasi ini sering digunakan dalam penelitian terkait pembelajaran mesin \cite{mikolajczyk2018data}\cite{Yang2022}. Ada beberapa metode untuk menerapkan kedua modifikasi ini. Salah satu metode untuk meningkatkan tingkat kecerahan adalah dengan mengubah gambar RGB menjadi HSV, yang memisahkan tiga saluran warna (h, s, dan v). Saluran \textit{value} (v) nilainya berkisar antara $-50 < v < 50$ yang mengontrol kecerahan gambar, \textit{saturation} (S) mengukur intensitas atau kemurnian warna dan \textit{hue} (h) merepresentasikan jenis warna yang dirasakan manusia, seperti merah, hijau, biru, kuning, dll. Gambar segar dengan kecerahan yang diubah dihasilkan dengan mengubah saluran v yang dimodifikasi kembali menjadi RGB seperti Gambar \ref{Contoh Augmentasi Contrast} \cite{oza2020empirical}\cite{Stollnitz1996}.
+    Praktik membuat gambar dan memodifikasi kecerahan dan kontras untuk setiap gambar baru dikenal sebagai meningkatkan nilai kecerahan dan kontras gambar. Karena dapat meningkatkan performa pengenalan gambar pada model, strategi augmentasi ini sering digunakan dalam penelitian terkait pembelajaran mesin \cite{mikolajczyk2018data}\cite{Yang2022}. Ada beberapa metode untuk menerapkan kedua modifikasi ini. Salah satu metode untuk meningkatkan tingkat kecerahan adalah dengan mengubah gambar RGB menjadi HSV, yang memisahkan tiga saluran warna (h, s, dan v). Saluran \textit{value} (v) nilainya berkisar antara $-50 < v < 50$ yang mengontrol kecerahan gambar, \textit{saturation} (S) mengukur intensitas atau kemurnian warna dan \textit{hue} (h) merepresentasikan jenis warna yang dirasakan manusia, seperti merah, hijau, biru, kuning, dll. Gambar segar dengan kecerahan yang diubah dihasilkan dengan mengubah saluran v yang dimodifikasi kembali menjadi RGB seperti Gambar \ref{Contoh Augmentasi Contrast} \cite{oza2020empirical, Stollnitz1996}.
 
-    \begin{figure}[H]
-      \centering
-      \includegraphics[width=0.75\textwidth]{figures/bab2/Lighting-Transforms-Contrast-augmentation.jpg}
-      \caption{Contoh Augmentasi \textit{Brightness} dan\textit{ Contrast} \cite{anand}}
-      \label{Contoh Augmentasi Contrast}
+    % \begin{figure}[H]
+    %   \centering
+    %   \includegraphics[width=0.75\textwidth]{figures/bab2/Lighting-Transforms-Contrast-augmentation.jpg}
+    %   \caption{Contoh Augmentasi \textit{Brightness} dan\textit{ Contrast} \cite{anand}}
+    %   \label{Contoh Augmentasi Contrast}
 
     
-     \end{figure} 
+    %  \end{figure} 
     
     Berbagai teknik, termasuk penyesuaian kontras linier, mengubah skala nilai piksel individual, menggunakan metode berbasis histogram, dan teknik berbasis resonansi, dapat digunakan untuk mengubah nilai kontras gambar melalui augmentasi \cite{Bebis2021, Maragatham2015, szeliski2021computer}. Teknik sederhana yang dapat digunakan untuk mengontrol nilai kontras pada suatu gambar dapat dilakukan dengan Persamaan \ref{Augmentasi Nilai Kontras} sebagai berikut.
 
@@ -414,7 +417,7 @@
       \begin{align*}
         f(x) & : \text{Nilai probabilitas densitas fungsi (PDF) pada titik } x \\
         \sigma & : \text{Simpangan baku (standard deviation) distribusi} \\
-        \pi & : \text{Konstanta matematika pi dengan nilai } \pi \approx 3.14159\\
+        \pi & : \text{Konstanta matematika pi dengan nilai } \pi \approx 3.14\\
         \mu & : \text{Rata-rata (mean) distribusi} \\
         \exp & : \text{Fungsi eksponensial} \\
         x & : \text{Nilai variabel acak yang ingin dihitung probabilitasnya} \\
@@ -451,7 +454,7 @@
     \end{align*}
     
 
-    Pada persamaan EAR dijelaskan diatas, di mana \vec{p}_1 hingga \vec{p}_6 mewakili lokasi
+    Pada persamaan EAR dijelaskan diatas, di mana $\vec{p}_1$ hingga $\vec{p}_6$ mewakili lokasi
      \textit{landmark 2D} pada retina. $\vec{p}_2, \vec{p}_3, \vec{p}_5,$ dan $\vec{p}_6$ digunakan 
      untuk mengukur tinggi mata, sedangkan $\vec{p}_1$ dan $\vec{p}_4$ digunakan untuk mengukur lebar mata. 
      Saat mata tertutup, nilai EAR dengan cepat turun hingga hampir nol, berbeda dengan saat mata terbuka, 
@@ -503,15 +506,15 @@ wilayah tersebut. MAR diukur dengan membagi vertikal jarak antara bibir atas dan
 
 
       \textbf{Keterangan:}
+      
     \begin{align*}
-        \vec{p}_i & : \text{Vektor posisi dari titik ke-i}\\
-
-        % \|vec{p}_2 - vec{p}_8\| & : \text{Jarak antara titik vec{p}_2 dan vec{p}_8}\\
-        % \|vec{p}_3 - vec{p}_7\| & : \text{Jarak antara titik vec{p}_3 dan vec{p}_7}\\
-        % \|vec{p}_4 - vec{p}_6\| & : \text{Jarak antara titik vec{p}_4 dan vec{p}_6}\\
-        % \|vec{p}_5 - vec{p}_1\| & : \text{Jarak antara titik vec{p}_5 dan vec{p}_1}\\
-
+        \vec{p}_i & : \text{Vektor posisi dari titik ke-i} \\
+        \|\vec{p}_2 - \vec{p}_8\| & : \text{Jarak antara titik } \vec{p}_2 \text{ dan } \vec{p}_8 \\
+        \|\vec{p}_3 - \vec{p}_7\| & : \text{Jarak antara titik } \vec{p}_3 \text{ dan } \vec{p}_7 \\
+        \|\vec{p}_4 - \vec{p}_6\| & : \text{Jarak antara titik } \vec{p}_4 \text{ dan } \vec{p}_6 \\
+        \|\vec{p}_5 - \vec{p}_1\| & : \text{Jarak antara titik } \vec{p}_5 \text{ dan } \vec{p}_1 \\
     \end{align*}
+
 
 
     
@@ -528,7 +531,19 @@ wilayah tersebut. MAR diukur dengan membagi vertikal jarak antara bibir atas dan
     
     \end{figure}
 
-\subsection{\textit{Convolution Layer}}
+    Secara garis besar proses pada \textit{Convolutional Neural Network} (CNN) terbagi menjadi dua garis besar yaitu \textit{feature learning} dan \textit{classification}. Pada \textit{input layer} terdapat nilai piksel dan jumlah chanel dari gambar yang dimasukkan, Proses \textit{convolution} menghasilkan \textit{feature map} 
+    yang diperoleh dengan menerapkan \textit{filter} berupa matriks.  Di sini, Nilai \textit{feature map} diubah berdasarkan \textit{activation function} yang digunakan seperti ReLU, softmax dan lain-lain. Setelah melewati berbagai proses selanjutkan digunakan \textit{pooling layer} yang bertujuan untuk mengurangi resolusi gambar, namun tidak menghilangkan informasi penting yang dimiliki. Sehingga hal ini dapat mengurangi jumlah parameter dan mempercepat proses klasifikasi. 
+
+    Pada lapisan terakhir terdapat \textit{fully connected layer} dimana semua neuron dari lapisan sebelumnya terhubung pada neuron lapisan berikutnya. Lapisan yang terhubung pada \textit{fully connected layer} sebelumnya telah berubah berubah mejadi data satu dimensi yang disebut dengan \textit{flatten}. \textit{Layer}
+    menggunakan semua nilai dan fitur yang telah dipelajari untuk membuat sebuah keputusan sesuai dengan kelas yang telah kita defenisikan sebelumnya.
+
+
+\section{\textit{Layer}}
+
+Pada \textit{Convolutional Neural Network} (CNN) terdapat beberapa \textit{layer} atau lapisan yang disusun menjadi beberapa blok. \textit{Layer} pada setiap blok ini berfungsi untuk melakukan proses pengolahan data, untuk lebih detailnya dijelaskan pada subbab selanjutnya.
+
+
+\subsection{\textit{Convolution}}
 
     Dalam jaringan CNN, lapisan \textit{input} berfungsi sebagai tahap awal yang menerima gambar, sementara lapisan \textit{output} menghasilkan label hasil prediksi. Salah satu tahap penting dalam ekstraksi fitur adalah penggunaan \textit{convolution layer}, yang diposisikan di awal untuk menerima \textit{input} dalam bentuk gambar. \textit{Convolution} merupakan jenis operasi linear khusus dan biasanya menjadi lapisan
     pertama pada model CNN yang disebut sebagai \textit{convolution layer}. Operasi pada
@@ -537,23 +552,60 @@ wilayah tersebut. MAR diukur dengan membagi vertikal jarak antara bibir atas dan
     menjadi ukuran \textit{stride} yang telah ditetapkan.
     Operasi yang dilakukan pada lapisan ini mirip dengan operasi konvolusi, yang melibatkan penggabungan berbagai nilai piksel lokal melalui \textit{filter linier}. \textit{Filter} ini berfungsi sebagai reseptor atau penerima neuron. Lapisan yang mendasari arsitektur CNN dirancang untuk mengekstrak fitur atau informasi dari gambar yang diberikan. Berikut ilustrasi proses pergeseran pada \textit{convolution layer} yang di tujukan pada Gambar \ref{Ilustrasi Proses Pergeseran Filter Pada Convolutional Layer} berikut \cite{Dewi2018}.
 
-  \begin{figure}[H]
-      \centering
-      \includegraphics[width=0.8\textwidth]{figures/bab2/cnn.png}
-      \caption{Ilustrasi Proses Pergeseran \textit{Filter} \cite{Reynolds}}
-      \label{Ilustrasi Proses Pergeseran Filter Pada Convolutional Layer}
+ %  \begin{figure}[H]
+ %      \centering
+ %      \includegraphics[width=0.8\textwidth]{figures/bab2/cnn.png}
+ %      \caption{Ilustrasi Proses Pergeseran \textit{Filter} \cite{Reynolds}}
+ %      \label{Ilustrasi Proses Pergeseran Filter Pada Convolutional Layer}
     
- \end{figure}
-
-\subsection{\textit{Stride}}
-
-    \textit{Stride} berfungsi sebagai parameter yang menunjukkan sejauh mana \textit{filter} menggerakkan piksel gambar dalam arah horizontal dan vertikal. Saat ukuran langkah diatur ke satu piksel, \textit{filter} akan bergeser sebesar satu piksel di seluruh gambar. Ukuran langkah berbanding terbalik dengan tingkat informasi detail yang dapat diekstraksi dari suatu gambar, ukuran langkah yang lebih kecil memungkinkan penangkapan informasi yang lebih detail, sedangkan ukuran langkah yang lebih besar memberikan lebih sedikit detail \cite{Dewi2018}.
+ % \end{figure}
 
 
+\subsection{\textit{Maxpooling}}
 
-\subsection{\textit{Padding}}
+    Lapisan \textit{max pooling} bertanggung jawab untuk menangani matriks \textit{output} dari lapisan sebelumnya, mengurangi ukuran gambar sambil mempertahankan nilai fitur yang penting. Hal ini dilakukan dengan memilih nilai maksimum dari \textit{output} yang dihasilkan oleh lapisan sebelumnya. Pendekatan ini memungkinkan model untuk melakukan proses generalisasi dengan cepat \cite{Gholamalinezhad2020, Nagi2011MaxpoolingCN}. Ilustrasi dari proses \textit{max pooling} ditampilkan pada Gambar \ref{Proses Pada Max Pooling Layer} berikut.
 
-    Salah satu parameter dalam CNN adalah \textit{padding}, juga dikenal sebagai \textit{zero padding}, menentukan berapa banyak piksel dengan nilai nol yang ditambahkan ke kedua sisi gambar sebagai masukan. Untuk mengontrol dimensi keluaran di lapisan \textit{convolusi} atau peta fitur, \textit{padding} diterapkan. Untuk mengekstrak informasi tambahan, dimensi dimodifikasi untuk mencegah penurunan tajam dalam ukuran dimensi. Secara matematis, untuk menentukan ukuran dimensi keluaran atau peta fitur akhir dapat menggunakan Persamaan \ref{Rumus besaran feature map} \cite{hakim2018implementasi} berikut.
+
+    % \begin{figure}[H]
+    %   \centering
+    %   \includegraphics[width=0.75\textwidth]{figures/bab2/pool.png}
+    %   \caption{Proses Pada \textit{Max Pooling Layer} \cite{fiki}}
+    %   \label{Proses Pada Max Pooling Layer}
+
+    
+    % \end{figure}
+
+\subsection{\textit{Dropout}}
+
+    Banyak lapisan tersembunyi yang biasanya disertakan dalam model \textit{deep learning}, yang membuatnya lebih mudah untuk memahami interaksi yang kompleks antara \textit{input} dan \textit{output}. \textit{Overfitting} adalah masalah yang umum terjadi meskipun ada manfaatnya, terutama pada dataset yang kecil \cite{Srivastava2014}. Untuk mengatasi hal ini, banyak strategi yang telah dikembangkan salah satunya adalah \textit{dropout}. Selain mencegah \textit{overfitting}, lapisan \textit{dropout} secara efektif menggabungkan beberapa jaringan saraf yang terhubung. Hal ini dilakukan dengan menggabungkan lapisan tersembunyi dengan lapisan lain sambil menghapusnya secara bebas dan sesaat \cite{Srivastava2014}. Pada Gambar \ref{Proses Pada Dropout Layer} berikut menunjukkan proses \textit{dropout layer}.
+
+    % \begin{figure}[H]
+    %   \centering
+    %   \includegraphics[width=0.70\textwidth]{figures/bab2/drop out.jpg}
+    %   \caption{Proses Pada \textit{Dropout Layer} \cite{ida}}
+    %   \label{Proses Pada Dropout Layer}
+    
+    % \end{figure} 
+
+    
+\subsection{\textit{Fully Conected}}
+
+    Lapisan yang terhubung sepenuhnya, juga dikenal sebagai \textit{Multi-Layer Perceptron} (MLP), membangun koneksi antara semua neuron aktivasi di lapisan sebelumnya dan lapisan berikutnya. Lapisan ini mengubah peta fitur yang disajikan sebagai \textit{array} multidimensi menjadi vektor melalui proses perataan, memastikan bahwa setiap aktivasi dari lapisan sebelumnya terhubung secara efektif ke lapisan berikutnya. Umumnya digunakan dalam MLP untuk klasifikasi data, lapisan terhubung sepenuhnya berbeda dari lapisan \textit{convolutional} karena neuron-nya terhubung ke seluruh masukan, menyerupai struktur jaringan saraf manusia yang saling berhubungan. Terlepas dari perbedaan ini, kedua lapisan menjalankan operasi perkalian matriks titik dalam prosesnya \cite{Dewi2018}.
+
+    
+
+
+
+
+
+\section{\textit{Hyperparameter}}
+
+    \textit{Hyperparameter} dalam CNN merupakan parameter yang tidak secara langsung dipelajari oleh model selama proses \textit{training}. Parameter-parameter ini perlu ditentukan sebelum proses \textit{training} dan memiliki pengaruh signifikan terhadap performa akhir model. Pemilihan nilai \textit{hyperparameter} yang tepat merupakan langkah krusial dalam mengoptimalkan performa CNN.
+
+ \subsection{\textit{Padding}}
+
+
+    Salah satu parameter dalam CNN adalah \textit{padding}, juga dikenal sebagai \textit{zero padding}, menentukan berapa banyak piksel dengan nilai nol yang ditambahkan ke kedua sisi gambar sebagai masukan. Untuk mengontrol dimensi keluaran di lapisan konvolusi atau peta fitur, \textit{padding} diterapkan. Untuk mengekstrak informasi tambahan, dimensi dimodifikasi untuk mencegah penurunan tajam dalam ukuran dimensi. Secara matematis, untuk menentukan ukuran dimensi keluaran atau peta fitur akhir dapat menggunakan Persamaan \ref{Rumus besaran feature map} \cite{hakim2018implementasi} berikut.
     \begin{equation}
         \begin{aligned}
           o = \left( \frac{i + 2p - k}{s} \right) + 1
@@ -573,15 +625,18 @@ wilayah tersebut. MAR diukur dengan membagi vertikal jarak antara bibir atas dan
         
 
 
+\subsection{\textit{Stride}}
 
-\subsection{\textit{Fungsi Aktivasi}}
+    \textit{Stride} berfungsi sebagai parameter yang menunjukkan sejauh mana \textit{filter} menggerakkan piksel gambar dalam arah horizontal dan vertikal. Saat ukuran langkah diatur ke satu piksel, \textit{filter} akan bergeser sebesar satu piksel di seluruh gambar. Ukuran langkah berbanding terbalik dengan tingkat informasi detail yang dapat diekstraksi dari suatu gambar, ukuran langkah yang lebih kecil memungkinkan penangkapan informasi yang lebih detail, sedangkan ukuran langkah yang lebih besar memberikan lebih sedikit detail \cite{Dewi2018}.
 
-Fungsi aktivasi adalah sebuah fungsi yang menentukan apakah sebuah neuron akan menjadi aktif atau tidak. Ada banyak jenis fungsi aktivasi, namun pada penelitian ini hanya digunakan tiga jenis, yaitu \textit{Rectified Linear Unit} (ReLU), \textit{Sigmoid }dan \textit{Softmax}.
+\subsection{\textit{Activation Function}}
+
+\textit{Activation function} adalah sebuah fungsi yang menentukan apakah sebuah neuron akan menjadi aktif atau tidak. Ada banyak jenis \textit{activation function}, namun pada penelitian ini hanya digunakan tiga jenis, yaitu \textit{Rectified Linear Unit} (ReLU), \textit{sigmoid }dan \textit{softmax}.
 
 
 
 \subsubsection{\textit{Rectified Linear Unit}}
-    \textit{Rectified Linear Unit} (ReLU) adalah fungsi aktivasi yang mampu mengubah nilai negatif menjadi nilai yang lebih besar atau sama dengan nol. Secara matematis, ReLU diwakili oleh rumus dalam Persamaan \ref{Aktifasi Fungsi ReLU}, di mana variabel x mewakili \textit{neuron} \textit{input} dan dikenal sebagai fungsi \textit{ramp}. Jika \textit{input} menghasilkan nilai yang lebih besar dari nol, \textit{output} yang dihasilkan sama dengan \textit{input} yang diberikan. ReLU digunakan secara luas dan telah menunjukkan proses pelatihan yang lebih cepat untuk jaringan yang besar \cite{Dewi2018}.
+    \textit{Rectified Linear Unit} (ReLU) adalah \textit{activation function} yang mampu mengubah nilai negatif menjadi nilai yang lebih besar atau sama dengan nol. Secara matematis, ReLU diwakili oleh rumus dalam Persamaan \ref{Aktifasi Fungsi ReLU}, di mana variabel x mewakili \textit{neuron} \textit{input} dan dikenal sebagai fungsi \textit{ramp}. Jika \textit{input} menghasilkan nilai yang lebih besar dari nol, \textit{output} yang dihasilkan sama dengan \textit{input} yang diberikan. ReLU digunakan secara luas dan telah menunjukkan proses pelatihan yang lebih cepat untuk jaringan yang besar \cite{Dewi2018}.
 
 
     \begin{equation}
@@ -613,7 +668,7 @@ Fungsi aktivasi adalah sebuah fungsi yang menentukan apakah sebuah neuron akan m
 
 
 \subsubsection{\textit{Sigmoid}}
-    Fungsi aktivasi \textit{sigmoid}, juga dikenal sebagai fungsi logistik, adalah fungsi non-linear umum yang digunakan dalam jaringan saraf tiruan. Fungsi ini memetakan nilai \textit{input} menjadi rentang antara 0 dan 1, dan sering digunakan untuk memodelkan probabilitas atau tingkat kepastian. Secara matematis, fungsi aktivasi \textit{sigmoid} didefinisikan pada Persamaan  \ref{Aktifasi Fungsi Sigmoid} berikut.
+    \textit{Activation function} \textit{sigmoid}, juga dikenal sebagai fungsi logistik, adalah fungsi non-linear umum yang digunakan dalam jaringan saraf tiruan. Fungsi ini memetakan nilai \textit{input} menjadi rentang antara 0 dan 1, dan sering digunakan untuk memodelkan probabilitas atau tingkat kepastian. Secara matematis, \textit{activation function} \textit{sigmoid} di definisikan pada Persamaan  \ref{Aktifasi Fungsi Sigmoid} berikut.
 
     \begin{equation}
         \begin{aligned}
@@ -629,6 +684,7 @@ Fungsi aktivasi adalah sebuah fungsi yang menentukan apakah sebuah neuron akan m
         \end{align*}
 
         
+
 
 \subsection{\textit{Optimizer}}
 
@@ -691,37 +747,9 @@ Adam didesain untuk mengatasi kekurangan \textit{Stochastic Gradient Descent} (S
 
 
 
-\subsection{\textit{Dropout Layer}}
-
-    Banyak lapisan tersembunyi yang biasanya disertakan dalam model \textit{deep learning}, yang membuatnya lebih mudah untuk memahami interaksi yang kompleks antara \textit{input} dan \textit{output}. \textit{Overfitting} adalah masalah yang umum terjadi meskipun ada manfaatnya, terutama pada dataset yang kecil \cite{Srivastava2014}. Untuk mengatasi hal ini, banyak strategi yang telah dikembangkan; salah satunya adalah \textit{dropout}. Selain mencegah \textit{overfitting}, lapisan \textit{dropout} secara efektif menggabungkan beberapa jaringan saraf yang terhubung. Hal ini dilakukan dengan menggabungkan lapisan tersembunyi dengan lapisan lain sambil menghapusnya secara bebas dan sesaat \cite{Srivastava2014}. Pada Gambar \ref{Proses Pada Dropout Layer} berikut menunjukkan proses \textit{dropout layer}.
-
-    \begin{figure}[H]
-      \centering
-      \includegraphics[width=0.70\textwidth]{figures/bab2/drop out.jpg}
-      \caption{Proses Pada \textit{Dropout Layer} \cite{ida}}
-      \label{Proses Pada Dropout Layer}
-    
-    \end{figure} 
-    
-
-\subsection{\textit{Maxpooling Layer}}
-
-    Lapisan \textit{max pooling} bertanggung jawab untuk menangani matriks \textit{output} dari lapisan sebelumnya, mengurangi ukuran gambar sambil mempertahankan nilai fitur yang penting. Hal ini dilakukan dengan memilih nilai maksimum dari \textit{output} yang dihasilkan oleh lapisan sebelumnya. Pendekatan ini memungkinkan model untuk melakukan proses generalisasi dengan cepat \cite{Gholamalinezhad2020, Nagi2011MaxpoolingCN}. Ilustrasi dari proses \textit{max pooling} ditampilkan pada Gambar \ref{Proses Pada Max Pooling Layer} berikut.
 
 
-    \begin{figure}[H]
-      \centering
-      \includegraphics[width=0.75\textwidth]{figures/bab2/pool.png}
-      \caption{Proses Pada \textit{Max Pooling Layer} \cite{fiki}}
-      \label{Proses Pada Max Pooling Layer}
 
-    
-    \end{figure}
-
-
-\subsection{\textit{Fully Conected Layer}}
-
-    Lapisan yang terhubung sepenuhnya, juga dikenal sebagai \textit{Multi-Layer Perceptron} (MLP), membangun koneksi antara semua neuron aktivasi di lapisan sebelumnya dan lapisan berikutnya. Lapisan ini mengubah peta fitur yang disajikan sebagai \textit{array} multidimensi menjadi vektor melalui proses perataan, memastikan bahwa setiap aktivasi dari lapisan sebelumnya terhubung secara efektif ke lapisan berikutnya. Umumnya digunakan dalam MLP untuk klasifikasi data, lapisan terhubung sepenuhnya berbeda dari lapisan \textit{convolutional} karena neuron-nya terhubung ke seluruh masukan, menyerupai struktur jaringan saraf manusia yang saling berhubungan. Terlepas dari perbedaan ini, kedua lapisan menjalankan operasi perkalian matriks titik dalam prosesnya \cite{Dewi2018}.
 
     
 
@@ -729,17 +757,17 @@ Adam didesain untuk mengatasi kekurangan \textit{Stochastic Gradient Descent} (S
 
     Mengevaluasi efektivitas model penilaian melibatkan pemeriksaan parameter kinerja seperti \textit{accuracy}, \textit{precision}, \textit{recall}, dan \textit{F1-Score}. Perhitungan parameter ini memerlukan penggunaan \textit{confusion matrix}, seperti yang digambarkan pada Gambar \ref{Confusion Matrix} \cite{Nurhikmat2018}.
 
-    \begin{figure}[H]
-      \centering
-      \includegraphics[width=0.75\textwidth]{figures/bab2/confusion matriks.png}
-      \caption{\textit{Confusion Matrix}}
-      \label{Confusion Matrix}
+    % \begin{figure}[H]
+    %   \centering
+    %   \includegraphics[width=0.75\textwidth]{figures/bab2/confusion matriks.png}
+    %   \caption{\textit{Confusion Matrix}}
+    %   \label{Confusion Matrix}
     
-    \end{figure}
+    % \end{figure}
 
     Gambar 2.14 menampilkan empat nilai, yaitu "\textit{True Positive}" (TP), "\textit{False Negative}" (FN), "\textit{False Positive}" (FP), dan "\textit{True Negative}" (TN). Keempat nilai tersebut dapat digunakan untuk menghitung parameter-parameter seperti \textit{accuracy}, \textit{precision}, \textit{recall}, dan \textit{F1-Score} \cite{Nurhikmat2018}.
 
-     Akurasi digunakan untuk mengevaluasi sejauh mana model mampu melakukan klasifikasi dengan tepat dengan Persamaan \ref{Accuracy} berikut. 
+     \textit{Accuracy} digunakan untuk mengevaluasi sejauh mana model mampu melakukan klasifikasi dengan tepat dengan Persamaan \ref{Accuracy} berikut. 
      
     \begin{equation}
         \begin{aligned}

@@ -1,1 +1,130 @@
-\chapter{Instrumen Pengujian}
+\chapter{Perhitungan Manual}
+
+\section{Perhitungan Parameter CNN}
+
+\begin{table}[H]
+    \centering
+    \scriptsize
+    \caption{Desain Arsitektur}
+    \label{Desain arsitektur}
+    \renewcommand{\arraystretch}{1.5}
+    \begin{tabular}{p{1cm}p{4.5cm}p{4cm}p{2.5cm}}
+    \hline
+    \textbf{No} & \textbf{Layer (type)}   & \textbf{Output Shape} & \textbf{Parameters}  \\ \hline
+    
+    1 & conv2d                   & (64, 64, 32)   & 896     \\ 
+    2 & conv2d\_1                & (64, 64, 32)   & 9248    \\ 
+    3 & batch\_normalization     & (64, 64, 32)   & 128     \\ 
+    4 & max\_pooling2d           & (32, 32, 32)   & 0       \\ 
+    5 & conv2d\_2                & (32, 32, 64)   & 18496   \\ 
+    6 & conv2d\_3                & (32, 32, 64)   & 36928   \\ 
+    7 & batch\_normalization\_1  & (32, 32, 64)   & 256     \\ 
+    8 & max\_pooling2d\_1        & (16, 16, 64)   & 0       \\ 
+    9 & conv2d\_4                & (16, 16, 128)  & 73856   \\ 
+    10 & conv2d\_5                & (16, 16, 128)  & 147584  \\ 
+    11 & batch\_normalization\_2  & (16, 16, 128)  & 512     \\ 
+    12 & max\_pooling2d\_2        & (8, 8, 128)    & 0       \\ 
+    13 & dropout                  & (8, 8, 128)    & 0       \\ 
+    14 & flatten                  & (8192)         & 0       \\ 
+    15 & dense                    & (256)          & 2097408 \\ 
+    16 & dense\_1                 & (3)            & 771     \\ \hline
+    \end{tabular}
+\end{table}
+
+
+
+\begin{enumerate}
+    \item \textbf{conv2d}
+    \[
+    \text{Parameter} = (\text{ukuran filter} \times \text{ukuran filter} \times \text{jumlah channel input} + 1) \times \text{jumlah filter}
+    \]
+    \[
+    = (3 \times 3 \times 3 + 1) \times 32 = (27 + 1) \times 32 = 28 \times 32 = 896
+    \]
+
+    \item \textbf{conv2d\_1}
+    \[
+    \text{Parameter} = (3 \times 3 \times 32 + 1) \times 32 = (288 + 1) \times 32 = 289 \times 32 = 9248
+    \]
+
+    \item \textbf{batch\_normalization}
+    \[
+    \text{Parameter} = 2 \times \text{jumlah channel output} = 2 \times 32 = 64 + 64 = 128
+    \]
+
+    \item \textbf{max\_pooling2d}
+    \[
+    \text{Parameter} = 0
+    \]
+
+    \item \textbf{conv2d\_2}
+    \[
+    \text{Parameter} = (3 \times 3 \times 32 + 1) \times 64 = (288 + 1) \times 64 = 289 \times 64 = 18496
+    \]
+
+    \item \textbf{conv2d\_3}
+    \[
+    \text{Parameter} = (3 \times 3 \times 64 + 1) \times 64 = (576 + 1) \times 64 = 577 \times 64 = 36928
+    \]
+
+    \item \textbf{batch\_normalization\_1}
+    \[
+    \text{Parameter} = 2 \times \text{jumlah channel output} = 2 \times 64 = 128 + 128 = 256
+    \]
+
+    \item \textbf{max\_pooling2d\_1}
+    \[
+    \text{Parameter} = 0
+    \]
+
+    \item \textbf{conv2d\_4}
+    \[
+    \text{Parameter} = (3 \times 3 \times 64 + 1) \times 128 = (576 + 1) \times 128 = 577 \times 128 = 73856
+    \]
+
+    \item \textbf{conv2d\_5}
+    \[
+    \text{Parameter} = (3 \times 3 \times 128 + 1) \times 128 = (1152 + 1) \times 128 = 1153 \times 128 = 147584
+    \]
+
+    \item \textbf{batch\_normalization\_2}
+    \[
+    \text{Parameter} = 2 \times \text{jumlah channel output} = 2 \times 128 = 256 + 256 = 512
+    \]
+
+    \item \textbf{max\_pooling2d\_2}
+    \[
+    \text{Parameter} = 0
+    \]
+
+    \item \textbf{dropout}
+    \[
+    \text{Parameter} = 0
+    \]
+
+    \item \textbf{flatten}
+    \[
+    \text{Parameter} = 0
+    \]
+
+    \item \textbf{dense}
+    \[
+    \text{Parameter} = (\text{jumlah neuron input} + 1) \times \text{jumlah neuron output}
+    \]
+    \[
+    = (8192 + 1) \times 256 = 8193 \times 256 = 2097408
+    \]
+
+    \item \textbf{dense\_1}
+    \[
+    \text{Parameter} = (256 + 1) \times 3 = 257 \times 3 = 771
+    \]
+\end{enumerate}
+
+\subsection{Total Jumlah Parameter}
+
+\[
+896 + 9248 + 128 + 0 + 18496 + 36928 + 256 + 0 + 73856 + 147584 + 512 + 0 + 0 + 0 + 2097408 + 771 = 2373183
+\]
+
+Jadi, total jumlah parameter pada CNN ini adalah 2,373,183.
