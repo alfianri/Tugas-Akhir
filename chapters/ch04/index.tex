@@ -3,18 +3,27 @@
 
 \section{Ekplorasi Dataset}
 
-    Penelitian ini menggunakan data sekunder dalam format video (.avi). Jumlah data berjumlah 319 video yang terdiri dari pengemudi pria dan wanita dengan resolusi 640 x 480 piksel dan kecepatan tiga puluh \textit{frame} per detik (FPS). Dataset ini memiliki beberapa penjelesan terkait dengan kondisi video, yaitu:
+    Penelitian ini menggunakan data video dalam format video (.avi). Jumlah data berjumlah 319 video yang terdiri dari pengemudi pria berjmlah 163 video dan wanita berjumlah 156 video dengan resolusi 640 x 480 piksel dan kecepatan tiga puluh \textit{frame} per detik (FPS). Dataset ini memiliki beberapa penjelesan terkait dengan kondisi video, yaitu:
     
     \begin{enumerate}
-        \item \textit{Participant Number}: Variabel yang memberikan informasi terkait dengan nomor partisifasi dalam dataset.
+        \item \textit{Participant Number}: Variabel yang memberikan informasi terkait dengan nomor partisipasi dalam dataset.
         \item \textit{Action}: Memberikan informasi terkait hal yang terjadi pada pengemudi.
         \item \textit{Scarf}:  Memberikan informasi apakah pengendara menggunakan syal atau tidak.
         \item \textit{Background Movement}: Memberitahukan kondisi latar belakang video, bergerak atau tidak.
-        \item \textit{Lighting}: Memberikan informasi kondisi kencahayaan.
-        \item  \textit{Type of Glasses}: Jenis kacamata yang digunakan.
+
+         \item  \textit{Glasses}: Jenis kacamata yang digunakan.
+        
+        \item \textit{Lighting}: Memberikan informasi kondisi pencahayaan.
+        
         \item  \textit{Ethnicity}: Jenis etnis pengendara.
+
+        \item  \textit{Duration}: Durasi video pengendara dengan satuan detik
+        
         
     \end{enumerate}
+
+  
+
 
     Penjelesan dataset untuk setiap videonya disajikan dalam tabel untuk seperti Tabel \ref{Penjelasan Dataset} berikut.
 
@@ -23,48 +32,64 @@
         \caption{Penjelasan Dataset}
         \label{Penjelasan Dataset}
     \scriptsize
-        \begin{tabular}{p{0.5cm} p{1.2 cm} p{1.5 cm} p{1.1cm} p{1.3 cm} {0.5 cm} {1.0 cm} {0.8 cm}{0.7cm}}
+        \begin{tabular}{p{0.5cm} p{1.2 cm} p{1.2 cm} p{1.1cm} p{1.3 cm} {0.5 cm} {1.0 cm} {0.5 cm}{0.7cm}{0.6cm} }
         \hline
-        \textbf{No.} & \textbf{Participant Number} & \textbf{Action} & \textbf{Scarf} & \textbf{BG Movement} & \textbf{Glasses} & \textbf{Lighting} & \textbf{Ethnicity} \\
+        \textbf{No.} & \textbf{Participant Number} & \textbf{Action} & \textbf{Scarf} & \textbf{BG Movement} & \textbf{Glasses} & \textbf{Lighting} & \textbf{Ethnicity} & \textbf{Durasi} \\
         \hline
 
         \hline
-        1 & 1 & Talking & No & No & No Glasses & Sunny & Caucasian \\
-        2 & 1 & Yawning & No & No & Sun glasses & Sunny & Caucasian  \\
-        3 & 1 & Normal & No & Yes & Prescription & Sunny & Middle Eastern \\
-        4 & 1 & Yawning & No & No & Prescription & Sunny & Caucasian  \\
-        5 & 2 & Yawning & No & Yes & No Glasses & Sunny & Caucasian  \\
-        6 & 2 & Talking & No & No & No Glasses & Sunny & Caucasian \\
-        7 & 2 & Yawning & No & No & Sun glasses & Sunny & Caucasian  \\
-        8 & 3 & Normal & No & Yes & Prescription & Sunny & Middle Eastern \\
-        ... &... & ... & ... & ... & ... & ... & ...  \\
-        ... &... & ... & ... & ... & ... & ... & ...  \\
-        ... &... & ... & ... & ... & ... & ... & ...  \\
-        156 &142 & Yawning & No & No & No Glasses & Sunny & Middle Eastern \\
-        157 & 145 & Yawning & No & No & No Glasses & Sunny & Middle Eastern \\
-        158 &148 & Yawning & No & Yes & No Glasses & Sunny & Caucasian  \\
-        159 &151 & Yawning & No & No & No Glasses & Sunny & Caucasian \\
-        160 &154 & Yawning & No & Yes & No Glasses & Sunny & Middle Eastern \\
-        161 &157 & Yawning & No & Yes & No Glasses & Sunny & Middle Eastern \\
-        162 &160 & Yawning & No & Yes & Prescription & Sunny & Middle Eastern \\
+        1 & 1 & Talking & No & No & No Glasses & Sunny & Caucasian & 24 s\\
+        2 & 1 & Yawning & No & No & Sun glasses & Sunny & Caucasian & 14 s\\
+        3 & 1 & Normal & No & Yes & Prescription & Sunny & Middle Eastern & 16 s\\
+        4 & 1 & Yawning & No & No & Prescription & Sunny & Caucasian & 14 s\\
+        5 & 2 & Yawning & No & Yes & No Glasses & Sunny & Caucasian & 15 s \\
+        6 & 2 & Talking & No & No & No Glasses & Sunny & Caucasian & 18 s\\
+        7 & 2 & Yawning & No & No & Sun glasses & Sunny & Caucasian  & 14 s\\
+        8 & 3 & Normal & No & Yes & Prescription & Sunny & Middle Eastern & 15 s\\
+        ... &... & ... & ... & ... & ... & ... & ...& ...  \\
+        ... &... & ... & ... & ... & ... & ... & ... & ... \\
+        ... &... & ... & ... & ... & ... & ... & ... & ...  \\
+        156 &142 & Yawning & No & No & No Glasses & Sunny & Middle Eastern & 22 s\\
+        157 & 145 & Yawning & No & No & No Glasses & Sunny & Middle Eastern & 20 s\\
+        158 &148 & Yawning & No & Yes & No Glasses & Sunny & Caucasian  & 16 s\\
+        159 &151 & Yawning & No & No & No Glasses & Sunny & Caucasian& 19 s \\
+        160 &154 & Yawning & No & Yes & No Glasses & Sunny & Middle Eastern & 23 s\\
+        161 &157 & Yawning & No & Yes & No Glasses & Sunny & Middle Eastern & 37 s\\
+        162 &160 & Yawning & No & Yes & Prescription & Sunny & Middle Eastern & 18 s\\
         \hline
         \end{tabular}
         \end{table}
 
     Contoh dataset awal yang berupa video ditampilkan seperti Gambar \ref{Dataset Video} berikut.
 
+     \begin{figure}[H]
+         \centering
+             \centering
+             \includegraphics[width=\textwidth]{figures/bab4/data video.png}
+             \caption{a) \textit{Male}, b) \textit{Female}}
+             \label{Dataset Video}
+     \end{figure}
 
-           
-     % \begin{figure}[H]
-     %     \centering
-     %         \centering
-     %         \includegraphics[width=\textwidth]{figures/bab4/data video.png}
-     %         \caption{a) \textit{Male}, b) \textit{Female}}
-     %         \label{Dataset Video}
-     % \end{figure}
+
+    Data video diekstrak menjadi gambar dengan menggunakan nilai EAR dan MAR, setiap foto hasil ektraksi akan langsung otomatis masuk dalam folder sesuai dengan kelas yang telah ditentukan. Penentuan kelas sebuah gambar dikelompokkan pada kategori kelas tetentu di peroleh berdasarkan kondisi nilai EAR dan MAR seperti yang tertulis sebagai berikut.
+
+    \begin{enumerate}
+        \item    Jika nilai EAR pada \textit{frame} tersebut lebih kecil dari EAR \textit{threshold} dan MAR lebih besar MAR \textit{threshold} foto akan masuk dalam folder "mengantuk \& menguap".
+
+        \item Jika nilai EAR pada \textit{frame} tersebut lebih kecil dari EAR \textit{threshold} dan MAR lebih kecil
+    dari MAR \textit{threshold} foto akan masuk dalam folder "mengantuk \& tidak menguap "
+
+
+     \item  Jika nilai EAR pada \textit{frame} tersebut lebih besar dari EAR \textit{threshold} dan MAR lebih besar
+    dari MAR \textit{threshold} foto akan masuk dalam folder "menguap \& tidak mengantuk"
+
+
+    \end{enumerate}
+
+Nilai \textit{threshold} yang dimaksut merupakan nilai ambang batas  yang menentukan gambar tersebut mesuk dalam kategori mengantuk dan menguap.
+     
 
     
-
 
 \section{Data \textit{Preprocessing}}
 
@@ -82,7 +107,7 @@
      % \end{figure}
    
    
-   Pada penelitian ini, fokus diarahkan pada fitur \textit{'action}', hanya keadaan\textit{'yawning'} dan \textit{'yawning \& talking'}  yang dipilih. Kondisi ini dipilih karena pengambilan data difokuskan pada pengemudi yang mengantuk dan menguap. Data kemudian diekstrak ke dalam format gambar (.jpg) dan dilatih pada model \textit{Convolutional Neural Network} (CNN). Seleksi data dilakukan berdasarkan dua kategori, yaitu \textit{'male'}dan \textit{'female'}.
+   Pada penelitian ini, fokus diarahkan pada fitur \textit{'action}', hanya keadaan\textit{'yawning'} dan \textit{'yawning \& talking'}  yang dipilih. Kondisi ini dipilih karena pengambilan data difokuskan pada pengemudi yang mengantuk dan menguap. Data kemudian diekstrak ke dalam format gambar (.jpg) dan dilatih pada model \textit{Convolutional Neural Network} (CNN). Seleksi data dilakukan berdasarkan dua kategori, yaitu data \textit{'male'}dan \textit{'female'}.
 
 \subsubsection{\textit{Male}}
           Sebelum proses seleksi data, dilakukan eksplorasi data awal terkait fitur-fitur pada data. Hal ini bertujuan untuk memahami karakteristik data dan meninjau kembali kelayakan fitur-fitur yang telah dipilih. Contoh data dengan kategori \textit{'male}' ditampilkan pada Gambar \ref{male gambar1} berikut.
@@ -110,7 +135,7 @@
 
 
     Setelah dilakukan pemilihan fitur, di hasilkan jumlah data 
-    untuk \textit{male} sebanyak 56 video. Deskripsi untuk setiap data setelah sudah dilakukan pemilihan fitur untuk kategori \textit{male} ditampilkan pada Tabel \ref{Data male setelah dilakukan pemilihan fitur} berikut.
+    untuk kategori \textit{male} sebanyak 56 video. Deskripsi untuk setiap data setelah sudah dilakukan pemilihan fitur untuk kategori \textit{male} ditampilkan pada Tabel \ref{Data male setelah dilakukan pemilihan fitur} berikut.
 
  
     \begin{table}[H]
@@ -307,10 +332,9 @@
     \textit{Mouth Aspect Ratio} (MAR) digunakan untuk 
     mengekstrak video menjadi format gambar (.jpg). 
     Nilai EAR dan MAR pada video yang berjumlah 114 hasil seleksi 
-    fitur akan di visualisasikan menggunakan bantuan \textit{library} pada \textit{python} yaitu \textit{Open CV} dan \textit{Dlib}. Visualisasi ini bertujuan untuk melihat di angka berapa data tersebut mengantuk dan menguap. Keadaan mata kantuk dapat di lihat pada saat nilai EAR berada dibawah rata-rata dan menuju nilai nol. Keadaan menguap dapat dilihat pada saat nilai MAR berada diatas rata-rata. Namun untuk menentukan ambang batas nilai MAR dan EAR dapat mendeteksi kantuk dan menguap dengan baik, dilakukan beberapa  percobaan pada nilai EAR dan MAR. Percobaan ini menggunakan 10 video yang diambil secara acak mewakili kategori \textit{male} dan \textit{female}.
-    \textit{Eye Aspect Ratio} (EAR) dan \textit{Mouth Aspect Ratio} 
-    (MAR) yang memiliki nilai kesalahan terkecil akan digunakan 
-    untuk melakukan ekstraksi 114 video sebelumnya menjadi gambar.
+    fitur akan di visualisasikan menggunakan bantuan \textit{library} pada \textit{python} yaitu \textit{Open CV} dan \textit{Dlib}. Visualisasi ini bertujuan untuk melihat pola di angka berapa data tersebut mengantuk dan menguap. Keadaan mata kantuk dapat di lihat pada saat nilai EAR berada dibawah rata-rata dan menuju nilai nol. Keadaan menguap dapat dilihat pada saat nilai MAR berada diatas rata-rata. 
+    
+    Namun untuk menentukan ambang batas atau \textit{threshold} nilai MAR dan EAR dapat mendeteksi kantuk dan menguap dengan baik, dilakukan beberapa  percobaan pada nilai EAR dan MAR. Percobaan ini menggunakan 10 video yang diambil secara acak mewakili kategori \textit{male} dan \textit{female}. \textit{Eye Aspect Ratio} (EAR) dan \textit{Mouth Aspect Ratio} (MAR) yang memiliki nilai kesalahan terkecil akan digunakan untuk melakukan ekstraksi 114 video hasil seleksi fitur sebelumnya.
 
 \subsubsection{\textit{Eye Aspect Ratio} (EAR)}
 
@@ -322,7 +346,7 @@
          %     \label{Grafik Nilai EAR}
          % \end{figure}
 
-            Berdasarkan grafik pada Gambar \ref{Grafik Nilai EAR}, nilai EAR \textit{(Eye Aspect Ratio)} menunjukkan pola mengantuk berada dibawah rata-rata. Hal ini sesuai dengan teori yang menyatakan bahwa semakin kecil nilai EAR menunjukkan bahwa kondisi mata semakin tertutup. Namun perlu ditentukan ambang batas dimana nilai EAR menunjukkan mengantuk dengan kesalahan terkecil.
+            Berdasarkan grafik pada Gambar \ref{Grafik Nilai EAR}, nilai EAR \textit{(Eye Aspect Ratio)} menunjukkan pola mengantuk berada dibawah rata-rata. Hal ini sesuai dengan teori yang menyatakan bahwa semakin kecil nilai EAR menunjukkan bahwa kondisi mata semakin tertutup. Namun perlu ditentukan ambang batas \textit{threshold} dimana nilai EAR menunjukkan mengantuk dengan kesalahan terkecil.
             
             Pada penentuan ambang batas tersebut akan dicoba ekstrak video dengan rentang nilai di bawah rata-rata yaitu $0.18 - 0.30$ dan diatas rata-rata yaitu $0.32 - 0.40$. Pemilihan rentang tersebut berdasarkan pola hasil visualisai nilai EAR yang menunjukkan pada rentang tersebut terdapat pola mata mengantuk. Selanjutnya akan di ekstrak video menjadi gambar kedalam dua kelas yaitu kantuk dan tidak kantuk. Tujuan mencoba bebera nilai ini untuk melihat di angka berapa nilai EAR dapat menentukan kantuk dan tidak kantuk dengan nilai kesalahan terkecil menggunakan Persamaan \ref{rumus error}. Nilai EAR yang dicoba untuk melakukan ekstraksi video menjadi gambar dapat di lihat pada Tabel \ref{Penentuan Nilai EAR} berikut.\\
 
@@ -354,7 +378,7 @@
                 \label{Penentuan Nilai EAR}
             \end{table}
 
-           Ekstraksi video dilakukan cara membagi hasil setiap gambar menjadi dua kategori, yaitu kantuk dan tidak kantuk. Selanjutnya, dilakukan pemeriksaan kembali terhadap hasil ekstrak pada kategori kantuk untuk mengetahui jumlah sampel yang salah diklasifikasikan sebagai mengantuk, padahal tidak. Hal ini dilakukan secara empiris atau melihat langsung hasil ekstraksi.
+           Ekstraksi video dilakukan dengan cara membagi hasil setiap gambar menjadi dua kategori, yaitu kantuk dan tidak kantuk. Selanjutnya, dilakukan pemeriksaan kembali terhadap hasil ekstrak pada kategori kantuk untuk mengetahui jumlah sampel yang salah diklasifikasikan sebagai mengantuk, pada sesungguhnya tidak mengantuk. Hal ini dilakukan secara empiris atau melihat langsung hasil ekstraksi.
 
 
             Pada tabel \ref{Penentuan Nilai EAR} ditemukan bahwa nilai EAR yang berada di atas rata-rata memiliki nilai \textit{error} yang tinggi yaitu diatas angka $ 81\%$, hal ini menunjukkan bahwa nilai EAR diatas rata-rata tidak dapat mengelompokkan data dengan baik. Nilai \textit{error} di bawah rata-rata menunjukkan angkanya mengecil, hal ini menunjukkan semakin sedikitnya terjadi kesalahan prediksi. Visualisasi nilai EAR ditampilkan pada Gambar \ref{Eksperimen Penentuan Nilai EAR} berikut.
@@ -367,7 +391,7 @@
              % \end{figure}
 
 
-          Dari hasil visualisasi pada Gambar \ref{Eksperimen Penentuan Nilai EAR} menunjukkan pola bahwa semakin besar nilai EAR jumlah yang tereteksi kantuk juga semakin besar, namun nilai \textit{error }juga sangat kecil. Pola ini sesuai dengan teori yang menyatakan semakin kecil nilai EAR menunjukkan bahwa kondisi mata sedang tertutup atau mengantuk. Sehingga pada penentuan nilai EAR penelitian ini akan digunakan dengan nilai kesalahan atau \textit{error} yang terkecil yaitu dengan EAR sebesar 0.18 dengan \textit{error} sebesar $34.48\%$\\
+          Dari hasil visualisasi pada Gambar \ref{Eksperimen Penentuan Nilai EAR} menunjukkan pola bahwa semakin besar nilai EAR jumlah yang terdeteksi kantuk juga semakin besar, namun nilai \textit{error }juga sangat kecil. Pola ini sesuai dengan teori yang menyatakan semakin kecil nilai EAR menunjukkan bahwa kondisi mata sedang tertutup atau mengantuk. Sehingga pada penentuan nilai EAR penelitian ini akan digunakan dengan nilai kesalahan atau \textit{error} yang terkecil yaitu dengan EAR sebesar 0.18 dengan \textit{error} sebesar $34.48\%$\\
 
     
 
@@ -419,7 +443,7 @@
             \end{table}
 
 
-         %Visualisasi nilai MAR yang diuju dapat dilihat pada Gambar \ref{Eksperimen Penentuan Nilai MAR} berikut.
+         Visualisasi nilai MAR yang diuju dapat dilihat pada Gambar \ref{Eksperimen Penentuan Nilai MAR} berikut.
 
          % \begin{figure}[H]
          %       \centering
@@ -439,7 +463,42 @@
     
 \subsection{Ekstraksi Data}
 
-     Setelah diperoleh nilai \textit{Eye Aspect Ratio }(EAR) dan \textit{Mouth Aspect Ratio} (MAR) terbaik dengan nilai \textit{error} terkecil. Selanjutnya dilakukan ektraksi data secara keseluruhan dari bentuk bentuk video (.avi) ke format gambar (.jpg). Data di ekstrak menjadi tiga kelas yaitu "mengantuk dan menguap", "mengantuk tidak menguap", "menguap tidak mengantuk" hasil ekstrak data video menjadi gambar ditampilkan pada tabel \ref{Hasil Ekstraksi Data} berikut. 
+     Setelah diperoleh nilai \textit{Eye Aspect Ratio }(EAR) dan \textit{Mouth Aspect Ratio} (MAR) terbaik dengan nilai \textit{error} terkecil. Selanjutnya dilakukan ektraksi data secara keseluruhan dari bentuk bentuk video (.avi) ke format gambar (.jpg). Data di ekstrak menjadi tiga kelas yaitu "mengantuk \& menguap", "mengantuk \& tidak menguap", "menguap \& tidak mengantuk". Proses ekstrak video agar menghasilkan data dengan format gambar sesuai dengan kelas yang ditentukan dilakukan dengan kondisi seperti Gambar \ref{kondisi ear dan mar} berikut.
+
+
+              \begin{figure}[H]
+              \caption{Kondisi Penentuan Nilai EAR dan MAR}
+               \centering
+               \includegraphics[width=0.90\textwidth]{figures/bab4/threshold.png}
+               \caption{Pembagian Data}
+               \label{kondisi ear dan mar}
+
+         \end{figure}
+
+     
+   
+    
+    
+    Setiap foto hasil ektraksi akan langsung otomatis masuk kedalam folder sesuai dengan kelas yang telah ditentukan. Pada ektraksi nilai \textit{thereshold} untuk EAR sebesar 0.18 dan nilai \textit{thereshold} MAR sebesar 0.58 kedua nilai ini diperoleh dari nilai terbaik hasil percobaan sebelumnya.
+
+    \begin{enumerate}
+        \item    Jika nilai EAR pada \textit{frame} tersebut lebih kecil dari EAR \textit{threshold} dan MAR lebih besar MAR \textit{threshold} foto akan masuk dalam folder "mengantuk \& menguap".
+
+        \item Jika nilai EAR pada \textit{frame} tersebut lebih kecil dari EAR \textit{threshold} dan MAR lebih kecil
+    dari MAR \textit{threshold} foto akan masuk dalam folder "mengantuk \& tidak menguap "
+
+
+     \item  Jika nilai EAR pada \textit{frame} tersebut lebih besar dari EAR \textit{threshold} dan MAR lebih besar
+    dari MAR \textit{threshold} foto akan masuk dalam folder "menguap \& tidak mengantuk"
+
+    
+        
+
+    \end{enumerate}
+    
+
+     
+     Hasil ekstrak data video menjadi gambar ditampilkan pada tabel \ref{Hasil Ekstraksi Data} berikut. 
 
        \begin{table}[H]
             \centering
@@ -457,13 +516,35 @@
                 \label{Hasil Ekstraksi Data}
             \end{table}
 
-        Pada tabel \ref{Hasil Ekstraksi Data} Ditemukan jumlah hasil ekstraksi untuk kelas "mengantuk dan menguap" berjumlah 1038 gambar, "mengantuk dan tidak menguap" berjumlah 1304 gambar dan kelas yang terakhir "Menguap tidak mengantuk" berjumlah 2042 gambar. Hal menunjukkan bahwa hasil ekstraksi data pada setiap kelasnya tidak \textit{imbalance} hal ini dapat mempengaruhi hasil akurasi saat dilakukan klasifikasi dengan CNN. Selanjutnya, untuk memperkaya jumlah data dan mengatasi data \textit{imbalance} atau tidak seimbang pada setiap kelasnya dilakukan teknik augmentasi data. 
+        Pada tabel \ref{Hasil Ekstraksi Data} Ditemukan jumlah hasil ekstraksi untuk kelas "mengantuk dan menguap" berjumlah 1038 gambar, "mengantuk dan tidak menguap" berjumlah 1304 gambar dan kelas yang terakhir "menguap tidak mengantuk" berjumlah 2042 gambar. Kondisi ini menunjukkan bahwa hasil ekstraksi data pada setiap kelasnya \textit{imbalance}, hal ini dapat mempengaruhi hasil akurasi saat dilakukan klasifikasi dengan CNN. Selanjutnya, untuk memperkaya jumlah data dan mengatasi data \textit{imbalance} atau tidak seimbang pada setiap kelasnya dilakukan teknik augmentasi data. Augmentasi data yang diterapkan adalah seperti \textit{zoom}, \textit{grayscal}e dan \textit{shear} dengan metode \textit{oversampling} dengan konfigurasi seperti Tabel \ref{Augmentasi Data} berikut.
+
         
-        Augmentasi data yang diterapkan adalah seperti \textit{zoom}, \textit{grayscal}e dan \textit{shear} dengan metode \textit{oversampling}. Hal ini bertujuan untuk membuat distribusi kelas menjadi seimbang. Augmentasi dilakukan dengan melakukan satu perlakukan untuk satu data pada jumlah kelas tertinggi. Kemudian jumlah ini menjadi acuan untuk kelas lainnya dengan maksimal data yang di augmentasi sebanyak jumlah data pada jumlah data kelas tertinggi. Sehingga pada masukan model CNN data menjadi seimbang. Jumlah data sebelum dan sesudah dilakukan augmentasi ditampilkan pada Tabel \ref{Hasil Augmentasi Data} berikut.
+\begin{table}[H]
+    \centering
+    \caption{Penelitian Mengenai Deteksi Kantuk}
+    \label{Tabel Perbandingan Hasil}
+    \begin{tabular}{
+        >{\raggedright\arraybackslash}p{1.0cm} 
+        >{\raggedright\arraybackslash}p{2.5cm} 
+        >{\raggedright\arraybackslash}p{9.3cm}}
+        \hline
+        \textbf{No} & \textbf{Augmentasi} & \textbf{Tujuan} \\
+        \hline
+        1 & \textit{zoom} & Memperbesar ukuran gambar dengan skala tertentu, nilai skala \textit{zoom} yang digunakan sebesar 0.3 atau 30\% dari gambar asli \\
+        2 & \textit{sheer} & Melakukan transformasi yang memiringkan gambar ke arah tertentu, nilai \textit{shear} yang digunakan sebesar 90 derajat \\
+        3 & \textit{grayscle} & Mengubah  gambar menjadi warna abu-abu atau hitam putih \\
+        
+        \hline
+    \end{tabular}
+\end{table}
+
+     
+        
+        Hal ini bertujuan untuk membuat distribusi kelas menjadi seimbang. Augmentasi dilakukan dengan melakukan satu perlakukan untuk satu data pada jumlah kelas tertinggi. Kemudian jumlah ini menjadi acuan untuk kelas lainnya dengan maksimal data yang di augmentasi sebanyak jumlah data pada jumlah data kelas tertinggi. Sehingga pada masukan model CNN data menjadi seimbang. Jumlah data sebelum dan sesudah dilakukan augmentasi ditampilkan pada Tabel \ref{Hasil Augmentasi Data} berikut.
     
 
 
-            \begin{table}[h]
+            \begin{table}[H]
             \centering
             \caption{Hasil Ekstraksi Data}
             \begin{tabular}{ccc}
@@ -482,8 +563,7 @@
 
 
 
-        
-\newpage
+
     
     \subsection{Pembagian Data}
     
@@ -511,7 +591,7 @@
 
 
 
-    Dari keseluruhan data hasil ekstraksi dan augmentasi diperoleh jumlah data sebanyak 12.252 gambar, 10\% dari keselurahan data dibagi menjadi data \textit{test} yaitu sebanyak 1227 gambar. Pada data \textit{test} jumlah data untuk setiap kelasnya sama yaitu sebanyak 409 gambar. Untuk data 90\% dibagi berdasarkan jumlah \textit{K-fold} yang telah ditetapkan yaitu $k = 5$, sehingga diperoleh untuk setiap \textit{foldnya} berjumlah sebanyak 2205 gambar dengan jumlah data setiap data kelasnya seimbang.
+    Dari keseluruhan data hasil ekstraksi dan augmentasi diperoleh jumlah data sebanyak 12.252 gambar, 10\% dari keselurahan data dibagi menjadi data \textit{test} yaitu sebanyak 1227 gambar. Pada data \textit{test} jumlah data untuk setiap kelasnya sama yaitu sebanyak 409 gambar. Untuk data 90\% dibagi berdasarkan jumlah \textit{KFold} yang telah ditetapkan yaitu $k = 5$, sehingga diperoleh untuk setiap \textit{foldnya} berjumlah sebanyak 2205 gambar dengan jumlah data setiap data kelasnya seimbang.
     
 
 
@@ -575,7 +655,7 @@
 
 \section{Pengujian Model CNN}
 
-    Dalam rangka menguji model, beberapa skenario dijalankan untuk mengidentifikasi model terbaik. Penelitian ini menguji beberapa parameter, sebagaimana dijelaskan pada Tabel \ref{Pengujian Parameter}, dengan tujuan untuk menentukan parameter optimal.  Akurasi \textit{test} yang dimaksut pada pengujian ini adalah menggunakan data validasi, sedangkan fungsi aktivasi yang digunakan hanya pada \textit{hidden layer}.
+    Dalam rangka menguji model, beberapa skenario dijalankan untuk mengidentifikasi model terbaik. Penelitian ini menguji beberapa parameter, sebagaimana dijelaskan pada Tabel \ref{Pengujian Parameter}, dengan tujuan untuk menentukan parameter optimal.  Akurasi \textit{test} yang dimaksut pada pengujian ini adalah menggunakan data validasi, sedangkan \textit{activation function} yang digunakan hanya pada \textit{hidden layer}.
 
 
     
@@ -628,11 +708,11 @@
             \label{Pengujian Learning Rate 0.01 }
         \end{table}
 
-    Pengujian fungsi aktivasi dengan \textit{learning rate} 0.01 
+    Pengujian fungsi \textit{activation function} dengan \textit{learning rate} 0.01 
     pada ReLU diperoleh rata-rata akurasi untuk \textit{training} sebesar 47.24\%, validasi sebesar 44.94\% dan test sebesar 50.10\%. Namun akurasi model cukup bervariasi di setiap iterasi \textit{KFold}, dapat dilihat pada akurasi \textit{training} diperoleh nilai terkecil sebesar 32.68\% dan terbesar 67.88\%.
-    Hal ini menunjukkan bahwa model sensitif terhadap pembagian data. Pada fungsi aktivasi \textit{sigmoid} diperoleh rata-rata akurasi untuk \textit{training} sebesar 33.76\%, validasi sebesar 33.24\% dan test sebesar 34.04\%. Akurasi pada \textit{sigmoid} stabil di setiap iterasi \textit{KFold} tapi akurasi yang dihasilkan jauh lebih kecil jika dibandingkan dengan ReLU.
+    Hal ini menunjukkan bahwa model sensitif terhadap pembagian data. Pada \textit{activation function} \textit{sigmoid} diperoleh rata-rata akurasi untuk \textit{training} sebesar 33.76\%, validasi sebesar 33.24\% dan test sebesar 34.04\%. Akurasi pada \textit{sigmoid} stabil di setiap iterasi \textit{KFold} tapi akurasi yang dihasilkan jauh lebih kecil jika dibandingkan dengan ReLU.
     
-    Pada fungsi aktivasi \textit{softmax} akurasi rata-rata untuk \textit{training} sebesar 33.29\%, validasi sebesar 33.83\% dan test sebesar 33.83\%. Akurasi pada \textit{softmax} juga stabil di setiap iterasi \textit{KFold} tapi akurasi yang dihasilkan lebih kecil jika dibandingkan dengan ReLU dan \textit{sigmoid}. Pada pengujian fungsi aktivasi untuk \textit{learning rate} 0.01 fungsi aktivasi terbaik adalah ReLU dengan rata-rata akurasi untuk \textit{training} sebesar 47.24\%, validasi sebesar 44.94\% dan test sebesar 50.10\%.
+    Pada \textit{activation function} \textit{softmax} akurasi rata-rata untuk \textit{training} sebesar 33.29\%, validasi sebesar 33.83\% dan test sebesar 33.83\%. Akurasi pada \textit{softmax} juga stabil di setiap iterasi \textit{KFold} tapi akurasi yang dihasilkan lebih kecil jika dibandingkan dengan ReLU dan \textit{sigmoid}. Pada pengujian \textit{activation function} untuk \textit{learning rate} 0.01 \textit{activation function} terbaik adalah ReLU dengan rata-rata akurasi untuk \textit{training} sebesar 47.24\%, validasi sebesar 44.94\% dan test sebesar 50.10\%.
 
     
 
@@ -678,10 +758,10 @@
         \label{Evaluasi Learning Rate 0.01 }
     \end{table}
 
-      Evaluasi model pada fungsi aktivasi dengan \textit{learning rate} 0.01 menunjukkan bahwa fungsi aktivasi \textit{ReLU} menghasilkan nilai rata-rata \textit{precision} sebesar 82,44\%, \textit{recall} 50,10\%, dan\textit{ F1-Score} 58,87\%. Hal ini menunjukkan kecenderungan fungsi aktivasi \textit{ReLU} untuk memprioritaskan prediksi positif daripada mengidentifikasi semua contoh positif. Hal ini terlihat dari nilai \textit{precision} yang jauh lebih tinggi dibandingkan \textit{recall}.
+      Evaluasi model pada \textit{activation function} dengan \textit{learning rate} 0.01 menunjukkan bahwa \textit{activation function} \textit{ReLU} menghasilkan nilai rata-rata \textit{precision} sebesar 82,44\%, \textit{recall} 50,10\%, dan\textit{ F1-Score} 58,87\%. Hal ini menunjukkan kecenderungan \textit{activation function} \textit{ReLU} untuk memprioritaskan prediksi positif daripada mengidentifikasi semua contoh positif. Hal ini terlihat dari nilai \textit{precision} yang jauh lebih tinggi dibandingkan \textit{recall}.
 
-     Pada fungsi aktivasi \textit{sigmoid} diperoleh nilai rata-rata pada \textit{precision} sebesar 33.33\%, \textit{recall} sebsar 34.04\% dan\textit{ F1-Score} sebesar 50.73\%. Hasil untuk \textit{sigmoid} menunjukkan bahwa model hanya dapat memprediksi satu kelas saja, hal ini dapat di lihat pada nilai \textit{precision} yang sama setiap iterasi KFold. Pada fungsi aktivasi \textit{softmax} diperoleh nilai rata-rata pada \textit{precision} sebesar 33.33\%, \textit{recall} sebesar 33.83\% dan \textit{F1-Score} sebesar 50.55\%.
-     Berdasarkan hasil evaluasi, fungsi aktivasi ReLU menghasilkan performa terbaik dengan rata-rata \textit{F1-Score} tertinggi. \textit{Sigmoid} dan Softmax memiliki performa yang jauh lebih rendah dan perlu dioptimalkan lebih lanjut.
+     Pada \textit{activation function} \textit{sigmoid} diperoleh nilai rata-rata pada \textit{precision} sebesar 33.33\%, \textit{recall} sebsar 34.04\% dan\textit{ F1-Score} sebesar 50.73\%. Hasil untuk \textit{sigmoid} menunjukkan bahwa model hanya dapat memprediksi satu kelas saja, hal ini dapat di lihat pada nilai \textit{precision} yang sama setiap iterasi KFold. Pada \textit{activation function} \textit{softmax} diperoleh nilai rata-rata pada \textit{precision} sebesar 33.33\%, \textit{recall} sebesar 33.83\% dan \textit{F1-Score} sebesar 50.55\%.
+     Berdasarkan hasil evaluasi, \textit{activation function} ReLU menghasilkan performa terbaik dengan rata-rata \textit{F1-Score} tertinggi. \textit{Sigmoid} dan Softmax memiliki performa yang jauh lebih rendah dan perlu dioptimalkan lebih lanjut.
 
 
  
@@ -728,12 +808,12 @@
         \label{Pengujian Learning Rate 0.001}
     \end{table}
 
-    Pengujian fungsi aktivasi untuk \textit{learning rate} 0.001 
+    Pengujian \textit{activation function} untuk \textit{learning rate} 0.001 
     pada \textit{ReLU} diperoleh rata-rata akurasi untuk \textit{training} sebesar 91.41\%, validasi sebesar 86.96\% dan test sebesar 90.84\%. Pada \textit{learning rate} 0.001 terjadi peningkatan akurasi yang signifikan dari akurasi menggunakan \textit{learning rate} 0.01. Sebelumnya hanya diperoleh rata-rata akurasi untuk \textit{training} sebesar 47.24\%, validasi sebesar 44.94\% dan test sebesar 50.10\%. Pada \textit{learning rate} 0.001 juga diperoleh akurasi setiap iterasi \textit{KFold} jauh lebih stabil dibandingkan sebelumnya. 
 
-    Fungsi aktivasi \textit{sigmoid} memiliki akurasi rata-rata untuk \textit{training} sebesar 73.40\%, validasi sebesar 49.26\% dan test sebesar 64.69\%. Penggunaan \textit{learning rate} 0.001 untuk fungsi aktivasi \textit{sigmoid} juga mengalami peningkatan yang tinggi dari sebelumnya rata-rata akurasi untuk \textit{training} sebesar 33.33\%, validasi sebesar 34.04\% dan test sebesar 50.73\%. Namun pada setiap iterasi \textit{KFold} akurasi sangat tidak stabil hal ini dibuktikan terdapat akurasi tertinggi sebesar 93.72\% dan terendah sebesar 33.56\%. Hal ini menunjukkan pembagian data sangat sensitif pada fungsi aktivasi sigmoid. Pada fungsi aktivasi \textit{softmax} memiliki akurasi rata-rata untuk \textit{training} sebesar 33.13\%, validasi sebesar 32.66\% dan test sebesar 33.94\%. Pada \textit{softmax} tidak ada perubahan yang cukup signifikan dari penggunaan \textit{learning rate} sebelumnya. 
+    \textit{Activation function}\textit{sigmoid} memiliki akurasi rata-rata untuk \textit{training} sebesar 73.40\%, validasi sebesar 49.26\% dan test sebesar 64.69\%. Penggunaan \textit{learning rate} 0.001 untuk \textit{activation function} \textit{sigmoid} juga mengalami peningkatan yang tinggi dari sebelumnya rata-rata akurasi untuk \textit{training} sebesar 33.33\%, validasi sebesar 34.04\% dan test sebesar 50.73\%. Namun pada setiap iterasi \textit{KFold} akurasi sangat tidak stabil hal ini dibuktikan terdapat akurasi tertinggi sebesar 93.72\% dan terendah sebesar 33.56\%. Hal ini menunjukkan pembagian data sangat sensitif pada \textit{activation function} sigmoid. Pada \textit{activation function} \textit{softmax} memiliki akurasi rata-rata untuk \textit{training} sebesar 33.13\%, validasi sebesar 32.66\% dan test sebesar 33.94\%. Pada \textit{softmax} tidak ada perubahan yang cukup signifikan dari penggunaan \textit{learning rate} sebelumnya. 
 
-     Penurunan \textit{learning rate} dari 0.01 ke 0.001 menunjukkan pengaruh yang signifikan terhadap kinerja fungsi aktivasi \textit{ReLU} dan \textit{sigmoid}. Namun pada perubahan \textit{learning rate} tidak menunjukkan efek yang substansial pada fungsi aktivasi \textit{softmax}.
+     Penurunan \textit{learning rate} dari 0.01 ke 0.001 menunjukkan pengaruh yang signifikan terhadap kinerja \textit{activation function} \textit{ReLU} dan \textit{sigmoid}. Namun pada perubahan \textit{learning rate} tidak menunjukkan efek yang substansial pada \textit{activation function} \textit{softmax}.
     
     
     
@@ -787,12 +867,12 @@
 \vspace{1cm}
 
 
-    Evaluasi model untuk fungsi aktivasi dengan \textit{learning rate} 0.001 menunjukkan bahwa fungsi aktivasi \textit{ReLU} menghasilkan nilai rata-rata \textit{precision} sebesar 91.12\%, \textit{recall} 90.84\%, dan \textit{ F1-Score} 90.84\%. Hasil ini jauh lebih baik dari pada penggunaan \textit{learning rate} 0.01 karena nilai rata-rata yang lebih tinggi dan untuk setiap metriks yang dihasilkan juga stabil. 
+    Evaluasi model untuk \textit{activation function} dengan \textit{learning rate} 0.001 menunjukkan bahwa \textit{activation function} \textit{ReLU} menghasilkan nilai rata-rata \textit{precision} sebesar 91.12\%, \textit{recall} 90.84\%, dan \textit{ F1-Score} 90.84\%. Hasil ini jauh lebih baik dari pada penggunaan \textit{learning rate} 0.01 karena nilai rata-rata yang lebih tinggi dan untuk setiap metriks yang dihasilkan juga stabil. 
     
-     Pada fungsi aktivasi \textit{sigmoid} diperoleh nilai rata-rata pada \textit{precision} sebesar 86.02\%, \textit{recall} sebsar 64.69\% dan\textit{ F1-Score} sebesar 70.68\%. Hasil pada \textit{sigmoid} menunjukkan perubahaan \textit{learning rate} menjadi 0.01 cukup berarti, hal ini dibuktikan adanya peningkatan nilai pada setiap mariks evaluasi. Sementara pada fungsi aktivasi \textit{softmax} diperoleh nilai rata-rata pada \textit{precision} sebesar 33.33\%, \textit{recall} sebsar 33.94\% dan\textit{ F1-Score} sebesar 50.68\%.
-     Perubahan \textit{learning rate} pada fungsi aktivasi \textit{sigmoid} tidak memiliki hasil yang berarti. 
+     Pada \textit{activation function}\textit{sigmoid} diperoleh nilai rata-rata pada \textit{precision} sebesar 86.02\%, \textit{recall} sebsar 64.69\% dan\textit{ F1-Score} sebesar 70.68\%. Hasil pada \textit{sigmoid} menunjukkan perubahaan \textit{learning rate} menjadi 0.01 cukup berarti, hal ini dibuktikan adanya peningkatan nilai pada setiap mariks evaluasi. Sementara pada \textit{activation function} \textit{softmax} diperoleh nilai rata-rata pada \textit{precision} sebesar 33.33\%, \textit{recall} sebsar 33.94\% dan\textit{ F1-Score} sebesar 50.68\%.
+     Perubahan \textit{learning rate} pada \textit{activation function} \textit{sigmoid} tidak memiliki hasil yang berarti. 
      
-     Pada penggunaan \textit{learning rate} 0.001 hasil evaluasi menunjukkan fungsi aktivasi terbaik diperoleh pada ReLU nilai \textit{ F1-Score} 90.84\%.
+     Pada penggunaan \textit{learning rate} 0.001 hasil evaluasi menunjukkan \textit{activation function} terbaik diperoleh pada ReLU nilai \textit{ F1-Score} 90.84\%.
      
   
 
@@ -844,13 +924,13 @@
         \label{Pengujian Learning Rate 0.0001 }
     \end{table}
 
-    Pengujian fungsi aktivasi untuk \textit{learning rate} 0.0001 
+    Pengujian \textit{activation function} untuk \textit{learning rate} 0.0001 
     pada \textit{ReLU} diperoleh rata-rata akurasi untuk \textit{training} sebesar 92.79\%, validasi sebesar 88.03\% dan test sebesar 91.70\%. Pada \textit{learning rate} 0.0001 terjadi peningkatan akurasi sekitar dua persen dari penggunaan \textit{learning rate} 0.001. 
     
-    Penggunaan fungsi aktivasi \textit{sigmoid} memiliki akurasi rata-rata untuk \textit{training} sebesar 72.25\%, validasi sebesar 48.37\% dan test sebesar 65.15\%. Penggunaan \textit{learning rate} 0.0001 untuk fungsi aktivasi \textit{sigmoid} tidak terdapat pola peningkatan akurasi malah mengalami penurunan akurasi sekitar satu persen. Pada hasil ini menunjukkan bahwa penurunan nilai \textit{learning rate} pada fungsi aktivasi \textit{sigmoid}
+    Penggunaan \textit{activation function} \textit{sigmoid} memiliki akurasi rata-rata untuk \textit{training} sebesar 72.25\%, validasi sebesar 48.37\% dan test sebesar 65.15\%. Penggunaan \textit{learning rate} 0.0001 untuk \textit{activation function} \textit{sigmoid} tidak terdapat pola peningkatan akurasi malah mengalami penurunan akurasi sekitar satu persen. Pada hasil ini menunjukkan bahwa penurunan nilai \textit{learning rate} pada \textit{activation function} \textit{sigmoid}
     tidak selalu mengalami peningkatan akurasi. 
 
-    Pada fungsi aktivasi \textit{softmax} memiliki akurasi rata-rata untuk \textit{training} sebesar 33.21\%, validasi sebesar 32.83\% dan test sebesar 32.83\%. Hasil fungsi aktivasi \textit{sofmaxt} tidak mengalami perubahan yang begitu besar dari penggunaan \textit{learning rate} 0.0001, 0.001, 0.01, Sehingga dapat disimpulkan pengaruh \textit{learning rate} untuk \textit{softmax }tidak cukup berpengaruh.
+    Pada \textit{activation function} \textit{softmax} memiliki akurasi rata-rata untuk \textit{training} sebesar 33.21\%, validasi sebesar 32.83\% dan test sebesar 32.83\%. Hasil \textit{activation function} \textit{sofmaxt} tidak mengalami perubahan yang begitu besar dari penggunaan \textit{learning rate} 0.0001, 0.001, 0.01, Sehingga dapat disimpulkan pengaruh \textit{learning rate} untuk \textit{softmax }tidak cukup berpengaruh.
 
 
 
@@ -899,19 +979,19 @@
         \label{Evaluasi Learning Rate 0.0001 }
     \end{table}
 
-      Evaluasi model pada fungsi aktivasi dengan \textit{learning rate} 0.0001 fungsi aktivasi \textit{ReLU} menghasilkan nilai rata-rata \textit{precision} sebesar 91.01\%, \textit{recall} 91.70\%, dan\textit{ F1-Score} 91.71\%. Pada 
+      Evaluasi model pada \textit{activation function} dengan \textit{learning rate} 0.0001 \textit{activation function} \textit{ReLU} menghasilkan nilai rata-rata \textit{precision} sebesar 91.01\%, \textit{recall} 91.70\%, dan\textit{ F1-Score} 91.71\%. Pada 
       Penggunaan \textit{learning rate} 0.0001 hasil prediksi setiap kelasnya cukup stabil di bandingkan sebelumnya. 
       
-      Pada fungsi aktivasi \textit{sigmoid} diperoleh nilai rata-rata pada \textit{precision} sebesar 73.55\%, \textit{recall} sebsar 65.15\% dan\textit{ F1-Score} sebesar 66.89\%. Hasil untuk \textit{sigmoid} menunjukkan lebih rendah dengan penggunaan \textit{learning rate} 0.001 yaitu dengan nilai rata-rata pada \textit{precision} sebesar 86.02\%, \textit{recall} sebsar 64.69\% dan\textit{ F1-Score} sebesar 70.68\%. Sementara pada fungsi aktivasi \textit{softmax} diperoleh nilai rata-rata pada \textit{precision} sebesar 33.33\%, \textit{recall} sebsar 32.83\% dan\textit{ F1-Score} sebesar 49.42\%.
-     Perubahan \textit{learning rate} pada fungsi aktivasi \textit{softmax} tidak memiliki perubahan yang berarti. 
+      Pada \textit{activation function} \textit{sigmoid} diperoleh nilai rata-rata pada \textit{precision} sebesar 73.55\%, \textit{recall} sebsar 65.15\% dan\textit{ F1-Score} sebesar 66.89\%. Hasil untuk \textit{sigmoid} menunjukkan lebih rendah dengan penggunaan \textit{learning rate} 0.001 yaitu dengan nilai rata-rata pada \textit{precision} sebesar 86.02\%, \textit{recall} sebsar 64.69\% dan\textit{ F1-Score} sebesar 70.68\%. Sementara pada \textit{activation function} \textit{softmax} diperoleh nilai rata-rata pada \textit{precision} sebesar 33.33\%, \textit{recall} sebsar 32.83\% dan\textit{ F1-Score} sebesar 49.42\%.
+     Perubahan \textit{learning rate} pada \textit{activation function} \textit{softmax} tidak memiliki perubahan yang berarti. 
      
      
      
-    Pengujian dan evaluasi fungsi aktivasi \textit{ReLU, sigmoid dan sigmoid} pada \textit{learning rate} 0.0001, 0.001, 0.01 diperoleh hasil yang terbaik pada  fungsi aktivasi \textit{ReLU} dengan \textit{learning rate} 0.0001. Fungsi aktivasi ini menghasilkan nilai rata-rata  akurasi untuk \textit{training} sebesar 92.79\%, validasi sebesar 88.03\% dan test sebesar 91.70\%, \textit{precision} sebesar 91.01\%, \textit{recall} 91.70\%, dan\textit{ F1-Score} 91.71\%.
+    Pengujian dan evaluasi \textit{activation function} \textit{ReLU, sigmoid dan sigmoid} pada \textit{learning rate} 0.0001, 0.001, 0.01 diperoleh hasil yang terbaik pada \textit{activation function} \textit{ReLU} dengan \textit{learning rate} 0.0001. \textit{activation function} ini menghasilkan nilai rata-rata  akurasi untuk \textit{training} sebesar 92.79\%, validasi sebesar 88.03\% dan test sebesar 91.70\%, \textit{precision} sebesar 91.01\%, \textit{recall} 91.70\%, dan\textit{ F1-Score} 91.71\%.
 
 \subsection{Pengujian \textit{Optmizer}}
 
-    Parameter \textit{learning rate} dan fungsi aktivasi terbaik yang dihasilkan, akan digunakan mencari \textit{optimizer} terbaik dengan membandingkan fungsi optimasi \textit{Stochastic Gradient Descent} (SGD) dan \textit{Adaptive Moment Estimation} (Adam). Hasil dari pengujian ditampilkan pada Tabel \ref{Pengujian Optimizer} berikut.
+    Parameter \textit{learning rate} dan \textit{activation function} terbaik yang dihasilkan, akan digunakan mencari \textit{optimizer} terbaik dengan membandingkan fungsi optimasi \textit{Stochastic Gradient Descent} (SGD) dan \textit{Adaptive Moment Estimation} (Adam). Hasil dari pengujian ditampilkan pada Tabel \ref{Pengujian Optimizer} berikut.
 
         \begin{table}[H]
         \centering
@@ -1029,7 +1109,7 @@
 \end{table}
 
 
-    Dari hasil evaluasi menunjukkan bahwa parameter terbaik yang diperoleh dengan skenario \textit{learning rate} 0.0001, fungsi aktivasi ReLU dan \textit{optimizer} SGD. Dengan nilai rata-rata akurasi sebesar 92.72\% \textit{precision} sebesar 93.32\%, \textit{recall} sebesar 92.72\%, dan \textit{F1-Score} sebesar 92.98\%.
+    Dari hasil evaluasi menunjukkan bahwa parameter terbaik yang diperoleh dengan skenario \textit{learning rate} 0.0001, \textit{activation function} ReLU dan \textit{optimizer} SGD. Dengan nilai rata-rata akurasi sebesar 92.72\% \textit{precision} sebesar 93.32\%, \textit{recall} sebesar 92.72\%, dan \textit{F1-Score} sebesar 92.98\%.
 
 
 \section{Analisis dan Evaluasi}
@@ -1123,7 +1203,7 @@
           %     \label{akurasi model terbaik}
           % \end{figure}
 
-        Dapat dilihat dari hasil evaluasi menggunakan \textit{confusion matrics}. Nilai akurasi dan metriks yang dihasilkan tidak berbeda jauh dengan pengujian yang dilakukan sebelumnya. Hasil evaluasi ditampilkan pada Tabel \ref{Evaluasi Model} berikut.
+        Dapat dilihat dari hasil evaluasi menggunakan \textit{confusion matrix}. Nilai akurasi dan metriks yang dihasilkan tidak berbeda jauh dengan pengujian yang dilakukan sebelumnya. Hasil evaluasi ditampilkan pada Tabel \ref{Evaluasi Model} berikut.
 
 
         \begin{table}[H]
@@ -1149,43 +1229,37 @@
     \end{table}
 
     Untuk hasil prediksi ditampilkan pada Gambar \ref{hasil prediksi} berikut.
-          % \begin{figure}[H]
-          %     \centering
-          %     \includegraphics[width=1.0\linewidth]{figures/bab4/hasil_prediksi.png}
-          %     \caption{Hasil prediksi}
-          %     \label{hasil prediksi}
-          % \end{figure}
+         
+          \begin{figure}[H]
+              \centering
+              \includegraphics[width=1.0\linewidth]{figures/bab4/hasil_prediksi.png}
+              \caption{Hasil prediksi}
+              \label{hasil prediksi}
+          \end{figure}
 
     
         
         
     Berdasarkan hasil percobaan yang telah dilakukan jika dibandingkan
-     dengan penelitian sebelumnya \cite{majeed2023detection}, Akurasi
-      penelitian sebelumnya lebih tinggi dibandingkan penelitian ini,
-       hal ini disebabkan ada perbedaan segmentasi data dan jumlah 
-       kelas yang digunakan berbeda. Hasil perbandingan 
-        ditunjukkan pada Tabel \ref{Tabel Perbandingan Hasil} berikut. 
+     dengan penelitian sebelumnya yang dilakukan oleh Fiaz Majeed, dkk \cite{majeed2023detection}. Akurasi penelitian sebelumnya lebih tinggi dibandingkan penelitian ini, hal ini disebabkan adanya perbedaan segmentasi data, jumlah kelas dan metode yang dilakukan merupakan kombinasi antara CNN dan RNN. Ringkasan penelitian sebelumnya dapat dilihat pada Tabel \ref{Penelitian lama} berikut. 
 
 
     \begin{table}[H]
         \centering
-        \caption{Penelitian Mengenai Deteksi Kantuk}
-         \label{Tabel Perbandingan Hasil}
+        \caption{Penelitian Deteksi Kantuk Sebelumnya \cite{majeed2023detection}}
+         \label{Penelitian lama}
         \begin{tabular}%{p{0.5cm}p{1.8cm}p{2.9cm}p{1.1cm}p{4.1cm}p{1cm}}
-              {  >{\raggedright\arraybackslash}p{0.3cm} 
-        >{\raggedright\arraybackslash}p{2.0cm} 
-        >{\raggedright\arraybackslash}p{2.5cm} 
-        >{\raggedright\arraybackslash}p{1.0cm} 
-        >{\raggedright\arraybackslash}p{4.5cm} 
-        >{\raggedright\arraybackslash}p{0.7cm}}
+              {  >{\raggedright\arraybackslash}p{0.5cm} 
+        >{\raggedright\arraybackslash}p{3 cm} 
+        >{\raggedright\arraybackslash}p{2cm} 
+        >{\raggedright\arraybackslash}p{5.0cm} 
+        >{\raggedright\arraybackslash}p{1.0cm}}
     
             \hline
-            \textbf{No} & \textbf{Penulis} & \textbf{Topik} &\textbf{ Metode} & \textbf{Hasil} & \textbf{Tahun} \\
+            \textbf{No}  & \textbf{Topik} &\textbf{ Metode} & \textbf{Hasil} & \textbf{Tahun} \\
             
             \hline
              1 
-            & 
-              Fiaz Majeed, Umair Shafique, Mejdl Safran, Sultan Alfarhood, and Imran Ashraf
             &
             \textit{Detection of Drowsiness among Drivers Using Novel Deep Convolutional Neural Network Model}
             & 
@@ -1197,25 +1271,43 @@
             2023 \\   
             \\
 
-            
-            2 
-            & 
-             Alfianri Manihuruk
-            & 
-            Deteksi Kantuk Pengendara Mobil Menggunkan \textit{Convolutional Neural Networks} (CNN)
-
-            & 
-            CNN
-            &
-            Segmentasi data dilakukan dengan nilai EAR dan MAR, dengan kelas yang diterapkan berupa \textit{multi class} dengan hasil akurasi sebesar 91.76\%. 
-            &
-            2024 \\
-       
-
              \hline
 
         \end{tabular}
     \end{table}
 
 
- 
+    Penelitian ini menghasilkan akurasi yang lebih rendah dibandingkan sebelumnya yaitu sebesar 91.76 \%. Hal ini terjadi karena pada penelitian ini menggunakan segmentasi data dengan nilai EAR dan MAR sedangkan sebelumnya hanya MAR. Penelitian ini juga menggunakan \textit{Multi-Class} sehingga jumlah model lebih sulit melakukan klasifikasi.
+
+        \begin{table}[H]
+        \centering
+        \caption{Penelitian Deteksi Kantuk Baru}
+         \label{Penelitian lama}
+        \begin{tabular}%{p{0.5cm}p{1.8cm}p{2.9cm}p{1.1cm}p{4.1cm}p{1cm}}
+              {  >{\raggedright\arraybackslash}p{0.5cm} 
+        >{\raggedright\arraybackslash}p{3 cm} 
+        >{\raggedright\arraybackslash}p{2cm} 
+        >{\raggedright\arraybackslash}p{5.0cm} 
+        >{\raggedright\arraybackslash}p{1.0cm}}
+    
+            \hline
+            \textbf{No}  & \textbf{Topik} &\textbf{ Metode} & \textbf{Hasil} & \textbf{Tahun} \\
+            
+            \hline
+             1
+            & 
+            Deteksi Kantuk Pengendara Mobil Menggunkan \textit{Convolutional Neural Networks} (CNN)
+
+            & 
+            CNN
+            &
+            Segmentasi data dilakukan dengan nilai EAR dan MAR, dengan kelas yang diterapkan berupa \textit{multi class} dengan hasil akurasi sebesar 91.76\%
+
+            &
+            2024 \\
+
+             \hline
+
+        \end{tabular}
+    \end{table}
+
