@@ -1080,7 +1080,14 @@ Nilai \textit{threshold} yang dimaksut merupakan nilai ambang batas  yang menent
         \label{Evaluasi Optimizer}
     \end{table}
 
-    Evaluasi model yang membandingkan \textit{optimizer} \textit{Stochastic Gradient Descent} (SGD) dan \textit{Adaptive Moment Estimation} (Adam).  \textit{Adam} menghasilkan nilai rata-rata \textit{precision} sebesar 91.01\%, \textit{recall} 91.70\%, dan\textit{ F1-Score} 91.71\%. SGD lebih unggul dari setiap matriks dengan selisih satu persen dari Adam. Nilai rata-rata \textit{precision} sebesar 93.32\%, \textit{recall} 92.72\%, dan\textit{ F1-Score} 92.78\%.
+    Evaluasi model yang membandingkan \textit{optimizer} \textit{Stochastic Gradient Descent} (SGD) dan
+     \textit{Adaptive Moment Estimation} (Adam).  \textit{Adam} menghasilkan nilai rata-rata \textit{precision} 
+     sebesar 91.01\%, \textit{recall} 91.70\%, dan\textit{ F1-Score} 91.71\%. SGD lebih unggul dari setiap 
+     matriks dengan selisih satu persen dari Adam. Nilai rata-rata \textit{precision} sebesar 93.32\%, 
+     \textit{recall} 92.72\%, dan\textit{ F1-Score} 92.78\%. \textit{Optimizer} SGD lebih stabil di setiap KFold dibandingkan Adam karena pembaruan parameter yang konsisten, 
+     generalisasi lebih baik, dan pengaturan parameter yang lebih sederhana. Adam, meskipun konvergensi lebih cepat, 
+     sering mengalami variabilitas dan ketidakstabilan karena penyesuaian learning rate adaptif dan
+      \textit{hyperparameter} yang lebih banyak.
 
     
 
@@ -1118,7 +1125,9 @@ Nilai \textit{threshold} yang dimaksut merupakan nilai ambang batas  yang menent
 \end{table}
 
 
-    Dari hasil evaluasi menunjukkan bahwa parameter terbaik yang diperoleh dengan skenario \textit{learning rate} 0.0001, \textit{activation function} ReLU dan \textit{optimizer} SGD. Dengan nilai rata-rata akurasi sebesar 92.72\% \textit{precision} sebesar 93.32\%, \textit{recall} sebesar 92.72\%, dan \textit{F1-Score} sebesar 92.98\%.
+    Dari hasil evaluasi menunjukkan bahwa parameter terbaik yang diperoleh dengan skenario \textit{learning rate} 
+    0.0001, \textit{activation function} ReLU dan \textit{optimizer} SGD. Dengan nilai rata-rata akurasi sebesar
+     92.72\% \textit{precision} sebesar 93.32\%, \textit{recall} sebesar 92.72\%, dan \textit{F1-Score} sebesar 92.98\%.
 
 
 \section{Analisis dan Evaluasi}
