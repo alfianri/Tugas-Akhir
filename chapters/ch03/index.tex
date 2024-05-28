@@ -97,11 +97,24 @@
     \end{figure}
 
 
-    Data yang digunakan merupakan data sekunder dengan format video, oleh sebab itu peneliti tidak melakukan pengambilan data secara langsung. Data akan di ekstrak kedalam bentuk gambar, selanjut beralih ke pemrosesan citra, yang meliputi prapemrosesan dan penambahan data, eksperimen, analisis, dan penilaian. Proses yang akan dilakukan mencakup seluruh rentang dari  pengambilan dataset hingga penilaian dan analisis, semuanya diarahkan dengan tujuan membangun model yang efisien. 
+    Data yang digunakan merupakan data sekunder dengan format video (.avi), oleh sebab itu peneliti tidak melakukan
+     pengambilan data secara langsung. Data akan di ekstrak kedalam bentuk gambar, selanjut beralih ke pemrosesan citra, 
+     yang meliputi prapemrosesan dan penambahan data, eksperimen, analisis, dan penilaian. Proses yang akan dilakukan 
+     mencakup seluruh rentang dari  pengambilan dataset hingga penilaian dan analisis, semuanya diarahkan dengan tujuan 
+     membangun model yang efisien. 
     
-    Proses klasifikasi secara umum dimulai dengan eksplorasi data video yang berfokus pada fitur-fitur video yang relevan. Tahap selanjutnya adalah praproses awal, yang meliputi seleksi fitur, penentuan nilai EAR (\textit{Eye Aspect Ratio}) dan MAR \textit{(Mouth Aspect Ratio}), dan konversi data video menjadi data gambar. Sebelum memasuki tahap klasifikasi menggunakan CNN \textit{(Convolutional Neural Network}), data terlebih dahulu menjalani praproses kedua, yaitu proses augmentasi data dan melakukan pembagian data menjadi data latih (\textit{training}) dan set data uji (\textit{testing}).
+    Proses klasifikasi secara umum dimulai dengan eksplorasi data video yang berfokus pada fitur-fitur video yang relevan.
+     Tahap selanjutnya adalah praproses awal, yang meliputi seleksi fitur, penentuan nilai EAR (\textit{Eye Aspect Ratio})
+      dan MAR \textit{(Mouth Aspect Ratio}), dan konversi data video menjadi data gambar. Sebelum memasuki tahap
+       klasifikasi menggunakan CNN \textit{(Convolutional Neural Network}), data terlebih dahulu menjalani praproses
+        kedua, yaitu proses augmentasi data dan melakukan pembagian data menjadi data latih (\textit{training}) 
+        dan set data uji (\textit{testing}).
 
-    Pada tahap klasifikasi, model akan menghasilkan metrik akan seperti akurasi,\textit{ precision}, \textit{recall}, dan \textit{F1-Score}. Hasil ini kemudian dianalisis dan dievaluasi. Jika hasil evaluasi telah memenuhi kriteria yang ditetapkan, maka proses klasifikasi selesai. Namun, jika hasil evaluasi belum memenuhi kriteria, maka proses klasifikasi akan diulangi dengan kembali ke tahap praproses awal. Setiap tahap dalam proses klasifikasi digambarkan secara visual dalam Gambar \ref{flowchart} berikut.
+    Pada tahap klasifikasi, model akan menghasilkan metrik seperti \textit{accuracy}, \textit{precision}, \textit{recall},
+     dan \textit{F1-Score}. Hasil ini kemudian dianalisis dan dievaluasi untuk melihat pengaruh dari parameter CNN. 
+     Jika hasil evaluasi telah memenuhi kriteria yang ditetapkan, maka proses klasifikasi selesai. Namun, 
+     jika hasil evaluasi belum memenuhi kriteria, maka proses klasifikasi akan diulangi dengan kembali ke tahap 
+     praproses awal. Setiap tahap dalam proses klasifikasi digambarkan secara visual pada Gambar \ref{flowchart} berikut.
 
 
     \begin{figure}[H]
@@ -121,7 +134,8 @@
 
 \section{Instrumen Penelitian}
 
-Dalam penelitian ini, proses pelatihan CNN dilakukan dengan menggunakan layanan \textit{Google Colabboration}. Sementara untuk spesifikasi perangkat yang digunakan ditampilkan sebagai berikut.
+Dalam penelitian ini, proses pelatihan CNN dilakukan dengan menggunakan layanan \textit{Google Colabboration}. 
+Sementara untuk spesifikasi perangkat yang digunakan ditampilkan sebagai berikut.
 
 
     \begin{enumerate}
@@ -242,7 +256,11 @@ Dalam penelitian ini, proses pelatihan CNN dilakukan dengan menggunakan layanan 
 
 \subsection{Desain Arsitektur CNN}
 
-    Merancang struktur yang efektif dengan mengekstrak fitur penting dari data gambar disebut sebagai desain arsitektur \textit{Convolutional Neural Network} (CNN). CNN adalah tipe arsitektur yang umum digunakan dalam pemrosesan gambar dan berbagai aplikasi pengenalan pola. Tujuan dari klasifikasi ini adalah untuk menghasilkan luaran yang menunjukkan keadaan pengendara sesuai dengan kelas yang telah di tetapkan. Seperti mengantuk dan menguap, mengantuk dan tidak menguap, menguap dan tidak mengantuk.  Alur kerja CNN diilustrasikan pada Gambar \ref{Proses Convolusional Neural Network} berikut.
+    Merancang struktur yang efektif dengan mengekstrak fitur penting dari data gambar disebut sebagai desain 
+    arsitektur \textit{Convolutional Neural Network} (CNN). CNN adalah tipe arsitektur yang umum digunakan dalam 
+    pemrosesan gambar dan berbagai aplikasi pengenalan pola. Tujuan dari klasifikasi ini adalah untuk menghasilkan 
+    luaran yang menunjukkan keadaan pengendara sesuai dengan kelas yang telah di tetapkan. Seperti mengantuk dan
+     menguap, mengantuk dan tidak menguap, menguap dan tidak mengantuk.  Alur kerja CNN diilustrasikan pada Gambar \ref{Proses Convolusional Neural Network} berikut.
  
      \begin{figure}[H]
       \centering
@@ -259,7 +277,10 @@ Dalam penelitian ini, proses pelatihan CNN dilakukan dengan menggunakan layanan 
 
     
 
-    Proses pelatihan menggunakan data berlabel yang telah dipisahkan ke dalam kumpulan data \textit{train}, \textit{test}, dan \textit{validation}. Data yang berupa gambar akan melewati dua tahap penting dalam CNN, yaitu ekstraksi fitur dan klasifikasi. Pada tahap ekstraksi fitur data akan dikonvolusi menjadi sebuah matriks yang berukuran besar. Selanjutnya dilakukan proses \textit{maxpooling} untuk mengurangi dimensi dari fitur ektrasi data oleh layar konvolusi. Hal ini bertujuan untuk mengurangi komputasi dalam CNN
+    Proses pelatihan menggunakan data berlabel yang telah dipisahkan ke dalam kumpulan data \textit{train}, \textit{test}, 
+    dan \textit{validation}. Data yang berupa gambar akan melewati dua tahap penting dalam CNN, yaitu ekstraksi fitur dan 
+    klasifikasi. Pada tahap ekstraksi fitur data akan dikonvolusi menjadi sebuah matriks yang berukuran besar. Selanjutnya 
+    dilakukan proses \textit{maxpooling} untuk mengurangi dimensi dari fitur ektrasi data oleh layar konvolusi. Hal ini bertujuan untuk mengurangi komputasi dalam CNN
     sehingga model lebih cepat dan efisien. Tahap terakhir akan dilakukan \textit{fully connected} yaitu informasi dari setiap fitur akan menentukan data tersebut dominan mirip pada salah satu kelas yang telah ditentukan sebelumnya.
     
     \textit{Tuning hyperparameter} diterapakan pada model seperti \textit{activation function}, \textit{learning rate} dan \textit{optimizer} untuk memperoleh model yang optimal. \textit{Activation function} berfungsi menentukan apakah sebuah neuron akan menjadi aktif atau tidak. \textit{Learning rate} mengatur seberapa besar perubahan yang diterapkan pada parameter model selama proses pelatihan, yang penting untuk memastikan konvergensi yang efisien tanpa melewatkan nilai optimal. \textit{Optimizer} digunakan untuk menemukan nilai terbaik dari parameter model dengan mengarahkan proses pembaruan bobot berdasarkan gradien \textit{error}. Kombinasi yang tepat dari \textit{hyperparameter} akan menentukan model yang dapat melakukan klasifikasi dengan baik.
