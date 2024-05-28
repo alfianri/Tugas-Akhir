@@ -244,7 +244,7 @@
 
 \subsection{Akuisisi Citra  Digital}
 
-    Dalam proses pemrosesan gambar digital, persyaratan awal adalah objek gambar digital itu sendiri. Hal ini dicapai melalui langkah akuisisi gambar, di mana gambar digital diperoleh dengan menggunakan alat akuisisi seperti kamera digital, ponsel pintar, mesin pemindai, internet, dll. Alat-alat ini menghasilkan kumpulan data dalam format seperti JPG, PNG, Bitmap, atau yang serupa. Tahap ini juga disebut sebagai tahap pengumpulan dataset \cite{Dewi2018}.
+    Dalam pemrosesan gambar digital, persyaratan awal adalah objek gambar digital itu sendiri. Hal ini dicapai melalui langkah akuisisi gambar, di mana gambar digital diperoleh dengan menggunakan alat akuisisi seperti kamera digital, ponsel pintar, mesin pemindai, internet, dll. Alat-alat ini menghasilkan kumpulan data dalam format seperti JPG, PNG, Bitmap, atau yang serupa. Tahap ini juga disebut sebagai tahap pengumpulan dataset \cite{Dewi2018}.
     
     
     Langkah awal lingkungan ditangkap menggunakan sebuah sensor electronik citra yag terbuat dari sensor cahaya CCD \textit{(charge-coupe device}) atau CMOS \textit{(Complementary Metal Oxide Semiconductor)}. Kemudian sensor elektronik mengubah intensitas cahaya dan frekuensi menjadi sebuah gelombang analog. Gelombang analog yang dihasilkan tersebut akan diubah menjadi sinyal digital \cite{putra2010pengolahan}.
@@ -382,7 +382,9 @@
 
 \subsubsection{\textit{Brightness} Dan \textit{Contrast}}
 
-    Praktik membuat gambar dan memodifikasi kecerahan dan kontras untuk setiap gambar baru dikenal sebagai meningkatkan nilai kecerahan dan kontras gambar. Karena dapat meningkatkan performa pengenalan gambar pada model, strategi augmentasi ini sering digunakan dalam penelitian terkait pembelajaran mesin \cite{mikolajczyk2018data}\cite{Yang2022}. Ada beberapa metode untuk menerapkan kedua modifikasi ini. Salah satu metode untuk meningkatkan tingkat kecerahan adalah dengan mengubah gambar RGB menjadi HSV, yang memisahkan tiga saluran warna (h, s, dan v). Saluran \textit{value} (v) nilainya berkisar antara $-50 < v < 50$ yang mengontrol kecerahan gambar, \textit{saturation} (S) mengukur intensitas atau kemurnian warna dan \textit{hue} (h) merepresentasikan jenis warna yang dirasakan manusia, seperti merah, hijau, biru, kuning, dll. Gambar segar dengan kecerahan yang diubah dihasilkan dengan mengubah saluran v yang dimodifikasi kembali menjadi RGB seperti Gambar \ref{Contoh Augmentasi Contrast} \cite{oza2020empirical, Stollnitz1996}.
+    Praktik membuat gambar dan memodifikasi kecerahan dan kontras untuk setiap gambar baru dikenal sebagai meningkatkan 
+    nilai kecerahan dan kontras gambar. Karena dapat meningkatkan performa pengenalan gambar pada model, strategi 
+    augmentasi ini sering digunakan dalam penelitian terkait pembelajaran mesin \cite{mikolajczyk2018data, Yang2022}. Ada beberapa metode untuk menerapkan kedua modifikasi ini. Salah satu metode untuk meningkatkan tingkat kecerahan adalah dengan mengubah gambar RGB menjadi HSV, yang memisahkan tiga saluran warna (h, s, dan v). Saluran \textit{value} (v) nilainya berkisar antara $-50 < v < 50$ yang mengontrol kecerahan gambar, \textit{saturation} (S) mengukur intensitas atau kemurnian warna dan \textit{hue} (h) merepresentasikan jenis warna yang dirasakan manusia, seperti merah, hijau, biru, kuning, dll. Gambar segar dengan kecerahan yang diubah dihasilkan dengan mengubah saluran v yang dimodifikasi kembali menjadi RGB seperti Gambar \ref{Contoh Augmentasi Contrast} \cite{oza2020empirical, Stollnitz1996}.
 
     \begin{figure}[H]
       \centering
