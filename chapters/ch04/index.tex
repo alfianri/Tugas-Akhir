@@ -902,7 +902,7 @@ dalam kategori mengantuk dan menguap, untuk lebih jelasnya akan dijelaskan pada 
 
     Evaluasi model untuk \textit{activation function} dengan \textit{learning rate} 0.001 menunjukkan bahwa \textit{activation function} \textit{ReLU} menghasilkan nilai rata-rata \textit{precision} sebesar 91.12\%, \textit{recall} 90.84\%, dan \textit{ F1-Score} 90.84\%. Hasil ini jauh lebih baik dari pada penggunaan \textit{learning rate} 0.01 karena nilai rata-rata yang lebih tinggi dan untuk setiap metriks yang dihasilkan juga stabil. 
     
-     Pada \textit{activation function}\textit{sigmoid} diperoleh nilai rata-rata pada \textit{precision} sebesar 86.02\%, \textit{recall} sebsar 64.69\% dan\textit{ F1-Score} sebesar 70.68\%. Hasil pada \textit{sigmoid} menunjukkan perubahaan \textit{learning rate} menjadi 0.01 cukup berarti, hal ini dibuktikan adanya peningkatan nilai pada setiap mariks evaluasi. Sementara pada \textit{activation function} \textit{softmax} diperoleh nilai rata-rata pada \textit{precision} sebesar 33.33\%, \textit{recall} sebsar 33.94\% dan\textit{ F1-Score} sebesar 50.68\%.
+     Pada \textit{activation function} \textit{sigmoid} diperoleh nilai rata-rata pada \textit{precision} sebesar 86.02\%, \textit{recall} sebsar 64.69\% dan\textit{ F1-Score} sebesar 70.68\%. Hasil pada \textit{sigmoid} menunjukkan perubahaan \textit{learning rate} menjadi 0.01 cukup berarti, hal ini dibuktikan adanya peningkatan nilai pada setiap mariks evaluasi. Sementara pada \textit{activation function} \textit{softmax} diperoleh nilai rata-rata pada \textit{precision} sebesar 33.33\%, \textit{recall} sebsar 33.94\% dan\textit{ F1-Score} sebesar 50.68\%.
      Perubahan \textit{learning rate} pada \textit{activation function} \textit{sigmoid} tidak memiliki hasil yang berarti. 
      
      Pada penggunaan \textit{learning rate} 0.001 hasil evaluasi menunjukkan \textit{activation function} terbaik diperoleh pada ReLU nilai \textit{ F1-Score} 90.84\%.
@@ -963,7 +963,8 @@ dalam kategori mengantuk dan menguap, untuk lebih jelasnya akan dijelaskan pada 
     Penggunaan \textit{activation function} \textit{sigmoid} memiliki akurasi rata-rata untuk \textit{training} sebesar 72.25\%, validasi sebesar 48.37\% dan test sebesar 65.15\%. Penggunaan \textit{learning rate} 0.0001 untuk \textit{activation function} \textit{sigmoid} tidak terdapat pola peningkatan akurasi malah mengalami penurunan akurasi sekitar satu persen. Pada hasil ini menunjukkan bahwa penurunan nilai \textit{learning rate} pada \textit{activation function} \textit{sigmoid}
     tidak selalu mengalami peningkatan akurasi. 
 
-    Pada \textit{activation function} \textit{softmax} memiliki akurasi rata-rata untuk \textit{training} sebesar 33.21\%, validasi sebesar 32.83\% dan test sebesar 32.83\%. Hasil \textit{activation function} \textit{sofmaxt} tidak mengalami perubahan yang begitu besar dari penggunaan \textit{learning rate} 0.0001, 0.001, 0.01, Sehingga dapat disimpulkan pengaruh \textit{learning rate} untuk \textit{softmax }tidak cukup berpengaruh.
+    Pada \textit{activation function} \textit{softmax} memiliki akurasi rata-rata untuk \textit{training} sebesar
+     33.21\%, validasi sebesar 32.83\% dan test sebesar 32.83\%. Hasil \textit{activation function} \textit{softmax} tidak mengalami perubahan yang begitu besar dari penggunaan \textit{learning rate} 0.0001, 0.001, 0.01, Sehingga dapat disimpulkan pengaruh \textit{learning rate} untuk \textit{softmax }tidak cukup berpengaruh.
 
 
 
@@ -1015,7 +1016,7 @@ dalam kategori mengantuk dan menguap, untuk lebih jelasnya akan dijelaskan pada 
       Evaluasi model pada \textit{activation function} dengan \textit{learning rate} 0.0001 \textit{activation function} \textit{ReLU} menghasilkan nilai rata-rata \textit{precision} sebesar 91.01\%, \textit{recall} 91.70\%, dan\textit{ F1-Score} 91.71\%. Pada 
       Penggunaan \textit{learning rate} 0.0001 hasil prediksi setiap kelasnya cukup stabil di bandingkan sebelumnya. 
       
-      Pada \textit{activation function} \textit{sigmoid} diperoleh nilai rata-rata pada \textit{precision} sebesar 73.55\%, \textit{recall} sebsar 65.15\% dan\textit{ F1-Score} sebesar 66.89\%. Hasil untuk \textit{sigmoid} menunjukkan lebih rendah dengan penggunaan \textit{learning rate} 0.001 yaitu dengan nilai rata-rata pada \textit{precision} sebesar 86.02\%, \textit{recall} sebsar 64.69\% dan\textit{ F1-Score} sebesar 70.68\%. Sementara pada \textit{activation function} \textit{softmax} diperoleh nilai rata-rata pada \textit{precision} sebesar 33.33\%, \textit{recall} sebsar 32.83\% dan\textit{ F1-Score} sebesar 49.42\%.
+      Pada \textit{activation function} \textit{sigmoid} diperoleh nilai rata-rata pada \textit{precision} sebesar 73.55\%, \textit{recall} sebesar 65.15\% dan\textit{ F1-Score} sebesar 66.89\%. Hasil untuk \textit{sigmoid} menunjukkan lebih rendah dengan penggunaan \textit{learning rate} 0.001 yaitu dengan nilai rata-rata pada \textit{precision} sebesar 86.02\%, \textit{recall} sebsar 64.69\% dan\textit{ F1-Score} sebesar 70.68\%. Sementara pada \textit{activation function} \textit{softmax} diperoleh nilai rata-rata pada \textit{precision} sebesar 33.33\%, \textit{recall} sebsar 32.83\% dan\textit{ F1-Score} sebesar 49.42\%.
      Perubahan \textit{learning rate} pada \textit{activation function} \textit{softmax} tidak memiliki perubahan yang berarti. 
      
      
@@ -1108,9 +1109,9 @@ dalam kategori mengantuk dan menguap, untuk lebih jelasnya akan dijelaskan pada 
      \textit{Adaptive Moment Estimation} (Adam).  \textit{Adam} menghasilkan nilai rata-rata \textit{precision} 
      sebesar 91.01\%, \textit{recall} 91.70\%, dan\textit{ F1-Score} 91.71\%. SGD lebih unggul dari setiap 
      matriks dengan selisih satu persen dari Adam. Nilai rata-rata \textit{precision} sebesar 93.32\%, 
-     \textit{recall} 92.72\%, dan\textit{ F1-Score} 92.78\%. \textit{Optimizer} SGD lebih stabil di setiap KFold dibandingkan Adam karena pembaruan parameter yang konsisten, 
+     \textit{recall} 92.72\%, dan\textit{ F1-Score} 92.78\%. \textit{Optimizer} SGD lebih stabil di setiap \textit{KFold} dibandingkan Adam karena pembaruan parameter yang konsisten, 
      generalisasi lebih baik, dan pengaturan parameter yang lebih sederhana. Adam, meskipun konvergensi lebih cepat, 
-     sering mengalami variabilitas dan ketidakstabilan karena penyesuaian learning rate adaptif dan
+     sering mengalami variabilitas dan ketidakstabilan karena penyesuaian \textit{learning rate} adaptif dan
       \textit{hyperparameter} yang lebih banyak.
 
     
@@ -1152,6 +1153,10 @@ dalam kategori mengantuk dan menguap, untuk lebih jelasnya akan dijelaskan pada 
     Dari hasil evaluasi menunjukkan bahwa parameter terbaik yang diperoleh dengan skenario \textit{learning rate} 
     0.0001, \textit{activation function} ReLU dan \textit{optimizer} SGD. Dengan nilai rata-rata akurasi sebesar
      92.72\% \textit{precision} sebesar 93.32\%, \textit{recall} sebesar 92.72\%, dan \textit{F1-Score} sebesar 92.98\%.
+    Pada pengujian yang dilakukan, pengaruh \textit{learning rate} pada \textit{activation function sigmoid} dan ReLU
+    sangat berpengaruh pada saat \textit{learning rate} ditetapkan menjadi 0.001 peningkatan 
+    akurasi terjadi cukup signifikan. Namun \textit{activation function softmax} tidak memiliki pengaruh signifikan
+    pada peningkatan atau penurunan akurasi.
 
 
 \section{Analisis dan Evaluasi}
