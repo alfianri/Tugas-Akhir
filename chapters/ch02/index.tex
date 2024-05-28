@@ -47,7 +47,7 @@
             & 
             CNN \& RNN
             &
-            Hasil eksperimen menunjukkan bahwa model yang diusulkan mencapai akurasi rata-rata 96,69\% tanpa augmentasi data, yang lebih unggul dari yang sudah ada yang sudah ada dalam mendeteksi kantuk 
+            Hasil eksperimen menunjukkan bahwa model yang diusulkan mencapai akurasi rata-rata 96,69\% tanpa augmentasi data, yang lebih unggul dari yang sudah ada yang sudah ada dalam mendeteksi kantuk.
             &
             2023 \\  
             \\
@@ -107,7 +107,7 @@
             &
             CNN
             &
-            Dari 1200 sampel latih, 1150 sampel uji dan 500 sampel validasi, diperoleh  akurasi latih sebesar 98\%. Akurasi validasi 97\% dan akurasi uji 96.42\%
+            Dari 1200 sampel latih, 1150 sampel uji dan 500 sampel validasi, diperoleh  akurasi latih sebesar 98\%. Akurasi validasi 97\% dan akurasi uji 96.42\%.
 
             &
 
@@ -212,7 +212,16 @@
 
 \subsection{Citra Digital}
 
-    Citra digital merupakan representasi gambar dua dimensi menggunakan satu set nilai digital tertentu, yang sering disebut sebagai piksel atau elemen gambar. Citra terdiri dari $m \times n$ piksel, di mana setiap piksel diwakili oleh $k$ bit. Sebuah piksel, dilambangkan dengan $k$-bit, memiliki $2^k$ corak berbeda dalam gambar skala abu-abu. Nilai piksel ini biasanya terdiri dari bilangan bulat dalam rentang 0 (mewakili piksel hitam) hingga $(2^k - 1)$ (mewakili piksel putih). Besaran nilai piksel ini memainkan peran penting dalam menentukan resolusi dan mempengaruhi kualitas gambar secara keseluruhan \cite{book}. Nilai yang menentukan intensitas gambar atau derajat skala abu-abu atau warna dalam suatu gambar dinyatakan sebagai fungsi dari intensitas gambar, dilambangkan dengan $f(x, y)$. Hal ini muncul dari representasi suatu gambar sebagai matriks dua dimensi, seperti yang digambarkan pada Gambar \ref{Sistem Koordinat Matematis Sebuah Citra} \cite{Andono2018} berikut.
+    Citra digital merupakan representasi gambar dua dimensi menggunakan satu set nilai digital tertentu,
+     yang sering disebut sebagai piksel atau elemen gambar. Citra terdiri dari $m \times n$ piksel, di mana setiap
+      piksel diwakili oleh $k$ bit. Sebuah piksel, dilambangkan dengan $k$-bit, memiliki $2^k$ corak berbeda dalam
+       gambar skala abu-abu. Nilai piksel ini biasanya terdiri dari bilangan bulat dalam rentang 0
+        (mewakili piksel hitam) hingga $(2^k - 1)$ (mewakili piksel putih). Besaran nilai piksel ini 
+        memainkan peran penting dalam menentukan resolusi dan mempengaruhi kualitas gambar secara 
+        keseluruhan \cite{book}. Nilai yang menentukan intensitas gambar atau derajat skala abu-abu atau warna 
+         suatu gambar dinyatakan sebagai fungsi dari intensitas gambar, dilambangkan dengan $f(x, y)$. Hal ini
+          muncul dari representasi suatu gambar sebagai matriks dua dimensi, seperti yang digambarkan
+           pada Gambar \ref{Sistem Koordinat Matematis Sebuah Citra} \cite{Andono2018} berikut.
 
     \begin{figure}[H]
       \centering
@@ -226,7 +235,12 @@
 
     
     
-    Pada Gambar \ref{Sistem Koordinat Matematis Sebuah Citra} memberikan visualisasi bentuk wajah seorang manusia dengan warna kulit sawo matang dan kerudung pink. Visualisasi wajah manusia tersebut merupakan sebuah kombinasi pixel yang membuat intensitas warna yang di tunjukkan pada fungsi $f(x,y)$. Berdasarkan persamaan tersebut, $f$ diasumsikan sebagai intensitas warna dan $(x,y,z)$ adalah koordinat pada dimensi x dan y pada \textit{layer} z. Sehingga citra sering didefenisikan sebagai sebuah fungsi yang memuat kombinasi intensitas warna dengan koordinat tertentu \cite{Kirana2021}.
+    Pada Gambar \ref{Sistem Koordinat Matematis Sebuah Citra} memberikan visualisasi bentuk wajah seorang manusia 
+    dengan warna kulit sawo matang dan kerudung pink. Visualisasi wajah manusia tersebut merupakan sebuah kombinasi
+     pixel yang membuat intensitas warna yang di tunjukkan pada fungsi $f(x,y)$. Berdasarkan persamaan tersebut, $f$ 
+     diasumsikan sebagai intensitas warna dan $(x,y,z)$ adalah koordinat pada dimensi x dan y pada \textit{layer} z yang menjadi chanel warna. 
+     Sehingga citra sering didefenisikan sebagai sebuah fungsi yang memuat kombinasi intensitas warna dengan koordinat
+      tertentu \cite{Kirana2021}.
 
 \subsection{Akuisisi Citra  Digital}
 
