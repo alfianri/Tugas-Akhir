@@ -384,7 +384,11 @@
 
     Praktik membuat gambar dan memodifikasi kecerahan dan kontras untuk setiap gambar baru dikenal sebagai meningkatkan 
     nilai kecerahan dan kontras gambar. Karena dapat meningkatkan performa pengenalan gambar pada model, strategi 
-    augmentasi ini sering digunakan dalam penelitian terkait pembelajaran mesin \cite{mikolajczyk2018data, Yang2022}. Ada beberapa metode untuk menerapkan kedua modifikasi ini. Salah satu metode untuk meningkatkan tingkat kecerahan adalah dengan mengubah gambar RGB menjadi HSV, yang memisahkan tiga saluran warna (h, s, dan v). Saluran \textit{value} (v) nilainya berkisar antara $-50 < v < 50$ yang mengontrol kecerahan gambar, \textit{saturation} (S) mengukur intensitas atau kemurnian warna dan \textit{hue} (h) merepresentasikan jenis warna yang dirasakan manusia, seperti merah, hijau, biru, kuning, dll. Gambar segar dengan kecerahan yang diubah dihasilkan dengan mengubah saluran v yang dimodifikasi kembali menjadi RGB seperti Gambar \ref{Contoh Augmentasi Contrast} \cite{oza2020empirical, Stollnitz1996}.
+    augmentasi ini sering digunakan dalam penelitian terkait pembelajaran mesin \cite{mikolajczyk2018data, Yang2022}. 
+    Ada beberapa metode untuk menerapkan kedua modifikasi ini. Salah satu metode untuk meningkatkan tingkat kecerahan 
+    adalah dengan mengubah gambar RGB menjadi HSV, yang memisahkan tiga saluran warna (h, s, dan v). 
+    Saluran \textit{value} (v) nilainya berkisar antara $-50 < v < 50$ yang mengontrol kecerahan gambar,
+     \textit{saturation} (s) mengukur intensitas atau kemurnian warna dan \textit{hue} (h) merepresentasikan jenis warna yang dirasakan manusia, seperti merah, hijau, biru, kuning, dll. Gambar segar dengan kecerahan yang diubah dihasilkan dengan mengubah saluran v yang dimodifikasi kembali menjadi RGB seperti Gambar \ref{Contoh Augmentasi Contrast} \cite{oza2020empirical, Stollnitz1996}.
 
     \begin{figure}[H]
       \centering
@@ -395,7 +399,11 @@
     
      \end{figure} 
     
-    Berbagai teknik, termasuk penyesuaian kontras linier, mengubah skala nilai piksel individual, menggunakan metode berbasis histogram, dan teknik berbasis resonansi, dapat digunakan untuk mengubah nilai kontras gambar melalui augmentasi \cite{Bebis2021, Maragatham2015, szeliski2021computer}. Teknik sederhana yang dapat digunakan untuk mengontrol nilai kontras pada suatu gambar dapat dilakukan dengan Persamaan \ref{Augmentasi Nilai Kontras} sebagai berikut.
+    Berbagai teknik, termasuk penyesuaian kontras linier, mengubah skala nilai piksel individual, 
+    menggunakan metode berbasis histogram, dan teknik berbasis resonansi, dapat digunakan untuk 
+    mengubah nilai kontras gambar melalui augmentasi \cite{Bebis2021, Maragatham2015, szeliski2021computer}. 
+    Teknik sederhana yang dapat digunakan untuk mengontrol nilai kontras pada suatu gambar dapat dilakukan dengan 
+    Persamaan \ref{Augmentasi Nilai Kontras} sebagai berikut.
 
     
     
@@ -415,7 +423,9 @@
          \beta & : \text{Nilai bias}.\\
     \end{align*}
 
-    Persamaan ini merepresentasikan proses perkalian dan penjumlahan dua buah titik dengan sebuah konstanta. Parameter \textit{gain} dan \textit{bias}, dilambangkan dengan $\alpha$ dan  $\beta$, menentukan nilai kontras dan kecerahan, masing-masing \cite{Szeliski2021}.
+    Persamaan ini merepresentasikan proses perkalian dan penjumlahan dua buah titik dengan sebuah konstanta. 
+    Parameter \textit{gain} dan \textit{bias}, dilambangkan dengan $\alpha$ dan  $\beta$, menentukan nilai kontras 
+    dan kecerahan, masing-masing \cite{Szeliski2021}.
     
 \subsubsection{\textit{Gaussian Noise}}
 
