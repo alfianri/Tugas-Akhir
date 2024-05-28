@@ -107,58 +107,74 @@ Jadi, hasil ReLU untuk \( x = [-2.0, 1.0, 0.0, 3.5] \) adalah \([0, 1.0, 0, 3.5]
 
 \subsection*{1. \textit{Stochastic Gradient Descent} (SGD)}
 
-\textit{Stochastic Gradient Descent} (SGD) memperbarui parameter model berdasarkan perkiraan gradien dari fungsi biaya. Pembaruan dilakukan dengan langkah-langkah berikut:
 
-\begin{enumerate}
-    \item Pilih \textit{learning rate} \(\eta\).
-    \item Hitung gradien dari fungsi biaya \(\nabla J(\theta)\) dengan \textit{respect to} parameter \(\theta\).
-    \item Perbarui parameter \(\theta\) dengan langkah:
-    \[
-    \theta = \theta - \eta \nabla J(\theta)
-    \]
-\end{enumerate}
+\subsection*{Notasi dan Rumus}
+\begin{itemize}
+    \item \( W \): Parameter model yang akan diperbarui.
+    \item \( \omega \): Nilai parameter \( W \) saat ini.
+    \item \( \eta \): Learning rate.
+    \item \( Q_i(\omega) \): Nilai fungsi \( Q_i \) untuk contoh data ke-i.
+    \item \( Q(\omega) = \ln\left(\sum_i Q_i(\omega)\right) \).
+    \item \( \nabla Q(\omega) = \ln\left(\sum_i \nabla Q_i(\omega)\right) \).
+\end{itemize}
 
-\textbf{Contoh:}
+\subsection*{Rumus Pembaruan Parameter}
+\begin{align}
+    W & = \omega - \eta \cdot \nabla Q_i(\omega) \\
+    Q(\omega) & = \ln\left(\sum_i Q_i(\omega)\right) \\
+    \nabla Q(\omega) & = \ln\left(\sum_i \nabla Q_i(\omega)\right)
+\end{align}
 
-Misalkan kita memiliki fungsi biaya sederhana:
-\[ 
-J(\theta) = (\theta - 3)^2 
-\]
+\subsection*{Contoh Perhitungan}
+Misalkan kita memiliki dua contoh data (\( i = 1, 2 \)), dengan:
+\begin{itemize}
+    \item Nilai parameter saat ini: \( \omega = 1.0 \)
+    \item Learning rate: \( \eta = 0.1 \)
+    \item Fungsi \( Q_1(\omega) = \omega^2 \) dan \( Q_2(\omega) = 2\omega \)
+\end{itemize}
 
-Gradien dari fungsi biaya:
-\[ 
-\nabla J(\theta) = 2(\theta - 3) 
-\]
+Langkah-langkah perhitungan manual:
 
-Misalkan \(\theta = 0\) dan \(\eta = 0.1\).
+1. Hitung nilai \( Q_i(\omega) \) untuk \( \omega = 1.0 \):
+   \begin{align*}
+       Q_1(1.0) & = (1.0)^2 = 1.0 \\
+       Q_2(1.0) & = 2 \cdot 1.0 = 2.0
+   \end{align*}
 
-\begin{enumerate}
-    \item Hitung gradien:
-    \[
-    \nabla J(0) = 2(0 - 3) = -6
-    \]
+2. Hitung nilai \( Q(\omega) \):
+   \[
+   Q(\omega) = \ln\left(Q_1(\omega) + Q_2(\omega)\right) = \ln(1.0 + 2.0) = \ln(3.0)
+   \]
 
-    \item Perbarui parameter \(\theta\):
-    \[
-    \theta = 0 - 0.1 \cdot (-6) = 0.6
-    \]
-\end{enumerate}
+3. Hitung gradien \( \nabla Q_i(\omega) \):
+   \begin{align*}
+       \nabla Q_1(\omega) & = \frac{d}{d\omega}(\omega^2) = 2\omega \\
+       \nabla Q_2(\omega) & = \frac{d}{d\omega}(2\omega) = 2
+   \end{align*}
+   Jadi, untuk \( \omega = 1.0 \):
+   \begin{align*}
+       \nabla Q_1(1.0) & = 2 \cdot 1.0 = 2 \\
+       \nabla Q_2(1.0) & = 2
+   \end{align*}
 
-Iterasi selanjutnya (misalkan \(\theta = 0.6\)):
+4. Hitung gradien \( \nabla Q(\omega) \):
+   \[
+   \nabla Q(\omega) = \ln\left(\nabla Q_1(\omega) + \nabla Q_2(\omega)\right) = \ln(2 + 2) = \ln(4)
+   \]
 
-\begin{enumerate}
-    \item Hitung gradien:
-    \[
-    \nabla J(0.6) = 2(0.6 - 3) = -4.8
-    \]
+5. Pembaruan parameter \( W \):
+   \begin{align*}
+       W & = \omega - \eta \cdot \nabla Q(\omega) \\
+       & = 1.0 - 0.1 \cdot \ln(4)
+   \end{align*}
+   Menghitung nilai \( \ln(4) \approx 1.386 \):
+   \[
+   W = 1.0 - 0.1 \cdot 1.386 = 1.0 - 0.1386 = 0.8614
+   \]
 
-    \item Perbarui parameter \(\theta\):
-    \[
-    \theta = 0.6 - 0.1 \cdot (-4.8) = 1.08
-    \]
-\end{enumerate}
+\subsection*{Kesimpulan}
+Parameter model \( W \) setelah satu iterasi pembaruan menggunakan SGD adalah \( W \approx 0.8614 \).
 
-Jadi, setelah dua iterasi, \(\theta\) diperbarui dari 0 menjadi 1.08.
 
 \subsection*{2. Adam (\textit{Adaptive Moment Estimation})}
 
