@@ -268,7 +268,12 @@
     \subsubsection{\textit{Affine} Transformation}
 
     
-        Dengan menggunakan pendekatan ini, matriks transformasi \textit{affine} dikalikan dengan matriks gambar yang diproses. Transformasi ini menonjol karena kemampuannya untuk mempertahankan bidang, titik, dan garis lurus yang terlihat pada gambar asli. Untuk augmentasi geometris, transformasi \textit{affine} sering digunakan untuk operasi seperti rotasi, translasi, pergeseran, dan penskalaan/pembesaran. Hal ini dimungkinkan karena Persamaan \ref{Affine Transformation} menerapkan gambar yang disediakan \cite{Gonzalez2009}.
+        Dengan menggunakan pendekatan ini, matriks transformasi \textit{affine} dikalikan dengan matriks 
+        gambar yang diproses. Transformasi ini menonjol karena kemampuannya untuk mempertahankan bidang, 
+        titik, dan garis lurus yang terlihat pada gambar asli. Untuk augmentasi geometris, 
+        transformasi \textit{affine} sering digunakan untuk operasi seperti rotasi, translasi, 
+        pergeseran, dan penskalaan/pembesaran. Hal ini dimungkinkan karena Persamaan \ref{Affine Transformation} 
+        menerapkan gambar yang disediakan \cite{Gonzalez2009}.
 
    
 
@@ -310,7 +315,11 @@
     
         
 
-        Untuk melakukan augmentasi gambar geometris secara komprehensif, berbagai jenis matriks transformasi \textit{affine} digunakan untuk menyesuaikan augmentasi sesuai dengan persyaratan tertentu. Matriks transformasi \textit{affine} yang sesuai dengan masing-masing teknik, termasuk rotasi, \textit{translation, shearing, zooming} dirinci dalam Tabel  \ref{Matriks Transformasi Afin pada Operasi Lainnya}.
+        Untuk melakukan augmentasi gambar geometris secara komprehensif, berbagai jenis matriks 
+        transformasi \textit{affine} digunakan untuk menyesuaikan augmentasi sesuai dengan persyaratan tertentu.
+         Matriks transformasi \textit{affine} yang sesuai dengan masing-masing teknik, termasuk rotasi,
+          \textit{translation, shearing, zooming} dirinci 
+          dalam Tabel  \ref{Matriks Transformasi Afin pada Operasi Lainnya} berikut.
         
 \begin{table}[H]
     \centering
@@ -327,9 +336,9 @@
         \hline \\
         Translasi & 
         \(\begin{bmatrix}
-            1 & 0 & 0 \\
-            0 & 1 & 0 \\
-            t_x & t_y & 1 \\
+            1 & 0 & t_x \\
+            0 & 1 & t_y \\
+            0 & 0 & 1 \\
         \end{bmatrix}\)
         
         & 
