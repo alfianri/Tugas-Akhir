@@ -789,6 +789,19 @@ Adam didesain untuk mengatasi kekurangan \textit{Stochastic Gradient Descent} (S
 \end{align*}
 
 
+\section{\textit{KFold Cross Validation}}
+
+\textit{KFold Cross Validation} merupakan teknik evaluasi model pembelajaran mesin yang lebih andal dan komprehensif dibandingkan 
+metode split data sederhana. Teknik ini bertujuan untuk memastikan kemampuan generalisasi model terhadap data baru yang 
+tidak terlihat selama pelatihan. Prosesnya terdiri dari beberapa langkah: pembagian dataset asli menjadi k subset (fold), pelatihan dan pengujian model 
+pada setiap fold secara berulang, dan penghitungan rata-rata hasil evaluasi. Teknik ini menawarkan beberapa manfaat, 
+seperti: mengurangi variabilitas hasil evaluasi, memanfaatkan seluruh dataset, dan mendeteksi overfitting.
+
+Manfaat \textit{KFold Cross Validation} seperti mengurangi variabilitas, evaluasi pada beberapa subset data menghasilkan 
+estimasi performa model yang lebih stabil dan akurat. Deteksi \textit{overfitting}, performa model yang buruk pada beberapa 
+old menunjukkan adanya \textit{overfitting}.
+\textit{KFold Cross Validation} merupakan teknik evaluasi yang penting untuk memastikan model pembelajaran mesin memiliki
+kemampuan generalisasi yang baik dan terhindar dari \textit{overfitting}.
 
 
 
