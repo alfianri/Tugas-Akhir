@@ -801,7 +801,19 @@ metode pembagian data sederhana. Teknik ini bertujuan untuk memastikan kemampuan
 tidak terlihat selama pelatihan. Prosesnya terdiri dari beberapa langkah: pembagian dataset asli menjadi k subset \textit{(fold)},
  pelatihan dan pengujian model 
 pada setiap \textit{fold} secara berulang, dan penghitungan rata-rata hasil evaluasi. Teknik ini menawarkan beberapa manfaat, 
-seperti, mengurangi variabilitas hasil evaluasi, memanfaatkan seluruh dataset, dan mendeteksi \textit{overfitting}.
+seperti, mengurangi variabilitas hasil evaluasi, memanfaatkan seluruh dataset, dan mendeteksi \textit{overfitting}. Pembagian 
+data menggunakan \textit{KFold Cross Validation} di ilustrasikan pada Gambar \ref{KFold Cross Validation} berikut.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\textwidth]{figures/bab2/kfold.png}
+    \caption{\textit{KFold Cross Validation}}
+    \label{KFold Cross Validation}
+  
+  \end{figure}
+
+
+
 
 Manfaat \textit{KFold Cross Validation} seperti mengurangi variabilitas, evaluasi pada beberapa subset data menghasilkan 
 estimasi performa model yang lebih stabil dan akurat. Deteksi \textit{overfitting}, performa model yang buruk pada beberapa 
