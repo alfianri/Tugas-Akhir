@@ -643,7 +643,10 @@ untuk lebih detailnya dijelaskan pada bagian selanjutnya.
 
 \section{\textit{Hyperparameter}}
 
-    \textit{Hyperparameter} dalam CNN merupakan parameter yang tidak secara langsung dipelajari oleh model selama proses \textit{training}. Parameter-parameter ini perlu ditentukan sebelum proses \textit{training} dan memiliki pengaruh signifikan terhadap performa akhir model. Pemilihan nilai \textit{hyperparameter} yang tepat merupakan langkah krusial dalam mengoptimalkan performa CNN.
+    \textit{Hyperparameter} dalam CNN merupakan parameter yang tidak secara langsung dipelajari oleh model selama 
+    proses \textit{training}. Parameter-parameter ini perlu ditentukan sebelum proses \textit{training} dan memiliki 
+    pengaruh signifikan terhadap performa akhir model. Pemilihan nilai \textit{hyperparameter} yang tepat merupakan 
+    langkah krusial dalam mengoptimalkan performa CNN.
 
  \subsection{\textit{Padding}}
 
@@ -731,7 +734,14 @@ untuk lebih detailnya dijelaskan pada bagian selanjutnya.
 
 \subsection{\textit{Optimizer}}
 
-\textit{Optimizer} adalah algoritma yang digunakan untuk menemukan nilai terbaik dari parameter model. Nilai-nilai ini disebut dengan bobot dan mengarahkan pemrosesan data dan membuat prediksi. Tujuan \textit{optimizer} untuk mengurangi nilai akhir dari fungsi \textit{loss}, yang memberi informasi tentang seberapa baik model membuat prediksi data. \textit{Optimizer} itu melaksanakan tugas dengan secara bertahap. Dengan memperbaharui bobot model berdasarkan gradien \textit{loss function}. Gradien adalah besarnya sebaris yang menyebutkan ke mana nilai harus digeser untuk meminimalkan nilai \textit{loss}. Dengan mengikuti instruksi ini, \textit{optimizer} memperbarui nilai bobot yang meminimalkan nilai \textit{loss} dan meningkatkan akurasi model \cite{ruder2017overview}.
+\textit{Optimizer} adalah algoritma yang digunakan untuk menemukan nilai terbaik dari parameter model.
+ Nilai-nilai ini disebut dengan bobot dan mengarahkan pemrosesan data dan membuat prediksi.
+  Tujuan \textit{optimizer} untuk mengurangi nilai akhir dari fungsi \textit{loss}, yang memberi informasi tentang 
+  seberapa baik model membuat prediksi data. \textit{Optimizer} itu melaksanakan tugas dengan secara bertahap. 
+  Dengan memperbaharui bobot model berdasarkan gradien \textit{loss function}.
+   Gradien adalah besarnya sebaris yang menyebutkan ke mana nilai harus digeser untuk meminimalkan nilai \textit{loss}. 
+   Dengan mengikuti instruksi ini, \textit{optimizer} memperbarui nilai bobot yang meminimalkan nilai \textit{loss} dan 
+   meningkatkan akurasi model \cite{ruder2017overview}.
 
 
 
@@ -742,7 +752,8 @@ model secara bertahap.  Pada setiap iterasi, SGD memperbarui parameter ke arah y
 fungsi \textit{loss}.  Gradien menunjukkan arah perubahan parameter yang akan menghasilkan penurunan \textit{loss} 
 terbesar.  Kesederhanaan dan efisiensi komputasi menjadi daya tarik utama SGD, terutama untuk menangani dataset 
 berukuran besar \cite{math11061360}.
-\textit{Gradient descent} menggunakan regresi linier seperti yang diberikan dalam Persamaan \ref{Stochastic Gradient Descent} 
+\textit{Gradient descent} menggunakan regresi linier seperti yang diberikan dalam 
+Persamaan \ref{Stochastic Gradient Descent} 
 berikut.
 
 \begin{equation}
@@ -763,6 +774,10 @@ berikut.
     Q_i(\omega) & : \text{Nilai fungsi } Q_i \text{ untuk contoh data ke-}i \\
     Q(\omega) & : \text{Nilai rata-rata fungsi } Q_i \text{ untuk semua contoh data}
 \end{align*}
+
+Untuk perhitungan manual \textit{Stochastic Gradient Descent} (SGD) lebih detail, di jelaskan pada
+ Lampiran \ref{Perhitungan Manual Optimizer}. 
+
 
 
     
